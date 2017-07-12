@@ -1,0 +1,80 @@
+"resource/layout/emailreminderbar.layout"
+{
+	styles
+	{
+		CEmailReminderBar
+		{
+			render {}
+			render_bg {
+				0="fill(x0, y0, x1, y0 + 1, eOSMessageInfoBorderTop)"
+				1="gradient(x0, y0 + 1, x1, y1 - 2, eOSMessageInfoGradientTop, eOSMessageInfoGradientBottom)"
+				2="fill(x0, y1 - 2, x1, y1 - 1, eOSMessageInfoGradientBottomOutline)"
+				3="fill(x0, y1 - 1, x1, y1, eOSMessageInfoBorderBottom)"
+			}
+		}
+		
+		soft
+		{
+			font-size=15
+		
+			textcolor="eOSMessageInfoText"
+		}
+
+		bright
+		{
+			
+			font-size=15
+		
+			textcolor="eOSMessageInfoText"
+		}
+
+		CloseStyle
+		{
+			render {}
+			render_bg {}
+			image="graphics/emailreminder_close"
+	
+		}
+
+		CloseStyle:hover
+		{
+			render {}
+			render_bg {}
+			image="graphics/emailreminder_close_hover"
+
+		}
+
+		URLLabel
+        {
+            font-size=15
+            font-style=normal
+            textcolor="eOSMessageInfoText"
+            padding-left=8
+            padding-right=8
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/_common/infobars/info/button/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/_common/infobars/info/button/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/_common/infobars/info/button/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/_common/infobars/info/button/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/_common/infobars/info/button/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/_common/infobars/info/button/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/_common/infobars/info/button/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/_common/infobars/info/button/b)"
+            }
+        }
+	}
+	
+	layout
+	{
+		region { name="hidden" x=0 y=0 width=0 height=0 }
+
+		place { control="emailreminderbar_yesbutton,emailreminderbar_nobutton,emailreminderbar_infolink" align=right margin-right=20 margin-top=12 spacing=8 height=24 }
+
+		place { control="emailreminderbarlabel,emailreminderbaremail_email" x=20 y=10 spacing=8 end-right="emailreminderbar_yesbutton" margin-right=8 }
+		place { control="emailreminderbar_info" x=20 y=24 end-right="emailreminderbar_yesbutton" margin-right=8 }
+		
+		place { control="emailreminderbar_close" region="hidden" width=0 height=0 }
+	}
+
+}

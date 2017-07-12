@@ -1,0 +1,56 @@
+"resource/layout/toolwindow.layout"
+{		
+	styles
+	{
+		ToolWindow
+		{
+			bgcolor="none"
+			render_bg
+            {
+                0="gradient(x0, y0, x1, y0+23, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+                1="fill(x0, y0+23, x1, y0+24, eOSInactiveTitleBorder)"
+                2="gradient(x0, y0+24, x1, y0+48, eOSInactiveSubHeaderTop, eOSInactiveSubHeaderBottom)"
+                4="fill(x0, y0+48, x1, y0+49, eOSInactiveTitleBorder)"
+                5="fill(x0, y0+50, x1, y1, eOSInactiveWindowBG)"
+            }
+		}
+		ToolWindow:framefocus
+		{
+			render_bg
+            {
+                0="gradient(x0, y0, x1, y0+23, eOSTitleTop, eOSTitleBottom)"
+                1="fill(x0, y0+23, x1, y0+24, eOSTitleBorder)"
+                2="gradient(x0, y0+24, x1, y0+48, eOSSubHeaderTop, eOSSubHeaderBottom)"
+                4="fill(x0, y0+48, x1, y0+49, eOSTitleBorder)"
+                5="fill(x0, y0+50, x1, y1, eOSWindowBG)"
+            }
+		}
+		
+		ToolWindow:framefocus
+		{			
+			bgcolor="none"
+		}
+	  
+		TabMenuButtonFlash
+		{ 
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1 - 1, y1 - 1, PropertySheet.FlashTabColor )"
+			}
+		}
+
+		TabMenuItemFlash
+		{
+			textcolor="PropertySheet.FlashTabColor"
+		}
+    
+	}
+
+	layout
+	{
+		place [!$OSX] { control="ToolWindowSheet" x=0 y=28 height=max width=max }
+		place [$OSX] { control="ToolWindowSheet" x=0 y=20 height=max width=max }
+	}
+}

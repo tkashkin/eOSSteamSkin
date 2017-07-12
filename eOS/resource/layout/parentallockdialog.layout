@@ -1,0 +1,66 @@
+"resource/layout/parentallockdialog.layout"
+{
+	styles
+	{
+		ParentalLockDialog
+		{
+			minimum-width=300
+			minimum-height=128
+			bgcolor="eOSWindowDarkBG"
+		}
+
+		Button
+		{
+			minimum-height=50
+			font-size=20
+			textcolor="white"
+
+			render {}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, white10)"
+			}
+		}
+		Button:hover
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, white25)"
+			}
+		}
+
+		Hey
+		{
+			font-size=14
+			textcolor="white"
+		}
+		
+		Key
+		{
+			bgcolor=none
+			textcolor=none
+			fontsize=0
+			render_bg
+			{
+				0="image_scale(x0, y0, x1, y1, graphics/keybg)"
+			}
+		}
+
+	}
+	
+	layout
+	{
+		region [!$OSX] { name="root" width=max height=max margin-top=32 }
+		region [$OSX] { name="root" width=max height=max margin-top=24 }
+
+		place { control="KeyImage" region="root" align=right y=16 margin-right=16 width=64 height=64 }
+
+		place { control="Instructions" region="root" x=16 y=8 width=max dir=down spacing=2 }
+
+		place { control="OK" region="root" width=max height=50 align=bottom }
+		
+		region { name="hidden" width=0 height=0 }
+		place { control="Cancel" region="hidden" }
+	}
+}
+

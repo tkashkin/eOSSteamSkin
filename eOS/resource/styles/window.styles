@@ -1,0 +1,320 @@
+window.styles
+{
+	styles
+	{
+        FrameMinimizeButton
+        {
+            image="graphics/eos/window/min_dis"
+            inset=0
+            padding=0
+        }
+        FrameMinimizeButton:hover
+        {
+            image="graphics/eos/window/min_hov"
+        }
+        FrameMinimizeButton:active
+        {
+            image="graphics/eos/window/min_down"
+        }
+        FrameMinimizeButton:framefocus
+        {
+            image="graphics/eos/window/min"
+        }
+        FrameMinimizeButton:framefocus:hover
+        {
+            image="graphics/eos/window/min_hov"
+        }
+        FrameMinimizeButton:framefocus:active
+        {
+            image="graphics/eos/window/min_down"
+        }
+
+        FrameMinimizeButton [$OSX]
+        {
+            image="graphics/mac/window/min_dis"
+        }
+        FrameMinimizeButton:hover [$OSX]
+        {
+            image="graphics/mac/window/min_hov"
+        }
+        FrameMinimizeButton:active [$OSX]
+        {
+            image="graphics/mac/window/min_down"
+        }
+        FrameMinimizeButton:framefocus [$OSX]
+        {
+            image="graphics/mac/window/min"
+        }
+        FrameMinimizeButton:framefocus:hover [$OSX]
+        {
+            image="graphics/mac/window/min_hov"
+        }
+        FrameMinimizeButton:framefocus:active [$OSX]
+        {
+            image="graphics/mac/window/min_down"
+        }
+
+        FrameMaximizeButton
+        {
+            image="graphics/eos/window/max_dis"
+            inset=0
+            padding=0
+        }
+        FrameMaximizeButton:hover
+        {
+            image="graphics/eos/window/max_hov"
+        }
+        FrameMaximizeButton:active
+        {
+            image="graphics/eos/window/max_down"
+        }
+        FrameMaximizeButton:framefocus
+        {
+            image="graphics/eos/window/max"
+        }
+        FrameMaximizeButton:framefocus:hover
+        {
+            image="graphics/eos/window/max_hov"
+        }
+        FrameMaximizeButton:framefocus:active
+        {
+            image="graphics/eos/window/max_down"
+        }
+
+        FrameMaximizeButton [$OSX]
+        {
+            image="graphics/mac/window/max_dis"
+        }
+        FrameMaximizeButton:hover [$OSX]
+        {
+            image="graphics/mac/window/max_hov"
+        }
+        FrameMaximizeButton:active [$OSX]
+        {
+            image="graphics/mac/window/max_hov"
+        }
+        FrameMaximizeButton:framefocus [$OSX]
+        {
+            image="graphics/mac/window/max"
+        }
+        FrameMaximizeButton:framefocus:hover [$OSX]
+        {
+            image="graphics/mac/window/max_hov"
+        }
+        FrameMaximizeButton:framefocus:active [$OSX]
+        {
+            image="graphics/mac/window/max_down"
+        }
+
+        FrameRestoreButton
+        {
+            image="graphics/eos/window/max_dis"
+            inset=0
+            padding=0
+        }
+        FrameRestoreButton:hover
+        {
+            image="graphics/eos/window/max_hov"
+        }
+        FrameRestoreButton:hover
+        {
+            image="graphics/eos/window/max_down"
+        }
+        FrameRestoreButton:framefocus
+        {
+            image="graphics/eos/window/max"
+        }
+        FrameRestoreButton:framefocus:hover
+        {
+            image="graphics/eos/window/max_hov"
+        }
+        FrameRestoreButton:framefocus:active
+        {
+            image="graphics/eos/window/max_down"
+        }
+
+        FrameRestoreButton [$OSX]
+        {
+            image="graphics/mac/window/max_dis"
+        }
+        FrameRestoreButton:hover [$OSX]
+        {
+            image="graphics/mac/window/max_hov"
+        }
+        FrameRestoreButton:active [$OSX]
+        {
+            image="graphics/mac/window/max_down"
+        }
+        FrameRestoreButton:framefocus [$OSX]
+        {
+            image="graphics/mac/window/max"
+        }
+        FrameRestoreButton:framefocus:hover [$OSX]
+        {
+            image="graphics/mac/window/max_hov"
+        }
+        FrameRestoreButton:framefocus:active [$OSX]
+        {
+            image="graphics/mac/window/max_down"
+        }
+
+        FrameCloseButton
+        {
+            image="graphics/eos/window/close_dis"
+            inset=0
+            padding=0
+        }
+        FrameCloseButton:hover
+        {
+            image="graphics/eos/window/close_hov"
+        }
+        FrameCloseButton:active
+        {
+            image="graphics/eos/window/close_down"
+        }
+        FrameCloseButton:framefocus
+        {
+            image="graphics/eos/window/close"
+        }
+        FrameCloseButton:framefocus:hover
+        {
+            image="graphics/eos/window/close_hov"
+        }
+        FrameCloseButton:framefocus:active
+        {
+            image="graphics/eos/window/close_down"
+        }
+
+        FrameCloseButton [$OSX]
+        {
+            image="graphics/mac/window/close_dis"
+        }
+        FrameCloseButton:hover [$OSX]
+        {
+            image="graphics/mac/window/close_hov"
+        }
+        FrameCloseButton:active [$OSX]
+        {
+            image="graphics/mac/window/close_down"
+        }
+        FrameCloseButton:framefocus [$OSX]
+        {
+            image="graphics/mac/window/close"
+        }
+        FrameCloseButton:framefocus:hover [$OSX]
+        {
+            image="graphics/mac/window/close_hov"
+        }
+        FrameCloseButton:framefocus:active [$OSX]
+        {
+            image="graphics/mac/window/close_down"
+        }
+
+        FrameMinimizeButton [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+        FrameMaximizeButton [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+		FrameRestoreButton [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+        FrameCloseButton [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+        
+        "CSteamRootDialog FrameMinimizeButton" [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+        "CSteamRootDialog FrameMaximizeButton" [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+		"CSteamRootDialog FrameRestoreButton" [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+        "CSteamRootDialog FrameCloseButton" [$LINUX]
+        {
+            inset="-6 0 0 0"
+        }
+
+        "CSteamRootDialog FrameMinimizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CSteamRootDialog FrameMaximizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CSteamRootDialog FrameRestoreButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CSteamRootDialog FrameCloseButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+
+        "CDialogSettings FrameMaximizeButton"
+        {
+            image="graphics/eos/window/max_dis"
+        }
+        "CDialogSettings FrameMaximizeButton" [$OSX]
+        {
+            image="graphics/mac/window/max_dis"
+        }
+
+        "CDialogSettings FrameMaximizeButton:framefocus"
+        {
+            image="graphics/eos/window/max_dis_framefocus"
+        }
+        "CDialogSettings FrameMaximizeButton:framefocus" [$OSX]
+        {
+            image="graphics/mac/window/max_dis_framefocus"
+        }
+
+        "CFriendsDialog FrameMinimizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CFriendsDialog FrameMaximizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CFriendsDialog FrameRestoreButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CFriendsDialog FrameCloseButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        
+        
+        FrameTitle
+        {
+            font-family=basefont
+            font-size=14
+            font-weight=800
+            textcolor="eOSInactiveTitleText"
+            bgcolor="none"
+        }
+        FrameTitle:framefocus
+        {
+            textcolor="eOSTitleText"
+        }
+        
+        FrameTitle [$OSX]
+        {
+            font-size=16
+            font-weight=400
+            inset="0 6 0 0"
+        }
+	}
+}

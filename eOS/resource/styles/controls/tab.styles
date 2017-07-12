@@ -1,0 +1,76 @@
+tab.styles
+{
+	styles
+	{
+		PageTab
+		{     
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			inset="8 2 8 2"
+			textcolor="Text"
+			render_bg {}
+		}
+
+		PageTab:selected
+		{
+			render_bg
+			{
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/tab/active_unfocused/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/tab/active_unfocused/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/tab/active_unfocused/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/tab/active_unfocused/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/tab/active_unfocused/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/tab/active_unfocused/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/tab/active_unfocused/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/tab/active_unfocused/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/tab/active_unfocused/m)"
+			}
+		}
+		PageTab:framefocus:selected
+		{
+			render_bg
+			{
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/tab/active/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/tab/active/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/tab/active/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/tab/active/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/tab/active/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/tab/active/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/tab/active/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/tab/active/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/tab/active/m)"
+			}
+		}
+
+		/// macOS
+		PageTab
+		{
+			render
+			{
+                0="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+			}
+		}
+		PageTab:framefocus
+		{
+			render
+			{
+                0="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+			}
+		}
+		PageTab:selected [$OSX]
+		{
+			render_bg
+			{
+                0="gradient(x0 - 1, y0, x1, y1, eOSInactiveActiveTabTop, eOSInactiveActiveTabBottom)"
+			}
+		}
+		PageTab:framefocus:selected [$OSX]
+		{
+			render_bg
+			{
+                0="gradient(x0 - 1, y0, x1, y1, eOSActiveTabTop, eOSActiveTabBottom)"
+			}
+		}
+	}
+}

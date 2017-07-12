@@ -1,0 +1,291 @@
+textentry.styles
+{
+	styles
+	{
+		TextEntry
+        {
+            font-family=basefont
+            font-size=14
+            font-weight=400
+            textcolor="eOSTextFieldText"
+            selectedtextcolor="eOSTextFieldSelectedText"
+            selectedbgcolor="eOSTextFieldSelectedBG"
+            shadowtextcolor="eOSTextFieldCursor"
+
+            inset-left=10
+            inset-right=10
+
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/textentry/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/textentry/m)"
+            }     
+        }
+        TextEntry:disabled
+        {
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/textentry/inactive/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/inactive/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/textentry/inactive/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/inactive/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/inactive/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/textentry/inactive/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/inactive/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/inactive/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/textentry/inactive/m)"
+            }
+        }
+        TextEntry:focus
+        {
+            render
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/textentry/focus/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/focus/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/textentry/focus/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/focus/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/focus/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/textentry/focus/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/focus/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/focus/b)"
+            }
+        }
+
+        LibrarySearch
+        {
+            inset-left=0
+            inset-right=0
+            minimum-width=140
+            render_bg
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/eos/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/eos/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/t)"
+                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/eos/controls/textentry/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/b)"
+                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/textentry/m)"
+                9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/eos/icons/search)"
+            }
+        }
+        LibrarySearch:focus
+        {
+            render
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/eos/controls/textentry/focus/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/focus/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/eos/controls/textentry/focus/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/focus/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/focus/t)"
+                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/eos/controls/textentry/focus/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/focus/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/focus/b)"
+            }
+        }
+
+        FriendsSearch
+        {
+            inset-left=0
+            inset-right=0
+            render_bg
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/eos/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/eos/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/t)"
+                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/eos/controls/textentry/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/b)"
+                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/textentry/m)"
+                9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/eos/icons/search)"
+            }
+        }
+        FriendsSearch:focus
+        {
+            render
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/eos/controls/textentry/focus/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/focus/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/eos/controls/textentry/focus/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/focus/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/focus/t)"
+                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/eos/controls/textentry/focus/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/focus/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/focus/b)"
+            }
+        }
+        
+        TextEntryURL
+        {
+            inset-left=20
+            render
+            {
+                0="image(x0 + 6, y0 + 6, x0 + 18, y0 + 18, graphics/_common/web/web)"
+            }
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/textentry/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/textentry/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/textentry/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/textentry/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/textentry/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/textentry/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/textentry/m)"
+            }  
+        }
+        URLStatusImage
+        {
+            render
+            {
+                0="image_scale(x0, y0, x1, y1, graphics/eos/controls/textentry/m)"
+                1="image(x0, y0, x1, y1, graphics/_common/web/secure)"
+            }
+        }
+        
+        
+        // macOS
+        
+		TextEntry [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/textentry/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/textentry/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/textentry/t)"
+                5="image_tiled(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/textentry/l)"
+                6="image_tiled(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/textentry/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/textentry/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/textentry/m)"
+            }     
+        }
+        TextEntry:disabled [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/textentry/inactive/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/textentry/inactive/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/textentry/inactive/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/textentry/inactive/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/textentry/inactive/t)"
+                5="image_tiled(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/textentry/inactive/l)"
+                6="image_tiled(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/textentry/inactive/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/textentry/inactive/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/textentry/inactive/m)"
+            }
+        }
+        TextEntry:focus [$OSX]
+        {
+            render
+            {
+                0="image(x0 - 2, y0 - 2, x0 + 6, y0 + 6, graphics/mac/controls/textentry/focus/tl)"
+                1="image(x1 - 6, y0 - 2, x1 + 2, y0 + 6, graphics/mac/controls/textentry/focus/tr)"
+                2="image(x0 - 2, y1 - 6, x0 + 6, y1 + 2, graphics/mac/controls/textentry/focus/bl)"
+                3="image(x1 - 6, y1 - 6, x1 + 2, y1 + 2, graphics/mac/controls/textentry/focus/br)"
+                4="image_tiled(x0 + 6, y0 - 2, x1 - 6, y0 + 6, graphics/mac/controls/textentry/focus/t)"
+                5="image_tiled(x0 - 2, y0 + 6, x0 + 6, y1 - 6, graphics/mac/controls/textentry/focus/l)"
+                6="image_tiled(x1 - 6, y0 + 6, x1 + 2, y1 - 6, graphics/mac/controls/textentry/focus/r)"
+                7="image_tiled(x0 + 6, y1 - 6, x1 - 6, y1 + 2, graphics/mac/controls/textentry/focus/b)"
+            }
+        }
+
+        LibrarySearch [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/mac/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/textentry/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/mac/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/textentry/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/mac/controls/textentry/t)"
+                5="image_tiled(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/mac/controls/textentry/l)"
+                6="image_tiled(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/textentry/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/mac/controls/textentry/b)"
+                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/textentry/m)"
+                9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/mac/icons/search)"
+            }
+        }
+        LibrarySearch:focus [$OSX]
+        {
+            render
+            {
+                0="image(x0 - 24, y0 - 2, x0 - 16, y0 + 6, graphics/mac/controls/textentry/focus/tl)"
+                1="image(x1 - 6, y0 - 2, x1 + 2, y0 + 6, graphics/mac/controls/textentry/focus/tr)"
+                2="image(x0 - 24, y1 - 6, x0 - 16, y1 + 2, graphics/mac/controls/textentry/focus/bl)"
+                3="image(x1 - 6, y1 - 6, x1 + 2, y1 + 2, graphics/mac/controls/textentry/focus/br)"
+                4="image_tiled(x0 - 16, y0 - 2, x1 - 6, y0 + 6, graphics/mac/controls/textentry/focus/t)"
+                5="image_tiled(x0 - 24, y0 + 6, x0 - 16, y1 - 6, graphics/mac/controls/textentry/focus/l)"
+                6="image_tiled(x1 - 6, y0 + 6, x1 + 2, y1 - 6, graphics/mac/controls/textentry/focus/r)"
+                7="image_tiled(x0 - 16, y1 - 6, x1 - 6, y1 + 2, graphics/mac/controls/textentry/focus/b)"
+            }
+        }
+
+        FriendsSearch [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/mac/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/textentry/tr)"
+                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/mac/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/textentry/br)"
+                4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/mac/controls/textentry/t)"
+                5="image_tiled(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/mac/controls/textentry/l)"
+                6="image_tiled(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/textentry/r)"
+                7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/mac/controls/textentry/b)"
+                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/textentry/m)"
+                9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/mac/icons/search)"
+            }
+        }
+        FriendsSearch:focus [$OSX]
+        {
+            render
+            {
+                0="image(x0 - 24, y0 - 2, x0 - 16, y0 + 6, graphics/mac/controls/textentry/focus/tl)"
+                1="image(x1 - 6, y0 - 2, x1 + 2, y0 + 6, graphics/mac/controls/textentry/focus/tr)"
+                2="image(x0 - 24, y1 - 6, x0 - 16, y1 + 2, graphics/mac/controls/textentry/focus/bl)"
+                3="image(x1 - 6, y1 - 6, x1 + 2, y1 + 2, graphics/mac/controls/textentry/focus/br)"
+                4="image_tiled(x0 - 16, y0 - 2, x1 - 6, y0 + 6, graphics/mac/controls/textentry/focus/t)"
+                5="image_tiled(x0 - 24, y0 + 6, x0 - 16, y1 - 6, graphics/mac/controls/textentry/focus/l)"
+                6="image_tiled(x1 - 6, y0 + 6, x1 + 2, y1 - 6, graphics/mac/controls/textentry/focus/r)"
+                7="image_tiled(x0 - 16, y1 - 6, x1 - 6, y1 + 2, graphics/mac/controls/textentry/focus/b)"
+            }
+        }
+        
+        TextEntryURL [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/textentry/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/textentry/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/textentry/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/textentry/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/textentry/t)"
+                5="image_tiled(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/textentry/l)"
+                6="image_tiled(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/textentry/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/textentry/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/textentry/m)"
+            }  
+        }
+        URLStatusImage [$OSX]
+        {
+            render
+            {
+                0="image_scale(x0, y0, x1, y1, graphics/mac/controls/textentry/m)"
+                1="image(x0, y0, x1, y1, graphics/_common/web/secure)"
+            }
+        }
+	}
+}

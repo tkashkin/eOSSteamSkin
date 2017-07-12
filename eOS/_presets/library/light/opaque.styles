@@ -1,0 +1,13 @@
+opaque.styles
+{
+	include "resource/styles/colors.styles"
+	colors
+	{
+		eOSLibraryBG="eOSWindowBG"
+		eOSLibrarySidebarBG="eOSSidebarBG"
+		eOSLibrarySidebarBorder="eOSSidebarBorder"
+
+		eOSLibraryLink="eOSLibraryGameInfoSubHeader"
+		eOSLibraryLinkHover="black"
+	}
+}

@@ -1,0 +1,104 @@
+"resource/layout/downloadsummarypanel.layout"
+{
+	styles
+	{
+		CDownloadSummaryPanel
+		{
+			bgcolor=none
+			render_bg
+			{
+				0="image(x0 - 11, y0 - 11, x0 + 19, y0 + 19, graphics/_common/library/card/tl)"
+                1="image(x1 - 19, y0 - 11, x1 + 11, y0 + 19, graphics/_common/library/card/tr)"
+                2="image_tiled(x0 + 19, y0 - 11, x1 - 19, y0 + 30, graphics/_common/library/card/t)"
+                3="image_tiled(x0 - 11, y0 + 19, x0 + 19, y1, graphics/_common/library/card/l)"
+                4="image_tiled(x1 - 19, y0 + 19, x1 + 11, y1, graphics/_common/library/card/r)"
+                5="fill(x0 + 19, y0 + 19, x1 - 19, y1, white)"
+			}
+	  	}
+
+	  	GraphPanel
+	  	{
+	  		textcolor="eOSSidebarBG"
+	  	}
+
+		PauseButton
+		{
+			font-size=0
+			textcolor=none
+			render_bg
+			{
+				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+			}
+		}
+		PauseButton:hover
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, black10)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+			}
+		}
+		PauseButton:active
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, black20)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+			}
+		}
+
+		ResumeButton
+		{
+			font-size=0
+			textcolor=none
+			render_bg
+			{
+				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+			}
+		}
+		ResumeButton:hover
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, black10)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+			}
+		}
+		ResumeButton:active
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, black20)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+			}
+		}
+	}
+	
+	layout
+	{
+		
+		region { name="card" width=max height=max }
+		
+		place { control="net_graphpanel" region="card" width=max height=max }				   
+		place { control="disc_graphpanel" region="card"  }
+		
+		place { control="pauseresumeallbutton" region="card" width=max height=max }
+
+		region { name="status" region="card" align="bottom" width=max height=20 margin-left=16 margin-right=16 margin-bottom=8 }
+		
+		place { region="status" control="download_rate,download_rate_value" align=left spacing=4 }
+		place { region="status" control="peak_download_rate,peak_download_rate_value" align=right spacing=4 }
+
+		place { region="card" control="" spacing=4 y=44	align=top	}
+		place { region="card" control="" spacing=4 y=66 align=top	}
+		
+		region { name="hidden" x=0 y=0 width=0 height=0 }
+		place { control="header,net_legend_panel,net_legend_label,disk_legend_panel,disk_legend_label,blackout_label,blackout_value,throttling_label,throttling_value,total_downloaded_value,total_downloaded,disk_status_value,disk_status_label" region="hidden" x=0 y=0 width=0 height=0 }
+	}
+}

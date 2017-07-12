@@ -1,0 +1,58 @@
+"resource/layout/gamespage_mini.layout"
+{
+	styles
+	{
+		"CGamesPage_Mini ListPanelInterior" {
+			minimum-width="9999"
+		}
+
+		RichText { //for emptylist
+			textcolor=none
+			selectedtextcolor=none
+			selectedbgcolor=none
+		}
+
+		ListPanelInterior:scrollbar {
+			render_bg { }
+		}
+
+		DetailsBorderPanel {
+			render_bg {
+				0="fill( x1 - 13, y0 + 1, x1, y1, A2ScrollGutter )"
+			}
+		}
+
+		CMiniGameFilterMenuButton {
+			render {
+				0="fill( x1 - 16, y0 + 12, x1 - 4, y1 - 10, Focus3 )"
+				1="image( x1 - 16, y0 + 8, x1, y1, graphics/onfocus/caret_down_onfocus )"
+			}
+		}
+
+		LibrarySearch:empty {
+			textcolor=none
+			padding-top=3
+			image="graphics/onfocus/search"
+		}
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		place [!$OSX] { control=MenuBar align=top width=52 height=49 }
+
+		region { name=nav height=50 width=max }
+		region { name=body y=79 height=max width=max }
+
+		place { control=gameslist region=body width=max height=max }
+
+		place [!$OSX] { control=library_search region=nav y=9 x=66 height=22 width=162 }
+		place [$OSX] { control=library_search region=nav y=9 x=73 height=22 width=162 }
+		place { control=library_filters height=30 y=50 x=20 }
+
+		place { control=label_search_icon,subnavgroup_library height=0 width=0 margin-left=-9999 }
+	}
+}

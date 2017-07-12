@@ -1,0 +1,49 @@
+"resource/layout/gamespage_details_achievements_locked.layout"
+{
+	colors
+	{
+		GameDetailsAchievements.ImageAreaSpacing "2"
+		GameDetailsAchievements.ImageWidth "32"
+		GameDetailsAchievements.LockedImageBorder "0"
+		Tooltip.Anchor=Parent
+	}
+
+	styles
+	{
+		achievementlabelmore {
+			textcolor=none
+			inset-left=-99
+			inset-top=-99
+    	}
+
+		lockedarea {
+			minimum-height="54"
+		}
+
+		achievementimagebg {
+			bgcolor=none
+      		image="graphics/none"
+      		render
+      		{
+      			0="image_scale(x0 + 1, y0 + 1, x1 - 1, y1 - 1, graphics/_common/mask/circle_white_42)"
+      		}
+		}
+	}
+
+	layout
+	{
+		region { name=images y=8 width=max height=46 margin-right=-30 }
+
+		place {
+			region=images
+			control=*achievementimage
+			y=2
+			dir=right
+			width=42
+			height=42
+			spacing=2
+		}
+
+		place { control="achievementlabelmore,imageexplanation" x=0 y=0 height=0 width=0 }
+	}
+}

@@ -1,0 +1,83 @@
+checkbox.styles
+{
+	styles
+	{
+		CheckButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/eos/controls/checkbox/unchecked"
+		}
+		CheckButton:selected
+		{
+			image="graphics/eos/controls/checkbox/checked"
+		}
+		CheckButton:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/eos/controls/checkbox/unchecked"
+		}
+		
+		CheckButton [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/unchecked"
+		}
+		CheckButton:selected [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked"
+		}
+		CheckButton:disabled [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/unchecked"
+		}
+		
+		IndeterminateCheckButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			bgcolor=none
+			image="graphics/eos/controls/checkbox/unchecked"
+		}
+		IndeterminateCheckButton [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/unchecked"
+		}
+
+		ListPanelCheckBox
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/eos/controls/checkbox/unchecked"
+			inset="0 5 0 0"
+		}
+		ListPanelCheckBox:selected
+		{
+			image="graphics/graphics/eos/controls/checkbox/checked"
+		}
+		ListPanelCheckBox:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/graphics/eos/controls/checkbox/unchecked"
+		}
+
+		ListPanelCheckBox [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/unchecked"
+		}
+		ListPanelCheckBox:selected [$OSX]
+		{
+			image="graphics/graphics/mac/controls/checkbox/checked"
+		}
+		ListPanelCheckBox:disabled [$OSX]
+		{
+			textcolor="TextDisabled"
+			image="graphics/graphics/mac/controls/checkbox/unchecked"
+		}
+	}
+}

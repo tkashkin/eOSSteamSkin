@@ -1,0 +1,63 @@
+"resource/layout/gamespage_details_achievements_most_recent.layout"
+{
+	colors
+	{
+		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
+		GameDetailsAchievements.ProgressBarMargins "8"
+
+		Tooltip.Anchor=Parent
+	}
+	styles
+	{
+		mostrecent {
+			minimum-height="74"
+		}
+
+		achievementimagebg {
+			bgcolor=none
+      		image="graphics/none"
+      		render
+      		{
+      			0="image_scale(x0 + 1, y0 + 1, x1 - 1, y1 - 1, graphics/_common/mask/circle_white_42)"
+      			1="fill(x0, y0, x1, y0 + 1, white)"
+      			1="fill(x0, y0, x0 + 1, y1, white)"
+      			1="fill(x1 - 1, y0, x1, y1, white)"
+      			1="fill(x0, y1 - 1, x1, y1, white)"
+      		}
+		}
+
+		progressbackground {
+			bgcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, white )"
+			}
+		}
+
+		progressbarimage {
+			bgcolor=none
+			render {
+				0="fill( x0, y0, x1, y1, eOSSelection )"
+			}
+		}
+
+		mostrecent_unlockedsofar
+		{
+			textcolor="eOSLibraryGameInfoSubHeader"
+		}
+	}
+
+	layout
+	{
+		region { name=body width=max height=max margin-left=16 }
+
+		place { control="mostrecent_label,mostrecent_name" x=0 y=0 width=0 height=0 }
+
+		place { region=body control="mostrecent_unlockedsofar" x=0 y=0 width=max margin-right=46 }
+
+		place { region=body control="mostrecent_image" x=0 y=16 width=42 height=42 }
+		place { region=body control="mostrecent_background" x=0 y=16 width=42 height=42 }
+
+		place { control="progressbackground" x=0 y=70 width=max height=4 }
+		place { control="progressbarimage" x=0 y=70 height=4 }
+	}
+}

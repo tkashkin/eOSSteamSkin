@@ -1,0 +1,70 @@
+"resource/layout/gamespage_details_news_item.layout"
+{
+	colors
+	{
+		GameDetailsNewsItem.ExtraVerticalSpacing "46"
+
+		RichText.InsetX 16
+		RichText.InsetY 2
+	}
+	
+	styles
+	{
+		CNewsItemPanel
+		{
+			render_bg {
+            	0="fill(x0, y0, x1, y0 + 1, eOSSidebarBorder)"
+			}
+		}
+
+		title_label
+		{
+			font-size=18
+            font-style="normal"
+            font-family=basefont
+            textcolor="black"
+    		font-weight=400 [!$OSX]
+            font-weight=700 [$OSX]
+    		inset-bottom=-2
+		}
+		date_and_author
+		{
+			textcolor="eOSLibraryGameInfoSubHeader"
+		}
+
+		more_link
+		{
+			font-size=0
+			textcolor=none
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view)"
+			}
+		}
+		more_link:hover
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view_hov)"
+			}
+		}
+		more_link:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view_down)"
+			}
+		}
+	}
+
+	layout
+	{
+		region { name="body" width=max margin-top=8 margin-bottom=8 }
+
+		place { region="body" control="newsitem_title" width=max margin-left=16 margin-right=46 }
+		place { region="body" control="newsitem_dateandauthor" start="newsitem_title" dir=down width=max margin-right=46 }
+		place { region="body" control="newsitem_more" start="newsitem_title" dir=right y=4 width=27 height=24 margin-right=16 }
+
+		place { region="body" y=43 control="newsitem_body" width=max }
+	}
+}

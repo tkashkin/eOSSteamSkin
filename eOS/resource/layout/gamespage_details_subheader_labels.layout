@@ -1,0 +1,78 @@
+"resource/layout/gamespage_details_subheader_labels.layout"
+{
+	controls
+	{
+		totalplaytimeheader { controlname="Label" style="headertext" labeltext="#steam_details_totalplaytimeheader" zpos="2" }
+		totalplaytimevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		gameplayedheader { controlname="Label" style="headertext" labeltext="#steam_details_lastplayedheader" zpos="2" }
+		gameplayedvalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		shareheader { controlname="Label" style="headertext" labeltext="#steam_details_sharedbyheader" zpos="2" }
+		sharevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		streamheader { controlname="Label" style="headertext" labeltext="#steam_details_streamfromheader" zpos="2" }
+		streamvalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+	}
+
+	styles
+	{
+		headertext
+		{
+			font-size=14
+			textcolor=none
+			inset-left=-999
+		}
+
+		headertext-red
+		{
+			font-size=14
+			textcolor=none
+			inset-left=-999
+		}
+
+		headertext-green
+		{
+			font-size=14
+			textcolor=none
+			inset-left=-999
+		}
+
+		headertext-blue
+		{
+			font-size=14
+			textcolor=none
+			inset-left=-999
+		}
+
+		valuetext
+		{
+			font-size=14
+			textcolor="eOSLibraryGameInfoSubHeader"
+		}
+
+		CDetailsSubHeaderLabelsPanel
+		{
+			render
+			{
+				0="fill(x0, y0 + 14, x1, y1, black)"
+			}
+		}
+	}
+
+	layout
+	{
+		region { name="labels" y=0 x=0 width=max height=max }
+
+		place {
+			control="totalplaytimevalue"
+			region="labels"
+			x=16
+			y=16
+			align=left
+			width=max
+		}
+
+		place { control="totalplaytimeheader,gameplayedheader,gameplayedvalue,shareheader,sharevalue,streamheader,streamvalue" x=0 y=0 width=0 height=0 }
+	}
+}

@@ -1,0 +1,234 @@
+colors.styles
+{
+	colors
+	{
+		black="0 0 0 255"
+        dark="35 35 35 255"
+        almostBlack="22 22 22 255"
+        almostBlackTrans="22 22 22 204"
+        white="255 255 255 255"
+        grey="153 153 153 255"
+        none="0 0 0 0"
+        yellow="255 255 0 255"
+        offwhite="164 164 164 255"
+        dullgreen="216 222 211 255"
+        maize="203 191 87 255"
+        red="255 51 51 255"
+        darkblue="39 100 130 255"
+        blue="54 143 179 255"
+        darkred="128 0 0 255"
+        darkpurple="64 0 64 255"
+        
+        dark_blue "2 15 23 255"
+    	med_blue "13 52 82 255"
+    	bg_blue "10 36 56 255"
+
+        white03="255 255 255 7.65"
+        white05="255 255 255 12.75"
+        white08="255 255 255 20.4"
+        white10="255 255 255 25.5"
+        white12="255 255 255 30.6"
+        white15="255 255 255 38.25"
+        white20="255 255 255 51"
+        white24="255 255 255 61.2"
+        white25="255 255 255 63.75"
+        white35="255 255 255 89.25"
+        white45="255 255 255 114.75"
+        white50="255 255 255 127.5"
+        white75="255 255 255 191.25"
+        white="255 255 255 255"
+        black05="255 255 255 12.75"
+        black10="0 0 0 25.5"
+        black12="0 0 0 30.6"
+        black15="0 0 0 38.25"
+        black20="0 0 0 51"
+        black24="0 0 0 61.2"
+        black25="0 0 0 63.75"
+        black45="0 0 0 114.75"
+        black45="0 0 0 114.75"
+        black50="0 0 0 127.5"
+        black75="0 0 0 191.25"
+        Black="0 0 0 255"
+        FrameBorder="15 15 15 255"
+        DetailsBackground=Black45
+        TextEntry="39 39 39 255"
+        ScrollBar="86 86 86 255"
+        ScrollBarH="110 110 110 255"
+        Grey1="40 40 40 255"
+        Grey2="48 48 48 255"
+        Grey3="75 75 75 255"
+        
+        // control colors
+        bordercolor="102 102 102 255"
+        darkcorner="73 73 73 255"
+        buttontext=Text
+        buttontextactive=Text
+        
+        // cool we can define font-families here as well
+        basefont="Arial"
+        basefont="Helvetica" [$OSX]
+        
+        // new control colors
+        ButtonFace="102 102 102 200"
+        ButtonFace2="80 80 80 255" // for use in main client list panel column header, some button states
+        ButtonFace3="92 92 92 255" // button cornering pixels
+        ButtonFaceDisabled="102 102 102 15"
+        ButtonFaceHover="99 99 99  240"   /// hover!
+        ButtonFaceActive="102 102 102  240"  // not sure what this state is...
+        ButtonFaceFocus="105 105 105  240"  //  keyboard focus
+        ButtonFaceActiveFocus="105 105 105  255"  // this is the default choice
+        BlueBorder="33 33 33 255"
+        ButtonBorder="89 89 89 255"
+        ButtonBorderSubtle="79 79 79 255"
+        ButtonBorderPage="124 124 124 255"
+        ButtonBorderDisabled="75 75 75 255"
+        ButtonBorderDisabled2="65 65 65 255"  //cornering pixels
+        ButtonBorderActive="125 125 125 255"
+        ButtonBorderFocus="137 137 137 255"
+        ButtonBorderFocusSubtle="122 122 122 255"
+        
+        Text="black"
+        Text2="47 47 47 255"
+        TextDisabled="grey"
+        TextHover="60 60 60 255"
+        TextSelected="white"
+        TextentrySelected="white" // color of any selected text
+        TextSelectedBG="63 146 254 255" // background color of any selected text 
+        TextGlowHover="124 124 124 255"
+        TextGlowSelected="169 169 169 255"
+        TextGlowHoverSm="123 123 123 255"
+        TextGlowSelectedSm="142 142 142 255"
+        redborder="169 72 71 255"
+
+        // eOS colors
+
+		eOSSelection="63 146 254 255"
+
+	    eOSTitleTop="230 230 230 255"
+	    eOSTitleBottom="197 197 197 255"
+	    eOSTitleBorder="133 133 133 255"
+	    eOSTitleText="47 47 47 255"
+
+	    eOSInactiveTitleTop="239 239 239 255"
+	    eOSInactiveTitleBottom="219 219 219 255"
+	    eOSInactiveTitleBorder="142 142 142 255"
+	    eOSInactiveTitleText="144 144 144 255"
+
+	    eOSTitleTop="233 233 233 255" [$OSX]
+	    eOSTitleBottom="211 211 211 255" [$OSX]
+	    eOSTitleBorder="160 160 160 255" [$OSX]
+	    eOSTitleText="60 60 60 255" [$OSX]
+
+	    eOSInactiveTitleTop="245 244 245 255" [$OSX]
+	    eOSInactiveTitleBottom="245 244 245 255" [$OSX]
+	    eOSInactiveTitleBorder="208 208 208 255" [$OSX]
+	    eOSInactiveTitleText="170 170 170 255" [$OSX]
+
+	    eOSSubHeaderTop="173 173 173 255"
+	    eOSSubHeaderBottom="200 200 200 255"
+	    eOSInactiveSubHeaderTop="200 200 200 255"
+	    eOSInactiveSubHeaderBottom="213 213 213 255"
+
+	    eOSSubHeaderTop="186 186 186 255" [$OSX]
+	    eOSSubHeaderBottom="186 186 186 255" [$OSX]
+	    eOSInactiveSubHeaderTop="239 239 239 255" [$OSX]
+	    eOSInactiveSubHeaderBottom="236 236 236 255" [$OSX]
+
+	    eOSWindowBG="white"
+
+		eOSWindowTintedBG="226 226 226 255"
+	    eOSWindowTintedBG="233 233 233 255" [$OSX]
+	    
+	    eOSWindowTintedBGAlpha64="226 226 226 64"
+	    eOSWindowTintedBGAlpha128="226 226 226 128"
+	    eOSWindowTintedBGAlpha200="226 226 226 200"
+
+	    eOSWindowTintedBGAlpha64="233 233 233 64" [$OSX]
+	    eOSWindowTintedBGAlpha128="233 233 233 128" [$OSX]
+	    eOSWindowTintedBGAlpha200="233 233 233 200" [$OSX]
+
+	    eOSWindowTintedBGAlpha="eOSWindowTintedBGAlpha64"
+
+	    eOSWindowDarkBG="40 40 40 255"
+
+	    eOSInactiveWindowBG="white"
+	    eOSInactiveWindowTintedBG="233 233 233 255"
+	    eOSInactiveWindowDarkBG="40 40 40 255"
+
+	    eOSSidebarBG="eOSWindowTintedBG"
+
+	    eOSSidebarBGAlpha64="eOSWindowTintedBGAlpha64"
+	    eOSSidebarBGAlpha128="eOSWindowTintedBGAlpha128"
+	    eOSSidebarBGAlpha200="eOSWindowTintedBGAlpha200"
+
+	    eOSSidebarBGAlpha="eOSSidebarBGAlpha64"
+
+		eOSSidebarBorder="166 166 166 255"
+	    eOSSidebarBorder="eOSTitleBorder" [$OSX]
+
+	    eOSMenuBG="eOSWindowTintedBG"
+	    eOSMenuBorder="eOSTitleBorder"
+	    eOSMenuText="128 128 128 255"
+	    eOSMenuTextHover="64 64 64 255"
+	    eOSMenuTextSelected="black"
+	    eOSMenuTextDisabled="grey"
+	    eOSMenuTextHoverBG="0 0 0 24"
+	    eOSMenuTextSelectedBG="0 0 0 48"
+
+	    eOSContextMenu="black"
+	    eOSContextMenuDisabled="grey"
+	    eOSContextMenuHover="black"
+	    eOSContextMenuSelected="black"
+	    eOSContextMenuBG="245 245 245 255"
+	    eOSContextMenuHoverBG="215 215 215 255"
+	    eOSContextMenuSelectedBG="215 215 215 255"
+
+	    eOSContextMenu="black" [$OSX]
+	    eOSContextMenuDisabled="grey" [$OSX]
+	    eOSContextMenuHover="white" [$OSX]
+	    eOSContextMenuSelected="white" [$OSX]
+	    eOSContextMenuBG="238 238 238 255" [$OSX]
+	    eOSContextMenuHoverBG="63 146 254 255" [$OSX]
+	    eOSContextMenuSelectedBG="63 146 254 255" [$OSX]
+
+	    eOSTextFieldText="eOSContextMenu"
+	    eOSTextFieldCursor="grey"
+	    eOSTextFieldSelectedText="eOSContextMenuSelected"
+	    eOSTextFieldSelectedBG="eOSSelection"
+
+	    eOSTableHeaderBG="238 238 238 255"
+	    eOSTableHeaderBorder="190 190 190 255"
+	    eOSTableHeaderDragger="214 214 214 255"
+
+	    eOSLibraryGameInfoSubHeader="117 117 117 255"
+
+	    eOSScrollBarFill="124 124 124 125"
+	    
+		eOSProgressBar="63 146 254 255"
+		eOSProgressBarBorder="63 146 254 255"
+
+	    eOSNotificationBG="238 238 238 255"
+	    eOSNotificationBorder="eOSTitleBorder"
+	    
+	    eOSTitleOutlineTop="247 247 247 255"
+	    eOSTitleOutlineBottom="208 208 208 255"
+
+	    eOSMessageInfoBorderTop="53 120 147 255"
+	    eOSMessageInfoGradientTop="85 193 236 255"
+	    eOSMessageInfoGradientBottom="68 162 233 255"
+	    eOSMessageInfoGradientBottomOutline="96 176 236 255"
+	    eOSMessageInfoBorderBottom="51 123 178 255"
+	    eOSMessageInfoText="0 65 102 255"
+
+	    // gradient colors for macOS
+	    eOSActiveTabTop="217 217 217 255"
+	    eOSActiveTabBottom="211 211 211 255"
+	    eOSInactiveActiveTabTop="245 245 245 255"
+	    eOSInactiveActiveTabBottom="245 245 245 255"
+
+	    // configurable default colors
+		//eOSLibraryBG="eOSWindowBG"
+		//eOSLibrarySidebarBG="eOSSidebarBGAlpha64"
+		//eOSLibrarySidebarBorder="eOSSidebarBorder"
+	}
+}

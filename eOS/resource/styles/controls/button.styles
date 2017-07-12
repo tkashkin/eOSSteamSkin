@@ -1,0 +1,159 @@
+button.styles
+{
+	styles
+	{
+		Button [$LINUX]
+		{     
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			inset="8 2 8 2"
+			textcolor="Text"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/button/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/button/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/button/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/button/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/button/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/button/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/button/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/button/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/button/m)"
+			}
+		}
+		Button:focus [$LINUX]
+		{
+			render_bg
+			{
+				0="image(x0 - 1, y0 - 1, x0 + 5, y0 + 5, graphics/eos/controls/button/focus/tl)"
+                1="image(x1 - 5, y0 - 1, x1 + 1, y0 + 5, graphics/eos/controls/button/focus/tr)"
+                2="image(x0 - 1, y1 - 5, x0 + 5, y1 + 1, graphics/eos/controls/button/focus/bl)"
+                3="image(x1 - 5, y1 - 5, x1 + 1, y1 + 1, graphics/eos/controls/button/focus/br)"
+                4="image_tiled(x0 + 5, y0 - 1, x1 - 5, y0 + 5, graphics/eos/controls/button/focus/t)"
+                5="image_scale(x0 - 1, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/button/focus/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1 + 1, y1 - 5, graphics/eos/controls/button/focus/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1 + 1, graphics/eos/controls/button/focus/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/button/focus/m)"
+			}
+		}
+		Button:selected [$LINUX]
+		{
+			render_bg
+			{
+				0="image(x0 - 1, y0 - 1, x0 + 5, y0 + 5, graphics/eos/controls/button/focus/tl)"
+                1="image(x1 - 5, y0 - 1, x1 + 1, y0 + 5, graphics/eos/controls/button/focus/tr)"
+                2="image(x0 - 1, y1 - 5, x0 + 5, y1 + 1, graphics/eos/controls/button/focus/bl)"
+                3="image(x1 - 5, y1 - 5, x1 + 1, y1 + 1, graphics/eos/controls/button/focus/br)"
+                4="image_tiled(x0 + 5, y0 - 1, x1 - 5, y0 + 5, graphics/eos/controls/button/focus/t)"
+                5="image_scale(x0 - 1, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/button/focus/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1 + 1, y1 - 5, graphics/eos/controls/button/focus/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1 + 1, graphics/eos/controls/button/focus/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/button/focus/m)"
+			}
+		}
+		Button:active [$LINUX]
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/button/active/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/button/active/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/button/active/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/button/active/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/button/active/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/button/active/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/button/active/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/button/active/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/button/active/m)"
+			}
+		}
+		Button:disabled [$LINUX]
+		{
+			textcolor="grey"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/eos/controls/button/disabled/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/eos/controls/button/disabled/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/eos/controls/button/disabled/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/eos/controls/button/disabled/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/eos/controls/button/disabled/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/eos/controls/button/disabled/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/eos/controls/button/disabled/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/eos/controls/button/disabled/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/eos/controls/button/disabled/m)"
+			}
+		}
+		
+		Button [$OSX]
+		{     
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			inset="8 2 8 2"
+			textcolor="Text"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/button/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/button/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/button/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/button/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/button/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/button/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/button/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/button/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/button/m)"
+			}
+		}
+		Button:hover [$OSX]
+		{
+
+		}
+		Button:selected [$OSX]
+		{
+			textcolor="white"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/button/active/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/button/active/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/button/active/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/button/active/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/button/active/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/button/active/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/button/active/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/button/active/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/button/active/m)"
+			}
+		}
+		Button:active [$OSX]
+		{
+			textcolor="white"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/button/active/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/button/active/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/button/active/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/button/active/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/button/active/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/button/active/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/button/active/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/button/active/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/button/active/m)"
+			}
+		}
+		Button:disabled [$OSX]
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/button/disabled/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/button/disabled/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/button/disabled/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/button/disabled/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/button/disabled/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/button/disabled/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/button/disabled/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/button/disabled/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/button/disabled/m)"
+			}
+		}
+	}
+}

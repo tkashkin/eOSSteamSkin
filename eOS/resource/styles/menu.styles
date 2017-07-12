@@ -1,0 +1,69 @@
+menu.styles
+{
+	styles
+	{
+    	Menu
+        {
+    		bgcolor="eOSMenuBG"
+          
+    		render
+            {
+                0="fill(x0, y0, x0+1, y1, eOSMenuBorder)"
+                2="fill(x1-1, y0, x1, y1, eOSMenuBorder)"
+                3="fill(x0, y0, x1, y0+1, eOSMenuBorder)"
+                4="fill(x0, y1-1, x1, y1, eOSMenuBorder)"
+            }
+    		corner_rounding=3
+        }
+        
+    	"MenuBar MenuButton"
+    	{
+    		textcolor=none
+    		bgcolor=none
+    		font-family=basefont
+    		font-size=0
+    		minimum-width=32
+    		minimum-height=32
+    		render_bg
+    		{
+    			0="image(x0, y0, x1, y1, graphics/eos/buttons/menu/menu)"
+    		}
+    	}
+    	"MenuBar MenuButton:selected"
+    	{
+    		render_bg
+    		{
+    			0="image(x0, y0, x1, y1, graphics/eos/buttons/menu/menu_down)"
+    		}
+    	}
+
+        MenuItem
+        {
+            padding=8
+            font-family=basefont
+            font-size=14
+            font-weight=regular
+            textcolor="eOSContextMenu"
+            bgcolor="eOSContextMenuBG"
+        }
+
+        MenuItem:selected
+        {
+            textcolor="eOSContextMenuSelected"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+
+        MenuItem:hover
+        {
+            textcolor="eOSContextMenuHover"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+       
+        MenuSeparator
+        {
+    		inset="-4 0 0 0"	
+    		textcolor="grey"
+    		bgcolor=none
+        }
+	}
+}

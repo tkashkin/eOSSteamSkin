@@ -1,0 +1,318 @@
+navigation.styles
+{
+	styles
+	{
+        zoomslider
+        {
+            textcolor="navlabel"
+        }
+        
+        zoomslider:hover
+        {
+            textcolor="black"
+        }
+
+        LibrarySeparator
+        {
+            padding-left=0
+            font-family=basefont
+            font-size=16
+            font-weight=400
+            textcolor=LabelDisabled
+            inset="0 -2 0 0"
+        }
+        
+        MusicPlayerIcon
+        {
+            bgcolor="none"
+            inset="-1 0 0 0"
+            render_bg={}
+            image="graphics/icon_music_player"
+            padding-left=0
+            padding-right=-1
+            padding-top=-1
+        }
+        
+        MusicPlayerIcon:hover
+        {
+            bgcolor="none"
+            inset="-1 0 0 0"
+            render_bg={}
+            image="graphics/icon_music_player_hover"
+            padding-left=0
+            padding-right=-1
+            padding-top=-1
+        }
+        
+        MusicPlayerIcon:selected
+        {
+            bgcolor="none"
+            inset="-1 0 0 0"
+            render_bg={}
+            image="graphics/icon_music_player_selected"
+            padding-left=0
+            padding-right=-1
+            padding-top=-1
+        }
+        
+        LibraryShow [!$OSX]
+        {
+            padding-left=0
+            font-family=basefont
+            font-size=14 
+            font-weight=400
+            textcolor="LabelDisabled"
+            font-style=uppercase
+        }
+
+        LibraryShow [$OSX]
+        {
+            padding-left=0
+            font-family=basefont
+            font-size=13 
+            font-weight=400
+            textcolor="LabelDisabled"
+            font-style=uppercase 
+        }
+        
+        NavLabel
+        {
+            font-family=basefont
+            font-size=14 [!$OSX]
+            font-size=15 [$OSX] 
+            font-weight=400
+            textcolor="Label"
+            font-style=uppercase
+        }   
+        
+        NavLabelView [!$OSX]
+        {
+            font-family=basefont
+            font-size=14
+            font-weight=400
+            textcolor="LabelDisabled"
+            font-style=uppercase
+            padding-left=0
+        }
+
+        NavLabelView [$OSX]
+        {
+            font-family=basefont
+            font-size=13 
+            font-weight=400
+            textcolor="LabelDisabled"
+            font-style=uppercase
+            padding-left=0
+        }
+        
+        Panel_transparent
+        {
+            bgcolor="none"
+        }
+        
+        CGameFilterMenuButton
+        {
+            minimum-width=22
+            minimum-height=24
+            font-size=0
+            textcolor=none
+        }
+        
+        WebPanelStyle
+        {
+            bgcolor="none"
+            textcolor="label"
+            inset="1 1 1 1"
+            render_bg
+            {
+                0="fill( x0, y0, x1, y1, almostblack )" // bg
+            }
+        }
+        
+        BroadcastPanelMinimized
+        {
+            bgcolor="none"
+            textcolor="label"
+            inset="0 0 0 0"
+            render_bg 
+            {
+                0="fill( x0, y0, x1, y1, almostblack )" // bg
+            }
+        }
+        
+        CUINavButtonNew
+        {
+            textcolor="133 176 223 255"
+            font-weight=800
+        }
+        
+        CUINavButton
+        {
+            bgcolor=none
+            
+            font-family=basefont
+            font-size=0
+        	textcolor=none
+            
+            render_bg
+            {
+            	0="image(x0, y0, x1, y0 + 24, graphics/eos/menu/button)"
+            }
+        }
+        CUINavButton:selected
+        {
+            render_bg
+            {
+            	0="image(x0, y0, x1, y1 + 24, graphics/eos/menu/button_active)"
+            }
+        }
+
+        CUINavButton [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0, y0, x1, y0 + 24, graphics/mac/menu/button)"
+            }
+        }
+        CUINavButton:selected [$OSX]
+        {
+            render_bg
+            {
+                0="image(x0, y0, x1, y1 + 24, graphics/mac/menu/button_active)"
+            }
+        }
+
+        CUINavButton2
+        {
+            textcolor="eOSContextMenu"
+            bgcolor="eOSContextMenuBG"
+            font-family=basefont
+            font-size=15
+            font-weight=400
+            padding-left=5
+            padding-right=5
+            padding-bottom=4
+        }
+                
+        CUINavButton2:hover
+        {
+            textcolor="eOSContextMenuHover"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+
+        CUINavButton2:selected 
+        {
+            textcolor="eOSContextMenuSelected"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+
+
+        SuperNavMenu
+        {
+            bgcolor="eOSMenuBG"
+          
+            render
+            {
+                0="fill(x0, y0, x0+1, y1, eOSMenuBorder)"
+                2="fill(x1-1, y0, x1, y1, eOSMenuBorder)"
+                3="fill(x0, y0, x1, y0+1, eOSMenuBorder)"
+                4="fill(x0, y1-1, x1, y1, eOSMenuBorder)"
+            }
+        }
+
+        SuperNavMenuItem
+        {
+            padding=8
+            font-family=basefont
+            font-size=14
+            font-weight=regular
+            textcolor="eOSContextMenu"
+            bgcolor="eOSContextMenuBG"
+        }
+        SuperNavMenuItem:selected
+        {
+            textcolor="eOSContextMenuSelected"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+        SuperNavMenuItem:hover
+        {
+            textcolor="eOSContextMenuHover"
+            bgcolor="eOSContextMenuHoverBG"
+        }
+
+        "SuperNavMenuDivider"
+        {
+            textcolor="none"
+            render {
+                1="fill( x0+6, y0+1, x1-6, y0+2, eOSContextMenuDisabled )"
+            }
+        }
+
+        CUINavigatorPanel
+        {           
+            bgcolor="none"
+            
+        	render // hack for navigation buttons
+        	{
+        		0="image(x0 + 275, y0 + 12, x0 + 277, y0 + 36, graphics/eos/menu/left)"
+        		1="image(x0 + 369, y0 + 12, x0 + 371, y0 + 36, graphics/eos/menu/right)"
+        		
+        		2="image(x0 + 275, y0 + 12, x0 + 299, y0 + 36, graphics/eos/menu/icons/store)"
+        		3="image(x0 + 299, y0 + 12, x0 + 323, y0 + 36, graphics/eos/menu/icons/library)"
+        		4="image(x0 + 323, y0 + 12, x0 + 347, y0 + 36, graphics/eos/menu/icons/community)"
+        		5="image(x0 + 347, y0 + 12, x0 + 371, y0 + 36, graphics/eos/menu/icons/profile)"
+        	}
+        }
+
+        CUINavigatorPanel [$OSX]
+        {           
+            bgcolor="none"
+            
+            render // hack for navigation buttons
+            {
+                0="image(x0 + 275, y0 + 12, x0 + 280, y0 + 36, graphics/mac/menu/left)"
+                1="image(x0 + 390, y0 + 12, x0 + 395, y0 + 36, graphics/mac/menu/right)"
+                
+                2="image(x0 + 278, y0 + 12, x0 + 302, y0 + 36, graphics/mac/menu/icons/store)"
+                3="image(x0 + 308, y0 + 12, x0 + 332, y0 + 36, graphics/mac/menu/icons/library)"
+                4="image(x0 + 338, y0 + 12, x0 + 362, y0 + 36, graphics/mac/menu/icons/community)"
+                5="image(x0 + 368, y0 + 12, x0 + 392, y0 + 36, graphics/mac/menu/icons/profile)"
+            }
+        }  
+
+        LabelEVCert [!$OSX]
+        {
+            font-family=basefont
+            font-size=14
+            textcolor="darkclientbg"
+            font-weight=400
+            bgcolor="html.secureurl"
+            inset-left=4
+            inset-right=4
+            inset-top=3     
+        }
+
+            
+        LabelEVCert [$OSX]
+        {
+            font-family=basefont
+            font-size=14
+            textcolor="darkclientbg"
+            font-weight=400
+            bgcolor="html.secureurl"
+            inset-left=3
+            inset-right=4
+            inset-top=3 
+        }
+
+        URLBarSecure
+        {
+            textcolor="html.secureurl"
+        }
+
+        URLBarBrokenSecure
+        {
+            textcolor="html.insecureurl"
+        }
+	}
+}

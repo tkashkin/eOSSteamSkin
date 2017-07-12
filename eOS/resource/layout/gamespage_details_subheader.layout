@@ -1,0 +1,321 @@
+"resource/layout/gamespage_details_subheader.layout"
+{
+	controls
+	{
+		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
+		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
+		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
+	}
+
+	colors
+	{
+		GameDetailsSubHeader.HorizontalSpacing=10
+		GameDetailsSubHeader.VerticalMargin=18
+	}
+
+	styles
+	{
+		CDetailsGameSubHeaderPanel
+		{
+			bgcolor=none
+			render_bg
+			{
+                0="image_tiled(x0 - 11, y0, x0 + 19, y1, graphics/_common/library/card/l)"
+               	1="image_tiled(x1 - 19, y0, x1 + 11, y1, graphics/_common/library/card/r)"
+                2="fill(x0 + 19, y0, x1 - 19, y1, white)"
+			}
+		}
+		
+		
+		ClientListButton
+		{
+			inset="20 0 0 0"
+			// minimum-width=20
+			// minimum-height set by code to match actual height of Launch button
+			// Do not set either minimum-width or -height here or it will override the code and the layout will break
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, launch1, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}
+		
+		ClientListButton:hover
+		{
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, launch0, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+		
+		ClientListButton:active
+		{
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+				
+		ClientListButton:selected
+		{
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}	
+		
+
+		DetailsButton
+		{   
+			inset="-3 0 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="white"
+			font-style=uppercase
+			bgcolor=none
+
+			render_bg
+			{
+				// background fill
+				0="gradient( x0, y0+1, x1, y1-1, parental_lock_active1, none )"
+
+
+			}	
+		}
+		
+		DetailsButton:hover
+		{
+			inset="-3 0 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="white"
+			font-style=uppercase
+			bgcolor=none
+			
+			render_bg
+			{
+				// background fill
+				0="gradient( x0, y0+1, x1, y1-1, parental_lock_active1, almostblack )"
+
+			}	
+		}
+		
+		DetailsButton:active
+		{
+			inset="-3 0 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+			bgcolor=none
+			
+			render_bg
+			{
+				// background fill
+				0="gradient( x0, y0+1, x1, y1-1, DialogBG, propertysheetbg )"
+			}	
+		}
+		
+		DetailsLaunchButton
+		{   
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+			bgcolor=none
+
+			minimum-height=36
+			inset="30 2 30 2"
+
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/m)"
+			}
+		}
+		DetailsLaunchButton:Hover
+		{
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/active/m)"
+			}
+		}
+		DetailsLaunchButton:Active
+		{
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/active/m)"
+			}
+		}
+				
+		DetailsInstallButton
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+			bgcolor=none
+
+			minimum-height=36
+			inset="30 2 30 2"
+
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/m)"
+			}
+		}
+		DetailsInstallButton:Hover
+		{
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/active/m)"
+			}
+		}
+		DetailsInstallButton:Active
+		{
+			render_bg
+			{
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/active/m)"
+			}
+		}
+		
+		DetailsBuyButton
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+			bgcolor=none
+
+			minimum-width=180
+			minimum-height=36
+
+			render_bg
+			{
+				0="image(x0 - 1, y0 - 1, x1 + 1, y1 + 3, graphics/_common/library/buttons/install/install)"
+			}
+		}
+		DetailsBuyButton:hover
+		{
+			
+		}
+		DetailsBuyButton:active
+		{
+
+		}		
+		DetailsBuyButton:Selected
+		{
+
+		}
+	}
+
+	layout
+	{
+		// Y offset here should match the vertical padding value above in the colors section
+		region { name="header" y=16 x=0 width=max height=max }
+
+		region { name="labels" x=8 y=0 width=max height=14 }
+
+		place { 
+			control=subheaderlabels
+			region=labels
+			dir=down
+			align=left
+		}
+
+		place {
+			control=launchbutton
+			region=header
+			dir=down
+			align=top-center
+			margin=8
+		}
+
+		place { 
+			control=clientlist
+			x=0
+			y=0
+			width=0
+			height=0
+		}
+	}
+}
