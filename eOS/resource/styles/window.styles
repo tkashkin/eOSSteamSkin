@@ -295,7 +295,23 @@ window.styles
         {
             inset="-4 0 0 0"
         }
-        
+
+        "CProductMarketingDialog FrameMinimizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CProductMarketingDialog FrameMaximizeButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CProductMarketingDialog FrameRestoreButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }
+        "CProductMarketingDialog FrameCloseButton" [$OSX]
+        {
+            inset="-4 0 0 0"
+        }        
         
         FrameTitle
         {
