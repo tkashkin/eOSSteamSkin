@@ -39,20 +39,20 @@ combobox.styles
 
 			render_bg
 			{
-				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/combobox/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/combobox/tr)"
-                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/combobox/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/combobox/br)"
-                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/mac/controls/combobox/t)"
-                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/combobox/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/combobox/r)"
-                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/mac/controls/combobox/b)"
-                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/combobox/m)"
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/mac/controls/combobox/normal/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/mac/controls/combobox/normal/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/mac/controls/combobox/normal/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/mac/controls/combobox/normal/br)"
+                4="image_scale(x0 + 5, y0, x1 - 17, y0 + 5, graphics/mac/controls/combobox/normal/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/mac/controls/combobox/normal/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/mac/controls/combobox/normal/r)"
+                7="image_scale(x0 + 5, y1 - 5, x1 - 17, y1, graphics/mac/controls/combobox/normal/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 17, y1 - 5, graphics/mac/controls/combobox/normal/m)"
 
-                9="image_tiled(x1 - 17, y0, x1 - 5, y0 + 5, graphics/mac/controls/combobox/at)"
-                11="image_tiled(x1 - 17, y1 - 5, x1 - 5, y1, graphics/mac/controls/combobox/ab)"
-                12="image_scale(x1 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/combobox/am)"
-                13="image(x1 - 12, y0 + 7, x1 - 6, y0 + 18, graphics/mac/controls/combobox/arrow)"
+                9="image_scale(x1 - 17, y0, x1 - 5, y0 + 5, graphics/mac/controls/combobox/normal/at)"
+                11="image_scale(x1 - 17, y1 - 5, x1 - 5, y1, graphics/mac/controls/combobox/normal/ab)"
+                12="image_scale(x1 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/mac/controls/combobox/normal/am)"
+                13="image(x1 - 13, y0 + 10, x1 - 5, y0 + 15, graphics/mac/controls/combobox/normal/a)"
 			}
 		}
 

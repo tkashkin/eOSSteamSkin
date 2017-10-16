@@ -30,7 +30,11 @@ radiobutton.styles
 		}
 		RadioButton:disabled [$OSX]
 		{
-			image="graphics/mac/controls/radiobutton/unchecked"
+			image="graphics/mac/controls/radiobutton/unchecked_disabled"
+		}
+		RadioButton:selected:disabled [$OSX]
+		{
+			image="graphics/mac/controls/radiobutton/checked_disabled"
 		}
 	}
 }
