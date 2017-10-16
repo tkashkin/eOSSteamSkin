@@ -22,15 +22,27 @@ checkbox.styles
 		
 		CheckButton [$OSX]
 		{
-			image="graphics/mac/controls/checkbox/unchecked"
+			image="graphics/mac/controls/checkbox/unchecked/normal"
 		}
-		CheckButton:selected [$OSX]
+		CheckButton:active [$OSX]
 		{
-			image="graphics/mac/controls/checkbox/checked"
+			image="graphics/mac/controls/checkbox/unchecked/pressed"
 		}
 		CheckButton:disabled [$OSX]
 		{
-			image="graphics/mac/controls/checkbox/unchecked"
+			image="graphics/mac/controls/checkbox/unchecked/disabled"
+		}
+		CheckButton:selected [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked/normal"
+		}
+		CheckButton:selected:active [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked/pressed"
+		}
+		CheckButton:selected:disabled [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked/disabled"
 		}
 		
 		IndeterminateCheckButton
@@ -42,9 +54,18 @@ checkbox.styles
 			bgcolor=none
 			image="graphics/eos/controls/checkbox/unchecked"
 		}
+
 		IndeterminateCheckButton [$OSX]
 		{
-			image="graphics/mac/controls/checkbox/unchecked"
+			image="graphics/mac/controls/checkbox/indeterminate/normal"
+		}
+		IndeterminateCheckButton:active [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/indeterminate/pressed"
+		}
+		IndeterminateCheckButton:disabled [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/indeterminate/disabled"
 		}
 
 		ListPanelCheckBox
@@ -68,16 +89,29 @@ checkbox.styles
 
 		ListPanelCheckBox [$OSX]
 		{
-			image="graphics/mac/controls/checkbox/unchecked"
+			image="graphics/mac/controls/checkbox/unchecked/normal"
 		}
-		ListPanelCheckBox:selected [$OSX]
+		ListPanelCheckBox:active [$OSX]
 		{
-			image="graphics/graphics/mac/controls/checkbox/checked"
+			image="graphics/mac/controls/checkbox/unchecked/pressed"
 		}
 		ListPanelCheckBox:disabled [$OSX]
 		{
 			textcolor="TextDisabled"
-			image="graphics/graphics/mac/controls/checkbox/unchecked"
+			image="graphics/mac/controls/checkbox/unchecked/disabled"
+		}
+		ListPanelCheckBox:selected [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked/normal"
+		}
+		ListPanelCheckBox:selected:active [$OSX]
+		{
+			image="graphics/mac/controls/checkbox/checked/pressed"
+		}
+		ListPanelCheckBox:selected:disabled [$OSX]
+		{
+			textcolor="TextDisabled"
+			image="graphics/mac/controls/checkbox/checked/disabled"
 		}
 	}
 }

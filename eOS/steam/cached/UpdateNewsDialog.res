@@ -23,7 +23,7 @@
 
 	layout
 	{
-		place [!$OSX] { control="frame_title" x=144 y=0 align=center height=32 }
+		place [!$OSX] { control="frame_title" y=0 align=center height=32 }
 		place [$OSX] { control="frame_title" x=0 y=0 width=max height=32 }
 		
 		place [$LINUX] { control="frame_close,frame_minimize" margin-left=6 y=4 width=24 height=24 spacing=6 }
