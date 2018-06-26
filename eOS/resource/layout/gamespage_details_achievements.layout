@@ -1,0 +1,68 @@
+"resource/layout/gamespage_details_achievements.layout"
+{
+	colors
+	{
+		GameDetailsAchievements.ExtraVerticalSpacing "0"
+
+		// This is additional extra vertical spacing when the "You've unlocked everything" label is set
+		// You should test with a game with everything unlocked if you change vertical spacing as this may
+		// need adjustment.
+		GameDetailsAchievements.EverythingExtraSpacing "0"
+		RichText.InsetX "0"
+		RichText.InsetY "0"
+	}
+
+	styles
+	{
+		achievementsdetails {
+			render_bg
+			{
+                0="image_tiled(x0 - 11, y0, x0 + 19, y1 - 29, graphics/_/_/library/card/l)"
+               	1="image_tiled(x1 - 19, y0, x1 + 11, y1 - 29, graphics/_/_/library/card/r)"
+                2="fill(x0 + 19, y0, x1 - 19, y1 - 29, white)"
+
+            	3="fill(x0, y0, x1, y0 + 1, eOSSidebarBorder)"
+
+            	4="image(x0 + 16, y0 + 42, x0 + 58, y0 + 84, graphics/_/_/library/achievement)"
+			}
+			minimum-height=128
+		}
+
+		Button
+		{
+			font-size=0
+			textcolor=none
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view)"
+			}
+		}
+		Button:hover
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view_hov)"
+			}
+		}
+		Button:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view_down)"
+			}
+		}
+	}
+
+	layout
+	{
+		region { name="body" width=max height=max margin-top=8 }
+
+		place { region="body" control="headerlabel" width=max margin-left=16 margin-right=46 }
+		place { region="body" control="viewall" start=headerlabel dir=right y=4 width=27 height=24 margin-right=16 }
+
+		place { region="body" control="mostrecent_area" start=headerlabel dir=down margin-left=-16 width=max }
+		place { region="body" control="locked_area" start=headerlabel dir=down y=6 width=max margin-left=44 }
+
+		place { control="everythinglabel" x=0 y=0 width=0 height=0 }
+	}
+}

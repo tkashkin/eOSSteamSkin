@@ -1,0 +1,41 @@
+"resource/layout/steamrootdialog.layout"
+{
+	layout
+	{
+		place { control="UINavigatorPanel" width=max height=max align=top margin-top=0 margin-right=-8 margin-left=-8 margin-bottom=-1 }
+
+		place [$LINUX] { control="frame_close" align=left margin-left=6 y=12 width=24 height=24 spacing=6 }
+		place [$LINUX] { control="frame_maximize" align=right margin-right=6 y=12 width=24 height=24 }
+		
+		place [$LINUX] { control="frame_minimize" align=left x=9999 y=9999 width=0 height=0 } // hidden
+		
+		//place [$LINUX] { control="account_balance" end-right="frame_maximize" align=right height=48 }
+		
+		place [$WINDOWS] { control="frame_minimize,frame_maximize,frame_close" align=right height=48 spacing=-8 }
+
+		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-left=9 margin-top=16 height=16 }
+		
+		//place [$OSX] { control="account_balance" align=right height=48 }
+
+		place [!$LINUX] { control="MenuBar" align=right y=8 width=32 height=32 margin-right=14 }
+		place [$LINUX] { control="MenuBar" align=right end-right="frame_maximize" y=8 width=32 height=32 margin-right=14 }
+		
+		place [$LINUX] { control="ParentalLockButton" align=right end-right="MenuBar" y=8 height=48 margin-right=6 }
+		place [$OSX] { control="ParentalLockButton" align=right end-right="MenuBar" y=-12 height=48 margin-right=-1 }
+		
+		place { control="account_balance,AccountButton" align=right end-right="ParentalLockButton" y=8 height=32 margin-right=6 }
+
+		place [$LINUX] { control="InboxButton" align=right end-right="AccountButton" y=8 width=32 height=32 margin-right=6 }
+		place [$OSX] { control="InboxButton" align=right end-right="AccountButton" y=12 height=24 margin-right=12 }
+		
+		place { control="SupportAlert" align=right end-right="ParentalLockButton" height=48 }
+
+		//place { control="FriendPanel" height=48 width=48 align=right end-right="MenuBar" }
+
+		// hidden
+		place { control="account_balance_seperator,account_URL,universe_label,startvr,exitvr,fullscreen,New,add_game,FriendPanel,view_friends,online_friends,UIStatusPanel,AnnouncementButton" x=9999 y=9999 width=0 height=0 }
+	
+ 		// the title bar is missing, so increase the size of the grip
+		place { control="frame_captiongrip" margin=2 width=max height=48 }
+	}
+}

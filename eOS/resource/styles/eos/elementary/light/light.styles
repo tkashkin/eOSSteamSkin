@@ -1,0 +1,17 @@
+light.styles
+{
+	include "resource/styles/eos/elementary/light/colors.styles"
+	
+	include "resource/styles/eos/_/_/common.styles"
+	include "resource/styles/eos/elementary/_/common.styles"
+	
+	include "resource/styles/eos/elementary/light/library.styles"
+	include "resource/styles/eos/elementary/light/inbox.styles"
+	
+	include "resource/styles/eos/elementary/light/controls/textentry.styles"
+	include "resource/styles/eos/elementary/light/controls/button.styles"
+	include "resource/styles/eos/elementary/light/controls/checkbox.styles"
+	include "resource/styles/eos/elementary/light/controls/radiobutton.styles"
+	include "resource/styles/eos/elementary/light/controls/combobox.styles"
+	include "resource/styles/eos/elementary/light/controls/tab.styles"
+}

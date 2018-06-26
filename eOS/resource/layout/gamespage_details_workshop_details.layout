@@ -1,0 +1,29 @@
+"resource/layout/gamespage_details_workshop_details.layout"
+{
+	colors
+	{
+		//margin-top + margin-btm + button-height + desired button spacing + y-spacing
+		//20 + 30 + 26 + 20 + 60
+		WorkshopDetailsPanel.ExtraVerticalSpacing "156"
+		WorkshopDetailsPanel.ExtraHorizontalSpacing "0"
+		RichText.InsetX "0"
+		RichText.InsetY "0"
+	}
+
+	styles {
+
+		CWorkshopDetailsPanel {
+		}
+
+		workshop_banner {
+			//left-margin pushes default banner out of view
+		}
+	}
+
+	layout {
+		region { name=body width=max height=max }
+		place { region=body control=workshop_description width=max }
+
+		place { region=body control=workshop_banner width=0 height=0 margin-left=-9999 }
+	}
+}

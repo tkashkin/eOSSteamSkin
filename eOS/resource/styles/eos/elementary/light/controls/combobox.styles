@@ -1,0 +1,41 @@
+combobox.styles
+{
+	styles
+	{
+		ComboBox
+		{
+			inset="10 0 0 0"
+			textcolor="eOSContextMenu"
+			font-family=basefont
+			font-size="14"
+			selectedtextcolor="eOSContextMenu"
+			selectedbgcolor=none
+			bgcolor=none
+
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/combobox/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/combobox/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/combobox/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/combobox/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/combobox/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/combobox/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/combobox/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/combobox/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/combobox/m)"
+                9="image(x1 - 20, y0 + 10, x1 - 10, y0 + 18, graphics/elementary/light/controls/combobox/arrow)"
+			}
+		}
+
+		ComboBoxButton
+		{
+			bgcolor=none
+			textcolor=none
+			inset=0
+			padding=0
+			minimum-width=48
+			render {}
+			render_bg {}
+		}
+	}
+}

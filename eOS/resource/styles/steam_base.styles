@@ -1,0 +1,1751 @@
+steam.styles
+{
+  colors
+  {
+    // colors section can include colors in "R G B A" form, or references to already defined colors;
+    // it can also include just general settings controls can pull from for extra customization
+
+    black="0 0 0 255"
+    dark="28 33 42 255"
+    almostBlack="22 25 28 255"
+    almostBlackTrans="22 25 28 204"
+    white="255 255 255 255"
+    grey="142 152 167 255"
+    none="0 0 0 0"
+    yellow="255 255 0 255"
+    offwhite="159 162 168 255"
+    dullgreen="216 222 211 255"
+    maize="203 191 87 255"
+    red="255 51 51 255"
+    darkblue="35 55 75 255"
+    blue="94 109 140 255"
+    darkred="128 0 0 255"
+    darkpurple="64 0 64 255"
+
+    dark_blue "27 44 61 255"
+    med_blue "13 36 82 255"
+    bg_blue "10 25 56 255"
+
+    // control colors
+    bordercolor="82 95 122 255"
+    darkcorner="58 68 88 255"
+    buttontext=Text
+    buttontextactive=Text
+
+    // cool we can define font-families here as well
+    basefont="Arial"
+    basefont="Helvetica" [$OSX]
+
+    // new control colors
+    ButtonFace="98 108 119 20"
+    ButtonFace2="67 73 83 255" // for use in main client list panel column header, some button states
+    ButtonFace3="86 93 106 255" // button cornering pixels
+    ButtonFaceDisabled="86 93 106 15"
+    ButtonFaceHover="84 91 104  240"   /// hover!
+    ButtonFaceActive="86 93 106  240"  // not sure what this state is...
+    ButtonFaceFocus="89	97	110  240"  //  keyboard focus
+    ButtonFaceActiveFocus="89 97 110  255"  // this is the default choice
+    BlueBorder="26 31 40 255"
+    ButtonBorder="75 84 102 255"
+    ButtonBorderSubtle="75 84 102 255"
+    ButtonBorderPage="124 124 124 255"
+    ButtonBorderDisabled="112 120 136 255"
+    ButtonBorderDisabled2="52 61 78 255"  //cornering pixels
+    ButtonBorderActive="112 120 137 255"
+    ButtonBorderFocus="125 133 148 255"
+    ButtonBorderFocusSubtle="110 118 134 255"
+
+    NavLabel="149 153 163 255"
+    Label="168 172 179 255"
+    Label2="107 112 123 255"
+    LabelDisabled="109 115 126 255"
+    LabelFocus="197 203 216 255"
+
+    SuperNav="white"
+    SuperNavHover="white"
+
+    ScrollGlyph="98 108 119 255"  // the color of the scroll bar arrows
+    ScrollGlyphDisabled="67 73 83 255"
+    ScrollGlyphFocus="242 242 242 255"
+
+    ScrollBG="53 59 66 255" // the color of the scroll bar gutter
+
+    HeaderClient="42 49 63 255" // the color of the List box header in the main client window
+    HeaderDialog="87 90 97 255" // the color of the list box header in other windows
+
+    TitleBar="21 24 31 80"
+    TitleBarFocus="14 31 56 80"
+    MenuBG="57 62 70 255"
+
+    Focus0="23 51 77 255" // used in window frame borders
+    Focus="25 55 84 255" // background color of any selected menu or list item
+    Focus2="21 70 107 255" 	// background color of view buttons and anything else in focus that needs more 'punch'
+    Focus3="75 80 89 255" 	// background color of highlighted friends
+    Focus4="61 102 143 255"   // bright cyan used in progress bars
+
+    FocusGrid="85 117 161 240"  	// background color of any grid item
+    Highlight="16 53 82 120" 	// same as focus
+
+    Highlight1="118 202 235 255"    // installing hover color
+    Highlight2="76 159 191 255" 	// installing color
+    Highlight3="173 69 71 255"    	// red for errors, blocked, etc.
+    Highlight5="24 53 82 255" 	// blue
+    Highlight5a="30 66 102 255" 	// lighter version of highlight5
+    Highlight5b="17 42 86 255" 	// as highlight5 but darker, for non-focused window borders
+
+    BackgroundStartSubtle="0 13 40 155"
+    BackgroundStartSubtle="0 15 46 45" [$OSX]
+    BackgroundStartSubtlest="0 15 44 100"
+    BackgroundStart="31 35 41 180"
+    BackgroundStartOpaque="31 35 41 255"
+
+    ClientBG="18 26 42 255"
+    ClientBGTop="25 32 46 255"
+    ClientGrouper="40 46 54 255"
+    DialogBG="42 46 51 255"
+    DialogBGFade1="42 46 51 255"
+    DialogBGFade2="42 46 51 0"
+
+    DarkClientBG="31 34 41 255"
+    DarkDialogBG="31 34 41 255"
+    DarkClientBGTransparent="28 31 37 19"
+    DarkDialogBGTransparent="41 47 55 170"
+
+    GameDetailsBlueTransparent="71 148 179 60"
+    GameDetailsGreenTransparent="71 148 179 160"
+    GameDetailsRedTransparent="71 148 179 160"
+
+    GameDetailsBlue="71 148 179 255"
+    GameDetailsGreen="71 148 179 255"
+    GameDetailsRed="71 148 179 255"
+
+    PropertySheetBG="50 55 61 255"
+    InteriorColor="46 49 54 255"
+
+    DialogBorder="110 113 119 255" // border color around any dialog
+
+    FillBG1="61 63 66 255" //gradient colors
+    FillBG2="64 65 69 255"
+
+    MenuBG1="56 60 68 255" //gradient colors
+    MenuBG2="41 45 51 255"
+
+    Divider="76 84 93 255"
+    SuperDivider="66 72 80 255"
+    DarkImageBorder="46 50 58 255"
+    DarkImageOverlay="0 0 0 80"
+
+    inbox_active "158 194 29 255"
+		inbox_active2 "155 199 9 255"
+		inbox_active4 "122 145 71 255"
+		inbox_active5 "85 102 47 255"
+
+
+		inbox_inactive "38 38 37 255"
+		inbox_inactive2 "142 194 12 255"
+		inbox_inactive4 "122 145 71 255"
+		inbox_inactive5 "74 102 29"
+
+		parental_lock_active1 "138 175 6 255"
+		parental_lock_active2 "49 49 49 255"
+		parental_lock_active4 "122 145 71 255"
+		parental_lock_active5 "85 102 47 255"
+		green5 "126 166 75 255"
+		green6 "92 126 16 255"
+		green7 "62 90 22 255"
+		green8 "38 48 2 255"
+
+
+		launch0 "119 215 250 255"
+		launch1 "83 172 204 255"
+		launch2 "54 125 153 255"
+
+
+		parental_lock_inactive1 "154 49 48 255"
+		parental_lock_inactive2 "189 79 79 255"
+		parental_lock_inactive3 "215 90 90 255"
+		parental_lock_inactive4 "146 72 71 255"
+		parental_lock_inactive5 "103 48 47 255"
+		red6="38 1 1 255"
+
+		support_lock_ack1 "187 157 47 255"
+		support_lock_ack2 "193 166 67 255"
+		AnnouncementBlue="61 146 175 255"
+
+
+    // colors pulled from steamscheme.res
+    "ClayBG"      "70 70 70 255"
+    "ClayButtonBG"      "85 85 85 255"
+    "ClayEnabled"     "88 88 88 255"
+    "ClayKeyFocus"      "92 92 92 255"
+    "ClayMouseDown"     "85 85 85 255"
+    "ClayDisabledText"    "134 134 134 255"
+    "ClayLightGreen"    "173 181 168 255" // frame button (close X) etc
+    "ClayDimLightGreen"   "166 172 162 255" // frame button and title without focus etc
+    "LightClayBG"     "104 106 101 255" // property sheet interior, active tab
+    "LightClayButtonBG"   "125 128 120 255" // buttons on property sheet interior, active tab
+    "DarkClayBG"      "47 49 45 255"    // shadow
+    "p_ClayMouseDown"   "94 94 94 255"
+    "ClaySheetBottom"   "92 90 87 255"
+    "MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
+    "GreenBG"     "76 88 68 255"
+    "LightGreenBG"      "90 106 80 255"   // darker background color
+    "DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
+    "LightGrayBG"     "121 126 121 255"
+    "GrayBG"      "73 73 73 255"
+    "GrayBG2"     "37 37 37 255"
+    "TempGradientTop" "52 52 52 255"
+
+
+    DragDrop.DragFrame        "255 255 255 192"
+    DragDrop.DropFrame        "150 255 150 255"
+
+    Frame.ClientInsetX        10
+    Frame.ClientInsetY        35
+    Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
+    Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
+    Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+    Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
+    Frame.AutoSnapRange         "6"
+    Frame.UsesAlphaBlending       1
+    FrameSystemButton.Icon        ""
+    FrameSystemButton.DisabledIcon    ""
+
+    Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+    Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+    Notifications.SlideDirection    "Vertical"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+    Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
+    Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
+    Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
+    Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+
+    ListPanel.TextColor       Text
+    ListPanel.BgColor       none
+    ListPanel.SelectedTextColor     TextentrySelected
+    ListPanel.SelectedBgColor     TextSelectedBG
+    ListPanel.SelectedOutOfFocusBgColor   ClientBG
+    ListPanel.DisabledTextColor     TextDisabled
+    ListPanel.DisabledSelectedTextColor   ClientBG
+    ListPanel.EmptyListInfoTextColor    Label
+    ListPanel.PerPixelScrolling     1
+    ListPanel.PostSectionLeading	10
+
+		// Default tooltip delay pops fast, but lets the mouse pass through without popping
+		// Anchor=Cursor makes it stick to initial pop location like windows implementation.
+		// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
+		// the parent panel (useful for icon sized items)
+		Tooltip.Delay=75
+		Tooltip.Anchor=Cursor
+
+
+    WizardPanel.HeaderBGColor     HeaderDialog
+
+    Menu.TextInset          "6"
+
+    PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
+    PropertySheet.TabGap        1
+    PropertySheet.FlashTabColor	"76 159 191 255"
+
+    RichText.InsetX         8
+    RichText.InsetY         7
+
+    ScrollBar.Wide          19
+
+    SectionedListPanel.CollapserWidth   16
+
+    HTML.SearchInsetY 5
+    HTML.SearchInsetX 10
+    HTML.SearchWide 348
+    HTML.SearchTall 38
+    HTML.SearchAnimationTime 0.25
+
+    HTML.IMEInsetY 5
+    HTML.IMEInsetX 10
+    HTML.IMEWide 348
+    HTML.IMETall 38
+    HTML.IMEAnimationTime 0.25
+
+    html.secureurl "126 166 75 255"
+    html.insecureurl "173 69 72 255"
+
+    MessageBox.ButtonHeight		24
+
+    TextEntry.IMEBGColor        "225 225 225 255"
+    TextEntry.IMEFGColor        "black"
+
+
+    // Friends List colors
+    Friends.InGameColor       "144 186 60 255"
+    Friends.InGameHoverColor  "182 235 76 255"
+    Friends.OnlineColor		   "84 165 196 255"
+    Friends.OnlineHoverColor	"104 203 242 255"
+    Friends.OfflineColor      "127 127 127 255"
+    Friends.OfflineHoverColor "185 185 185 255"
+    Friends.PanelDefault      "Label"
+    Friends.PanelOver       "Text"
+    Friends.PanelSelected     "ClientBG"
+    Friends.SectionHeader     "Label"
+    Friends.NoAvatarOver      "Text"
+    Friends.IgnoredColor      "White"
+    Friends.ListHeaderFadeOut	"54 54 54 0"
+	Friends.GoldenColor       "255 255 99 255"
+//	Friends.GoldenColor       "228 202 99 255"
+	Friends.GoldenHoverColor       "255 255 180 255"
+//	Friends.GoldenHoverColor       "248 218 109 255"
+
+
+    ChatDialog.URLColor       "text"
+    ChatOwnTextColor        "Label"
+		ChatDialog.HistoryColor	"124 124 124 255"
+    ChatGradientTop         "39 39 39 255"
+    ChatGradientBottom        "104 104 104 255"
+
+    AchievementPopup.TitleColor   "Text"
+    AchievementPopup.DescriptionColor "180 180 180 255"
+
+    GiftOnlyInfo.ImagePanelColor  "GrayBG"
+
+		dd_texture_bottom "16 16 16 255"
+ }
+
+  styles
+	{
+		headertextlarge
+        {
+            padding=16
+            padding-bottom=0
+            font-family=basefont
+            font-size=24
+            textcolor=Text
+            font-weight=400
+            bgcolor=none
+        }
+        
+        gamedetails-headerlabel
+    	{
+    		font-size=18
+    		font-style="normal"
+    		font-family=basefont
+    		textcolor="black"
+    		font-weight=400 [!$OSX]
+    		font-weight=700 [$OSX]
+    		inset-bottom=-2 [!$OSX]
+    	}
+    	gamedetails-headerlabel-red
+    	{
+            font-size=18
+            font-style="normal"
+            font-family=basefont
+            textcolor="black"
+    		font-weight=400 [!$OSX]
+            font-weight=700 [$OSX]
+    		inset-bottom=-2 [!$OSX]
+    	}
+    	gamedetails-headerlabel-green
+    	{
+            font-size=18
+            font-style="normal"
+            font-family=basefont
+            textcolor="black"
+    		font-weight=400 [!$OSX]
+            font-weight=700 [$OSX]
+    		inset-bottom=-2 [!$OSX]
+    	}
+    	gamedetails-headerlabel-blue
+    	{
+            font-size=18
+            font-style="normal"
+            font-family=basefont
+            textcolor="black"
+    		font-weight=400 [!$OSX]
+            font-weight=700 [$OSX]
+    		inset-bottom=-2 [!$OSX]
+    	}
+		
+		Frame
+		{
+			bgcolor=eOSInactiveWindowBG
+			corner_rounding=5
+			render_bg [!$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSInactiveTitleBorder)"
+				//2="fill(x0, y0+32, x1, y1, eOSInactiveWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSInactiveTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSInactiveTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSInactiveTitleBorder)"
+			}
+			render_bg [$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+24, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+23, x1, y0+24, eOSInactiveTitleBorder)"
+				//2="fill(x0, y0+24, x1, y1, eOSInactiveWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSInactiveTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSInactiveTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSInactiveTitleBorder)"
+			}
+		}
+
+		Frame:FrameFocus
+		{
+			bgcolor=eOSWindowBG
+			render_bg [!$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSTitleTop, eOSTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSTitleBorder)"
+				//2="fill(x0, y0+32, x1, y1, eOSWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSTitleBorder)"
+			}
+			render_bg [$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+24, eOSTitleTop, eOSTitleBottom)"
+				1="fill(x0, y0+23, x1, y0+24, eOSTitleBorder)"
+				//2="fill(x0, y0+24, x1, y1, eOSWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSTitleBorder)"
+			}
+		}
+
+		CGamePropertiesDialog
+		{
+			render_bg [!$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSInactiveTitleBorder)"
+				2="fill(x0, y0+57, x1, y1, eOSInactiveWindowBG)"
+
+				3="gradient(x0, y0+32, x1, y0+56, eOSInactiveSubHeaderTop, eOSInactiveSubHeaderBottom)"
+				4="fill(x0, y0+56, x1, y0+57, eOSInactiveTitleBorder)"
+			}
+			render_bg [$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+24, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+23, x1, y0+24, eOSInactiveTitleBorder)"
+				2="fill(x0, y0+49, x1, y1, eOSInactiveWindowBG)"
+
+				3="gradient(x0, y0+24, x1, y0+48, eOSInactiveSubHeaderTop, eOSInactiveSubHeaderBottom)"
+				4="fill(x0, y0+48, x1, y0+49, eOSInactiveTitleBorder)"
+			}
+			render
+			{
+				1="fill(x0, y0, x0 + 1, y1, eOSInactiveTitleBorder)"
+				2="fill(x0, y0, x1, y0 + 1, eOSInactiveTitleBorder)"
+				3="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+				4="fill(x0, y1 - 1, x1, y1, eOSInactiveTitleBorder)"
+			}
+		}
+		CGamePropertiesDialog:FrameFocus
+		{
+			render_bg [!$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSTitleTop, eOSTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSTitleBorder)"
+				2="fill(x0, y0+57, x1, y1, eOSWindowBG)"
+
+				3="gradient(x0, y0+32, x1, y0+56, eOSSubHeaderTop, eOSSubHeaderBottom)"
+				4="fill(x0, y0+56, x1, y0+57, eOSTitleBorder)"
+			}
+			render_bg [$OSX]
+			{
+				0="gradient(x0, y0, x1, y0+24, eOSTitleTop, eOSTitleBottom)"
+				1="fill(x0, y0+23, x1, y0+24, eOSTitleBorder)"
+				2="fill(x0, y0+49, x1, y1, eOSWindowBG)"
+
+				3="gradient(x0, y0+24, x1, y0+48, eOSSubHeaderTop, eOSSubHeaderBottom)"
+				4="fill(x0, y0+48, x1, y0+49, eOSTitleBorder)"
+
+			}
+			render
+			{
+				1="fill(x0, y0, x0 + 1, y1, eOSTitleBorder)"
+				2="fill(x0, y0, x1, y0 + 1, eOSTitleBorder)"
+				3="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+				4="fill(x0, y1 - 1, x1, y1, eOSTitleBorder)"
+			}
+		}
+
+		downarrow
+		{
+			image="graphics/icon_down_default"    
+		}
+
+		downarrow:hover
+		{
+			image="graphics/icon_down_hover"
+
+			render_bg {
+
+				//background
+				0="fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, buttonfaceactive )"
+				//lines around
+				1="fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, buttonfaceactive )"  //left
+				2="fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, buttonfaceactive )"  //right
+			}
+		}
+
+		uparrow
+		{
+		image="graphics/icon_up_default"    
+		}
+
+		rightarrow
+		{
+		image="graphics/icon_right_default"   
+		}
+
+		rightarrow:hover
+		{
+		image="graphics/icon_right_hover"    
+		}
+
+		headertextlarge
+		{
+		padding=16
+		padding-bottom=0
+		font-family=basefont
+		font-size=24
+		textcolor=Text
+		font-weight=400
+		bgcolor=none
+		}
+
+		CheckButtonList
+		{
+		inset="1 1 1 1"
+		textcolor="text2"
+		bgcolor=none
+		} 
+
+		CheckButtonList:scrollbar
+		{
+		inset="1 1 1 1"
+		textcolor="text2"
+		bgcolor=none
+		} 
+
+		"Page CheckButtonList"
+		{
+		inset="1 1 1 1"
+		textcolor="text2"
+		bgcolor=none
+		}
+
+		"Page CheckButtonList:scrollbar"
+		{
+		inset="1 1 1 1"
+		textcolor="text2"
+		bgcolor=none
+		}
+
+		"CheckbuttonList Checkbutton"
+		{textcolor="label"} 
+
+		"CheckbuttonList Checkbutton:focus"
+		{textcolor="texthover"} 
+
+		Divider
+		{
+		bgcolor="none"
+		render
+		{
+		0="gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )"     
+		}
+		}
+
+
+
+		FrameBRGripPanel
+		{
+		image=graphics/resizer
+		}
+
+		FrameBRGripPanel:hover
+		{
+		image=graphics/resizer_over
+		}
+
+
+		"CFriendsDialog SectionedListPanelInterior"
+		{
+		bgcolor=none
+		inset="-6 -1 -1 -1"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		shadowtextcolor="TextDisabled"	// the color of disabled line items		
+		render
+		{	}
+		render_bg { }
+		}	
+
+		GraphPanel
+		{
+		textcolor=Highlight5
+		bgcolor=none
+		render_bg { }
+		}
+
+		HTML
+		{
+		bgcolor="none"
+		render_bg 
+		{
+		0="fill( x0, y0, x1, y1, almostblack )" // bg
+		}
+		inset="2 2 2 2" 
+		}
+
+		Label
+		{
+		textcolor="Label"
+		selectedtextcolor="Text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		}
+
+		ListPanel
+		{
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="eOSContextMenu"
+		hoverbgcolor="eOSContextMenuSelectedBG"
+		hovertextcolor="eOSContextMenuSelected"
+		selectedtextcolor="eOSContextMenuSelected"
+		selectedbgcolor="eOSContextMenuSelectedBG"
+		shadowtextcolor="TextDisabled"	// the color of disabled line items
+		padding=8
+		}
+
+		ListPanelSectionCollapser
+		{
+		bgcolor=none
+		render_bg {}
+		}
+
+		"GameItem_Uninstalled"
+		{
+		textcolor="labeldisabled"
+		selectedtextcolor="label"
+		}
+		"GameItem_Uninstalled:hover"
+		{
+		textcolor="label"
+		selectedtextcolor="label"
+		}
+
+		"GameItem_Installed"
+		{
+		textcolor="text"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Installed:hover"
+		{
+		textcolor="white"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Running"
+		{
+		textcolor="Friends.InGameColor"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Running:hover"
+		{
+		textcolor="white"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Shortcut"
+		{
+		textcolor="text"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Shortcut:hover"
+		{
+		textcolor="white"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Mod"
+		{
+		textcolor="text"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Mod:hover"
+		{
+		textcolor="white"
+		selectedtextcolor="white"
+		}
+
+		"GameItem_Updating"
+		{
+		textcolor="highlight2"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Updating:hover"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Updating:selected"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Decrypting"
+		{
+		textcolor="highlight2"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Decrypting:hover"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Decrypting:selected"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Syncing"
+		{
+		textcolor="highlight2"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Syncing:hover"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameItem_Syncing:selected"
+		{
+		textcolor="highlight1"
+		selectedtextcolor="highlight1"
+		}
+
+		"GameColumn_BigText"
+		{
+		font-family=basefont
+		font-size=17
+		font-weight=700
+		textcolor="text"
+		}
+
+		ListPanelColumnheader
+		{
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor="label"
+		font-style="uppercase"
+		bgcolor=none
+		inset="1 3 0 0"
+		render_bg
+		{
+		0="fill(x0, y0, x1, y1, eOSTableHeaderBG)"
+		0="fill(x0, y1 - 1, x1, y1, eOSTableHeaderBorder)"
+		}
+		}
+
+		ListPanelDragger
+		{
+		bgcolor="none"
+		render 
+		{
+		0="fill(x0, y0 + 1, x0 + 1, y1 - 3, eOSTableHeaderDragger)"
+		}
+		}
+
+		ListPanelSectionHeader
+		{     
+		inset="2 0 0 0"
+		textcolor=label
+		font-family=basefont
+		font-size=12
+		font-weight=300
+		bgcolor=none
+		render_bg {}
+		} 
+
+		ListPanelSectionHeader:hover
+		{     
+		textcolor=texthover
+		} 
+
+		"ListPanel RichText"
+		{
+		textcolor="Text"
+		font-family=basefont
+		font-size=15
+		bgcolor=none
+		render_bg {} 
+		}
+
+		"ListPanel RichText url" 
+		{
+		font-family=basefont
+		font-size=15
+		textcolor="Text"
+		font-style=underline
+		}
+
+		"ListPanel RichTextInterior"
+		{
+		bgcolor=none
+		render_bg {} 
+		bgcolor=none
+		}
+
+		MainNav
+		{
+		textcolor="Label"
+		selectedtextcolor="Text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=21
+		font-weight=700
+		font-style="uppercase"
+		}
+
+		Notification
+		{
+		font-family=basefont
+		font-size=15
+		font-weight=400
+		bgcolor="eOSNotificationBG"
+		render_bg
+		{
+		1="fill(x0, y0, x0 + 1, y1, eOSNotificationBorder)"
+		2="fill(x0, y0, x1, y0 + 1, eOSNotificationBorder)"
+		3="fill(x1 - 1, y0, x1, y1, eOSNotificationBorder)"
+		4="fill(x0, y1 - 1, x1, y1, eOSNotificationBorder)"
+		}
+		}
+
+
+		Page
+		{
+		bgcolor="none"
+		}
+
+		"CSteamRootDialog Page"
+		{
+		bgcolor="none"
+		render_bg {}
+		}
+
+		"Page RadioButtonList"
+		{
+		bgcolor="DialogBG"
+		}
+
+		TabCloseButton
+		{
+		render_bg {}
+		image="graphics/tiny_x_default"
+		}
+
+		TabCloseButton:hover
+		{
+		image="graphics/tiny_x_hover"
+		}
+
+		Panel
+		{ 
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		bgcolor="none"
+		}
+
+		ProgressBar
+		{
+		textcolor="eOSProgressBar"
+		bgcolor="none"
+		render
+		{
+		1="fill(x0 + 1, y0 + 1, x1 - 1, y0 + 2, eOSProgressBarBorder)"
+		2="fill(x0 + 1, y1 - 2, x1 - 1, y1 - 1, eOSProgressBarBorder)"
+		3="fill(x0 + 1, y0 + 1, x0 + 2, y1 - 1, eOSProgressBarBorder)"
+		4="fill(x1 - 2, y0 + 1, x1 - 1, y1 - 1, eOSProgressBarBorder)"
+		}   
+		}
+
+		PropertyPage
+		{
+		bgcolor="PropertySheetBG"
+		}
+
+		"CFriendsDialog PropertySheet"
+		{
+		bgcolor="none"
+		}
+
+		RadioButtonList
+		{
+		bgcolor="none"
+		inset="-2 0 0 0" 
+		}
+
+		RichText
+		{
+		textcolor="eOSTextFieldText"
+		selectedtextcolor="eOSTextFieldSelectedText"	
+		selectedbgcolor="eOSTextFieldSelectedBG"	
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		}
+
+		RichTextInterior 
+		{
+		bgcolor=none
+		}
+
+		// style of links in a rich text control
+
+		"RichText url"
+		{
+		font-family=basefont
+		font-size=14
+		textcolor="label"
+		selectedtextcolor="label"
+		font-style=underline
+		}
+
+		"RichText url:hover"
+		{
+		textcolor="Texthover"
+		}
+
+		"CFriendPanel RichText URL" 
+		{
+		textcolor="text"
+		font-family=basefont
+		font-style=underline
+		font-size=14
+		}
+
+		// style of bold text in a rich text control
+		"RichText bold"
+		{
+		font-size=15
+		font-weight=1000
+		}
+
+		"RichText emphasis"
+		{
+		font-size=15
+		font-style=italic
+		}
+
+		SectionedListPanel
+		{
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="eOSContextMenu"
+		hoverbgcolor="eOSContextMenuSelectedBG"
+		hovertextcolor="eOSContextMenuSelected"
+		selectedtextcolor="eOSContextMenuSelected"
+		selectedbgcolor="eOSContextMenuSelectedBG"
+		shadowtextcolor="TextDisabled"  // the color of disabled line items
+		inset="0 -1 1 1"
+		}
+
+		"CFriendsDialog SectionedListPanel"
+		{
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"  
+		}
+
+		SectionedlistpanelCollapser
+		{
+		render_bg {}
+		bgcolor=none
+		inset="2 1 0 0"
+		} 
+
+		SectionedListPanelCollapser:hover
+		{
+
+		}
+
+		SectionedListPanelCollapser:selected
+		{
+
+		}
+
+		SectionedListPanelCollapser:selected:hover
+		{
+
+		}
+
+
+
+		StatusLabel
+		{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="labelfocus"
+		font-style=uppercase   
+		}
+
+		StatusLabelDim
+		{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="TextDisabled"
+		font-style=normal   
+		}
+
+		StatusLabel:hover
+		{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="white"
+		font-style=uppercase
+		}
+
+		TextEntryLarge
+		{
+		font-family=basefont
+		font-size=18
+		textcolor="Text"
+		font-weight=400
+		bgcolor="none"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="text"  // this is the cursor color
+
+		inset-left=4
+		render
+		{
+		// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+		}     
+		}
+
+		TextEntryLarge:focus
+		{     
+		textcolor="TextHover"
+		render
+		{
+		// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus  )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // right
+		}     
+		}
+
+		TextEntryLarge:disabled
+		{     
+		textcolor="TextDisabled"
+		bgcolor="ButtonFaceDisabled"
+		render
+		{
+		// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
+		}     
+		}
+
+		ToggleButton
+		{
+		inset="1 0 0 0"
+		inset="1 3 0 0" [$OSX]
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor="Text"
+		bgcolor=none
+		render_bg
+		{
+
+		// background fill
+		0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+		}
+		}
+
+		ToggleButton:focus
+		{     
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{
+		// background fill
+		0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+		}
+		}
+
+		ToggleButton:hover
+		{
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{     
+
+		// background fill
+		0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+		}
+		}
+
+		ToggleButton:selected
+		{
+
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{
+		// background fill
+		0="gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
+		}
+		}
+
+
+		"Page ToggleButton"
+		{
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor="Text"
+		bgcolor=none
+		render_bg
+		{
+		// background fill
+		0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+		}
+		}
+
+		"Page ToggleButton:hover"
+		{
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{
+		0="gradient( x0, y0, x1, y1, buttonfacehover, propertysheetbg )"
+		}
+		}
+
+		"Page ToggleButton:focus"
+		{
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{
+		0="gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )"
+		}
+		}
+
+		"Page ToggleButton:selected"
+		{
+		textcolor="TextHover"
+		bgcolor="none"
+		render_bg
+		{
+		0="gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
+		}
+		}
+
+		// the background and frame of a tooltip
+		TooltipWindow
+		{
+		bgcolor="eOSMenuBG"
+		render_bg
+		{
+		0="fill(x0, y0, x1, y0 + 1, eOSMenuBorder)"
+		1="fill(x0, y0, x0 + 1, y1, eOSMenuBorder)"
+		2="fill(x1 - 1, y0, x1, y1, eOSMenuBorder)"
+		3="fill(x0, y1 - 1, x1, y1, eOSMenuBorder)"
+		}
+		}
+
+		// body text inside a tooltip
+		"TooltipWindow Label"
+		{
+		padding-left=4
+		textcolor="black"
+		}
+
+		// headline text inside a tooltip
+		tooltip_headline
+		{
+		textcolor="black"
+		padding-left=4
+		padding-top=1
+		padding-bottom=0
+		font-weight=1000   		
+		}
+
+		TreeNode
+		{
+		bgcolor=none
+		render_bg {}
+		}
+
+		TreeNodeImage
+		{
+		bgcolor=none
+		}
+
+		TreeViewSubPanel
+		{
+		bgcolor=none
+		}
+
+		TreeNodeText
+		{
+		font-family=basefont
+		font-size=13
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="TextSelectedBG"
+		bgcolor=none
+		render {}
+		render_bg {}
+		}
+
+		TreeView
+		{
+		render_bg
+		{
+		-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+		// lines around
+		1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+		2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+		3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+		4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+
+		// single pixel fills in the corners
+		5="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		6="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		7="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		8="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+		11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+		12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+		13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+		14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+		15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+		16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+		17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+		18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+		}     
+		}
+
+		URLLabel
+		{
+		textcolor="label"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=underline
+		}
+
+		URLLabel:Hover
+		{
+		textcolor="texthover"
+		font-size=14
+		}
+
+		URLLabelSimple
+		{
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=regular
+		}
+
+		URLLabelSimple [$OSX]
+		{
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		font-style=regular
+		}
+
+		URLLabelSimple:Hover
+		{
+		font-style=underline
+		textcolor="WHITE"
+		}  
+
+		URLLabelSimple2
+		{
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=regular
+		}
+
+		URLLabelSimple2 [$OSX]
+		{
+		textcolor="labelfocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		font-style=regular
+		}
+
+		URLLabelSimple2:Hover
+		{
+		textcolor="WHITE"
+		}  
+
+
+		// Steam-specific styles
+		CConsoleHistory
+		{
+		font-family=basefont
+		font-size=14
+		textcolor="label"
+		selectedtextcolor="TextSelected"
+		}
+
+		GameColumnHeaderFavorites
+		{
+		image="steam/cached/fav_remove"
+
+		}
+
+		CGamesListFavoritesToggle
+		{
+		image="steam/cached/fav_addTo"
+		}
+
+		CGamesListFavoritesToggle:hover
+		{
+		image="steam/cached/fav_addTo_ovr"
+		}
+
+		CGamesListFavoritesToggle:selected
+		{
+		image="steam/cached/fav_remove"
+		}
+
+		CGamesListFavoritesToggle:selected:hover
+		{
+		image="steam/cached/fav_remove_ovr"
+		}
+
+		WrapPanel
+		{
+		inset="0 0 0 0"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		bgcolor=none
+		inset="1 -1 1 1"  
+		}
+
+		FullscreenButton
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_controller_bpm"
+		}
+
+
+		FullscreenButton:hover
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_controller_bpm_over"
+		}
+
+		FullscreenButton:active
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_controller_bpm_down"
+		}
+
+		FullscreenButton:disabled
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_controller_bpm_disabled"
+		}
+
+		VRButton
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr"
+		}  
+
+		VRButton:hover
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_over"
+		}
+
+		VRButton:active
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_down"
+		}
+
+		VRButton:disabled
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_disabled"
+		}
+
+		VRButtonExit
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_happy"
+		}  
+
+		VRButtonExit:hover
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_happy_over"
+		}
+
+		VRButtonExit:active
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_happy_down"
+		}
+
+		VRButtonExit:disabled
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_vr_disabled"
+		}
+
+		"html-findbar"
+		{
+		font-family=basefont
+		font-size=14
+		textcolor="text2"
+		font-weight=400
+		bgcolor="DarkClientBG"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+
+		render
+		{
+		// lines around
+		0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
+		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 
+		2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
+		}     	
+		}
+
+		"html-imebar"
+		{
+		font-family=basefont
+		font-size=14
+		textcolor="text2"
+		font-weight=400
+		bgcolor="DarkClientBG"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+
+		render
+		{
+		// lines around
+		0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
+		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 
+		2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
+		}     	
+		}
+
+		// styles for text used in RichText controls in various places
+
+		console_text_error
+		{
+		textcolor="Highlight3"
+		font-size=14
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		}
+
+		console_text
+		{
+		font-family=basefont
+		font-size=14
+		textcolor="text"
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="Focus"
+		}
+
+		friends_chat_text
+		{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"	
+		SelectedBgColor="focus"
+		font-size=16
+		}
+
+		friends_chat_text_self
+		{
+		textcolor="ChatOwnTextColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+		friends_chat_history
+		{
+		textcolor="ChatDialog.HistoryColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+		friends_chat_event
+		{
+		textcolor="Text"
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		}
+
+		friends_chat_bright_event
+		{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"
+		font-size=16
+		font-weight=1000
+		}
+
+		friends_chat_url
+		{
+		textcolor="text"
+		SelectedBgColor="focus"
+		font-style=underline
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		}
+
+		friends_chat_name_ingame
+		{
+		textcolor="Friends.InGameColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+		friends_chat_name_golden
+		{
+		textcolor="Friends.GoldenColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+
+		friends_chat_self
+		{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+		friends_chat_name
+		{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+		}
+
+		friends_chat_accountid
+		{
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		textcolor="text"
+		font-size=16
+		}
+
+		friends_chat_securitylink
+		{
+		textcolor="text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=16
+		font-weight=400
+		font-style=underline
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="Focus"
+		}
+
+		CChatRoomDlg
+		{			
+		bgcolor="none"
+
+		render
+		{
+
+		}
+		render_bg
+		{
+
+		}
+
+		}
+
+		ChatListPanel
+		{
+
+		}
+
+
+		Chat_MenuButton_withChrome
+		{
+		font-family=basefont
+		font-style="uppercase"
+		font-size="13"
+		font-weight=400
+		textcolor="text"
+		bgcolor="none"
+		minimum-width=120
+		}
+
+		Chat_MenuButton_withChrome:disabled
+		{
+		textcolor="LabelDisabled"
+		render_bg
+		{     
+		// background fill
+		0="fill( x0, y0, x1, y1, none )"
+
+		}
+		}    
+
+		// used in friends tooltip and friends list for overriding regular styles with custom colors
+		friends_offline
+		{
+		textcolor="Friends.OfflineColor"
+		}
+
+		friends_offline:hover
+		{
+		textcolor="Friends.OfflineHoverColor"
+		}
+
+		friends_online
+		{
+		textcolor="Friends.OnlineColor"
+		}
+
+		friends_online:hover
+		{
+		textcolor="Friends.OnlineHoverColor"
+		}
+
+		friends_ingame
+		{
+		textcolor="Friends.InGameColor"
+		}
+
+		friends_ingame:hover
+		{
+		textcolor="Friends.InGameHoverColor"
+		}
+
+		friends_golden
+		{
+		textcolor="Friends.GoldenColor"
+		}
+
+		friends_golden:hover
+		{
+		textcolor="Friends.GoldenHoverColor"
+		}
+
+		friends_ignored
+		{
+		textcolor="Friends.IgnoredColor"
+		}
+
+
+		TabPageCloseButton
+		{
+		padding-right=16
+		}
+
+		"NotifyRemoteClientTitle"
+		{
+		textcolor="LabelDisabled"
+		}
+
+		"NotifyRemoteClientInfo"
+		{
+		textcolor="176 172 165 255"
+		}
+	}
+}

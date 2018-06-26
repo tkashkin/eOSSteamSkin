@@ -1,0 +1,44 @@
+inbox.styles
+{
+	styles
+	{
+		inbox_button
+        {
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/inbox/inbox)"
+			}
+        }
+        inbox_button:selected
+        {
+        	render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+				1="image(x0, y0, x1, y1, graphics/elementary/_/inbox/inbox)"
+			}
+        }
+
+        inbox_button_active
+        {
+            font-size=11
+            font-weight=900
+            textcolor=white
+            padding-left=15
+            padding-right=-8
+            padding-top=-12
+            
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/inbox/inbox_message)"
+			}
+        }
+        inbox_button_active:selected
+        {
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+				1="image(x0, y0, x1, y1, graphics/elementary/_/inbox/inbox_message)"
+			}
+        }
+	}
+}

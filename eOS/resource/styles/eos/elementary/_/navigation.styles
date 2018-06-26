@@ -1,0 +1,93 @@
+navigation.styles
+{
+	styles
+	{
+		BackButton
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/elementary/light/navigation/back"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		BackButton:disabled
+		{
+			image="graphics/elementary/light/navigation/back_disabled"
+		}
+		BackButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
+
+		ForwardButton
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/elementary/light/navigation/forward"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		ForwardButton:disabled
+		{
+			image="graphics/elementary/light/navigation/forward_disabled"
+		}
+		ForwardButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
+
+		HomeButton
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/elementary/light/navigation/home"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		HomeButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
+
+		ReloadButton
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/elementary/light/navigation/reload"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		ReloadButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
+
+		StopButton
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/elementary/light/navigation/stop"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		StopButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
+	}
+}

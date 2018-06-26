@@ -1,0 +1,6 @@
+_dark.styles
+{	
+	include "resource/styles/eos/_/dark/dark.styles"
+	include "resource/styles/eos/elementary/dark/dark.styles" [$LINUX]
+	include "resource/styles/eos/macos/dark/dark.styles" [$OSX]
+}

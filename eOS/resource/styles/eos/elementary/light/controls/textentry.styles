@@ -1,0 +1,160 @@
+textentry.styles
+{
+	styles
+	{
+		TextEntry
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="eOSTextFieldText"
+			selectedtextcolor="eOSTextFieldSelectedText"
+			selectedbgcolor="eOSTextFieldSelectedBG"
+			shadowtextcolor="eOSTextFieldCursor"
+
+			inset-left=10
+			inset-right=10
+
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/normal/tr)"
+				2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/textentry/normal/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/normal/br)"
+				4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/t)"
+				5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/normal/r)"
+				7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/normal/b)"
+				8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+			}	 
+		}
+		TextEntry:disabled
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/textentry/disabled/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/disabled/tr)"
+				2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/textentry/disabled/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/disabled/br)"
+				4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/disabled/t)"
+				5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/textentry/disabled/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/disabled/r)"
+				7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/disabled/b)"
+				8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/disabled/m)"
+			}
+		}
+		TextEntry:focus
+		{
+			render
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/textentry/focused/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/focused/tr)"
+				2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/textentry/focused/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/focused/br)"
+				4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/focused/t)"
+				5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/textentry/focused/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/focused/r)"
+				7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/focused/b)"
+				8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+			}
+		}
+
+		LibrarySearch
+		{
+			inset-left=0
+			inset-right=0
+			minimum-width=140
+			render_bg
+			{
+				0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/elementary/light/controls/textentry/normal/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/normal/tr)"
+				2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/elementary/light/controls/textentry/normal/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/normal/br)"
+				4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/t)"
+				5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/elementary/light/controls/textentry/normal/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/normal/r)"
+				7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/normal/b)"
+				8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+				9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/elementary/light/icons/search)"
+			}
+		}
+		LibrarySearch:focus
+		{
+			render
+			{
+				0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/elementary/light/controls/textentry/focused/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/focused/tr)"
+				2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/elementary/light/controls/textentry/focused/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/focused/br)"
+				4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/focused/t)"
+				5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/elementary/light/controls/textentry/focused/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/focused/r)"
+				7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/focused/b)"
+				8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+			}
+		}
+
+		FriendsSearch
+		{
+			inset-left=0
+			inset-right=0
+			render_bg
+			{
+				0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/elementary/light/controls/textentry/normal/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/normal/tr)"
+				2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/elementary/light/controls/textentry/normal/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/normal/br)"
+				4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/t)"
+				5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/elementary/light/controls/textentry/normal/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/normal/r)"
+				7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/normal/b)"
+				8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+				9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/elementary/light/icons/search)"
+			}
+		}
+		FriendsSearch:focus
+		{
+			render
+			{
+				0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/elementary/light/controls/textentry/focused/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/focused/tr)"
+				2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/elementary/light/controls/textentry/focused/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/focused/br)"
+				4="image_tiled(x0 - 17, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/focused/t)"
+				5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/elementary/light/controls/textentry/focused/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/focused/r)"
+				7="image_tiled(x0 - 17, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/focused/b)"
+				8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+			}
+		}
+		
+		TextEntryURL
+		{
+			inset-left=20
+			render
+			{
+				0="image(x0 + 6, y0 + 6, x0 + 18, y0 + 18, graphics/_/light/icons/web/web)"
+			}
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/tl)"
+				1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/textentry/normal/tr)"
+				2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/textentry/normal/bl)"
+				3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/textentry/normal/br)"
+				4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/textentry/normal/t)"
+				5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/l)"
+				6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/textentry/normal/r)"
+				7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/textentry/normal/b)"
+				8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/textentry/normal/m)"
+			}  
+		}
+		URLStatusImage
+		{
+			render
+			{
+				0="image_scale(x0, y0, x1, y1, graphics/elementary/light/controls/textentry/normal/m)"
+				1="image(x0, y0, x1, y1, graphics/_/light/icons/web/secure)"
+			}
+		}
+	}
+}

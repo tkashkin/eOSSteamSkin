@@ -1,0 +1,6 @@
+steam.styles
+{
+	include "resource/styles/steam_base.styles"
+	
+	include "resource/styles/eos/eos.styles"
+}

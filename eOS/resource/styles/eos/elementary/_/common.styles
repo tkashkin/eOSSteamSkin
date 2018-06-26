@@ -1,0 +1,8 @@
+common.styles
+{
+	include "resource/styles/eos/elementary/_/window.styles"
+	include "resource/styles/eos/elementary/_/rootdialog.styles"
+	include "resource/styles/eos/elementary/_/header.styles"
+	include "resource/styles/eos/elementary/_/navigation.styles"
+	include "resource/styles/eos/elementary/_/menu.styles"
+}
