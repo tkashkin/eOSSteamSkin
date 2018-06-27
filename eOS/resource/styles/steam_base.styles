@@ -56,8 +56,8 @@ steam.styles
     ButtonBorderFocusSubtle="110 118 134 255"
 
     NavLabel="149 153 163 255"
-    Label="168 172 179 255"
-    Label2="107 112 123 255"
+    Label="0 0 0 255"
+    Label2="42 42 42 255"
     LabelDisabled="109 115 126 255"
     LabelFocus="197 203 216 255"
 
@@ -503,17 +503,6 @@ steam.styles
 		rightarrow:hover
 		{
 		image="graphics/icon_right_hover"    
-		}
-
-		headertextlarge
-		{
-		padding=16
-		padding-bottom=0
-		font-family=basefont
-		font-size=24
-		textcolor=Text
-		font-weight=400
-		bgcolor=none
 		}
 
 		CheckButtonList

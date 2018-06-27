@@ -23,6 +23,13 @@
 			render_bg {}
 			render
 			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/headerbar_avatar_mask_unfocused)"
+			}
+		}
+		AccountMenuButtonStyle:framefocus
+		{
+			render
+			{
 				0="image(x0, y0, x1, y1, graphics/elementary/light/headerbar_avatar_mask)"
 			}
 		}
