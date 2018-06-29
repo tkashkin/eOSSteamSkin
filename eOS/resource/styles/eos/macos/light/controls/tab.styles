@@ -1,0 +1,40 @@
+tab.styles
+{
+	styles
+	{
+		PageTab
+		{     
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			inset="8 2 8 2"
+			textcolor="Text"
+			render_bg {}
+			render
+			{
+                0="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+			}
+		}
+		PageTab:framefocus
+		{
+			render
+			{
+                0="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+			}
+		}
+		PageTab:selected [$OSX]
+		{
+			render_bg
+			{
+                0="gradient(x0 - 1, y0, x1, y1, eOSInactiveActiveTabTop, eOSInactiveActiveTabBottom)"
+			}
+		}
+		PageTab:framefocus:selected [$OSX]
+		{
+			render_bg
+			{
+                0="gradient(x0 - 1, y0, x1, y1, eOSActiveTabTop, eOSActiveTabBottom)"
+			}
+		}
+	}
+}

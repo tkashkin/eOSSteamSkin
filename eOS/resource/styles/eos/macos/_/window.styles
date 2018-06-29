@@ -1,0 +1,120 @@
+window.styles
+{
+	styles
+	{
+		FrameMinimizeButton
+        {
+            image="graphics/macos/_/window/min_dis"
+			inset="-6 0 2 0"
+			padding=0
+        }
+        FrameMinimizeButton:hover
+        {
+            image="graphics/macos/_/window/min_hov"
+        }
+        FrameMinimizeButton:active
+        {
+            image="graphics/macos/_/window/min_down"
+        }
+        FrameMinimizeButton:framefocus
+        {
+            image="graphics/macos/_/window/min"
+        }
+        FrameMinimizeButton:framefocus:hover
+        {
+            image="graphics/macos/_/window/min_hov"
+        }
+        FrameMinimizeButton:framefocus:active
+        {
+            image="graphics/macos/_/window/min_down"
+        }
+
+		FrameMaximizeButton
+        {
+            image="graphics/macos/_/window/max_dis"
+			inset="-6 0 -2 0"
+			padding=0
+        }
+        FrameMaximizeButton:hover
+        {
+            image="graphics/macos/_/window/max_hov"
+        }
+        FrameMaximizeButton:active
+        {
+            image="graphics/macos/_/window/max_hov"
+        }
+        FrameMaximizeButton:framefocus
+        {
+            image="graphics/macos/_/window/max"
+        }
+        FrameMaximizeButton:framefocus:hover
+        {
+            image="graphics/macos/_/window/max_hov"
+        }
+        FrameMaximizeButton:framefocus:active
+        {
+            image="graphics/macos/_/window/max_down"
+        }
+
+		FrameRestoreButton
+        {
+            image="graphics/macos/_/window/max_dis"
+			inset="-6 0 -2 0"
+			padding=0
+        }
+        FrameRestoreButton:hover
+        {
+            image="graphics/macos/_/window/max_hov"
+        }
+        FrameRestoreButton:active
+        {
+            image="graphics/macos/_/window/max_down"
+        }
+        FrameRestoreButton:framefocus
+        {
+            image="graphics/macos/_/window/max"
+        }
+        FrameRestoreButton:framefocus:hover
+        {
+            image="graphics/macos/_/window/max_hov"
+        }
+        FrameRestoreButton:framefocus:active
+        {
+            image="graphics/macos/_/window/max_down"
+        }
+		
+		FrameCloseButton
+        {
+            image="graphics/macos/_/window/close_dis"
+			inset="-6 0 2 0"
+			padding=0
+        }
+        FrameCloseButton:hover
+        {
+            image="graphics/macos/_/window/close_hov"
+        }
+        FrameCloseButton:active
+        {
+            image="graphics/macos/_/window/close_down"
+        }
+        FrameCloseButton:framefocus
+        {
+            image="graphics/macos/_/window/close"
+        }
+        FrameCloseButton:framefocus:hover
+        {
+            image="graphics/macos/_/window/close_hov"
+        }
+        FrameCloseButton:framefocus:active
+        {
+            image="graphics/macos/_/window/close_down"
+        }
+        
+        FrameTitle
+        {
+            font-size=16
+            font-weight=400
+            inset="0 6 0 0"
+        }
+	}
+}

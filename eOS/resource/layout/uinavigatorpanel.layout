@@ -8,7 +8,7 @@
 
 		place [$WINDOWS] { control="back,forward" region="header" x=30 spacing=20 height=48 } 
 		place [$LINUX] { control="back,forward" region="header" x=51 y=9 spacing=-3 height=32 }
-		place [$OSX] { control="back,forward" region="header" x=80 y=12 spacing=-8 height=24 }
+		place [$OSX] { control="back,forward" region="header" x=84 y=12 spacing=-1 height=24 }
 		
 		place [!$OSX] { control="refresh,stop" region="header" start="forward" x=0 height=32 }
 		place [$OSX] { control="refresh,stop" region="header" start="forward" x=20 height=24 }

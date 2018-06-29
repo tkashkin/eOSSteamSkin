@@ -1,7 +1,110 @@
 colors.styles
 {
+	include "resource/styles/eos/_/_/colors.styles"
+	include "resource/styles/eos/_/light/colors.styles"
+	include "resource/styles/eos/macos/_/colors.styles"
+
 	colors
 	{
+		eOSSelection="63 146 254 255"
+
+	    eOSTitleTop="233 233 233 255"
+	    eOSTitleBottom="211 211 211 255"
+	    eOSTitleBorder="160 160 160 255"
+	    eOSTitleText="60 60 60 255"
+
+	    eOSInactiveTitleTop="245 244 245 255"
+	    eOSInactiveTitleBottom="245 244 245 255"
+	    eOSInactiveTitleBorder="208 208 208 255"
+	    eOSInactiveTitleText="170 170 170 255"
+
+	    eOSSubHeaderTop="186 186 186 255"
+	    eOSSubHeaderBottom="186 186 186 255"
+	    eOSInactiveSubHeaderTop="239 239 239 255"
+	    eOSInactiveSubHeaderBottom="236 236 236 255"
+
+		eOSWindowBG="255 255 255 255"
 		
+	    eOSWindowTintedBG="233 233 233 255"
+
+	    eOSWindowTintedBGAlpha64="233 233 233 64"
+	    eOSWindowTintedBGAlpha128="233 233 233 128"
+	    eOSWindowTintedBGAlpha200="233 233 233 200"
+
+		eOSWindowTintedBGAlpha="eOSWindowTintedBGAlpha64"
+
+		eOSWindowDarkBG="40 40 40 255"
+
+		eOSInactiveWindowBG="255 255 255 255"
+		eOSInactiveWindowTintedBG="233 233 233 255"
+		eOSInactiveWindowDarkBG="40 40 40 255"
+
+		eOSSidebarBG="eOSWindowTintedBG"
+
+		eOSSidebarBGAlpha64="eOSWindowTintedBGAlpha64"
+		eOSSidebarBGAlpha128="eOSWindowTintedBGAlpha128"
+		eOSSidebarBGAlpha200="eOSWindowTintedBGAlpha200"
+
+		eOSSidebarBGAlpha="eOSSidebarBGAlpha64"
+
+	    eOSSidebarBorder="eOSTitleBorder"
+
+		eOSMenuBG="eOSWindowTintedBG"
+		eOSMenuBorder="eOSTitleBorder"
+		eOSMenuText="128 128 128 255"
+		eOSMenuTextHover="64 64 64 255"
+		eOSMenuTextSelected="0 0 0 255"
+		eOSMenuTextDisabled="128 128 128 255"
+		eOSMenuTextHoverBG="0 0 0 24"
+		eOSMenuTextSelectedBG="0 0 0 48"
+
+	    eOSContextMenu="black"
+	    eOSContextMenuDisabled="grey"
+	    eOSContextMenuHover="white"
+	    eOSContextMenuSelected="white"
+	    eOSContextMenuBG="238 238 238 255"
+	    eOSContextMenuHoverBG="63 146 254 255"
+	    eOSContextMenuSelectedBG="63 146 254 255"
+
+		eOSTextFieldText="eOSContextMenu"
+		eOSTextFieldCursor="153 153 153 255"
+		eOSTextFieldSelectedText="eOSContextMenuSelected"
+		eOSTextFieldSelectedBG="eOSSelection"
+
+		eOSTableHeaderBG="238 238 238 255"
+		eOSTableHeaderBorder="190 190 190 255"
+		eOSTableHeaderDragger="214 214 214 255"
+
+		eOSLibraryGameInfoSubHeader="117 117 117 255"
+
+		eOSScrollBarFill="124 124 124 125"
+		
+		eOSProgressBar="63 146 254 255"
+		eOSProgressBarBorder="63 146 254 255"
+
+		eOSNotificationBG="238 238 238 255"
+		eOSNotificationBorder="eOSTitleBorder"
+		
+		eOSTitleOutlineTop="247 247 247 255"
+		eOSTitleOutlineBottom="208 208 208 255"
+
+		eOSMessageInfoBorderTop="53 120 147 255"
+		eOSMessageInfoGradientTop="85 193 236 255"
+		eOSMessageInfoGradientBottom="68 162 233 255"
+		eOSMessageInfoGradientBottomOutline="96 176 236 255"
+		eOSMessageInfoBorderBottom="51 123 178 255"
+		eOSMessageInfoText="0 65 102 255"
+		
+		eOSActiveTabTop="217 217 217 255"
+		eOSActiveTabBottom="211 211 211 255"
+		eOSInactiveActiveTabTop="245 245 245 255"
+		eOSInactiveActiveTabBottom="245 245 245 255"
+		
+		eOSLibraryBG="eOSWindowDarkBG"
+		eOSLibrarySidebarBG="eOSSidebarBG"
+		eOSLibrarySidebarBorder="eOSSidebarBorder"
+
+		eOSLibraryLink="eOSLibraryGameInfoSubHeader"
+		eOSLibraryLinkHover="white"
 	}
 }

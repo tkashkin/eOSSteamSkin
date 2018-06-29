@@ -58,17 +58,9 @@
 			bgcolor="0 255 0 255"
 	    }
 
-	    "GamesPage_Details ListPanelSectionCollapser"
-	    {
-	    	font-size=0
-	    	inset=-32
-	    	image=graphics/none
-	    }
-
 	    "GamesPage_Details ListPanelSectionHeader"
 	    {
 	        bgcolor=none
-	        font-style=uppercase
 	    	inset-left=0
 	    }
 		

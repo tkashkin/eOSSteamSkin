@@ -627,115 +627,103 @@ steam.styles
 
 		"GameItem_Uninstalled"
 		{
-		textcolor="labeldisabled"
-		selectedtextcolor="label"
+    		textcolor="Grey3"
+    		selectedtextcolor="white"
 		}
 		"GameItem_Uninstalled:hover"
 		{
-		textcolor="label"
-		selectedtextcolor="label"
+    		textcolor="Grey2"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Installed"
 		{
-		textcolor="text"
-		selectedtextcolor="white"
-		}
-
-		"GameItem_Installed:hover"
-		{
-		textcolor="white"
-		selectedtextcolor="white"
+    		textcolor="black"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Running"
 		{
-		textcolor="Friends.InGameColor"
-		selectedtextcolor="white"
+    		textcolor="Friends.InGameColor"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Running:hover"
 		{
-		textcolor="white"
-		selectedtextcolor="white"
+    		textcolor="dullgreen"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Shortcut"
 		{
-		textcolor="text"
-		selectedtextcolor="white"
-		}
-
-		"GameItem_Shortcut:hover"
-		{
-		textcolor="white"
-		selectedtextcolor="white"
+    		textcolor="black"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Mod"
 		{
-		textcolor="text"
-		selectedtextcolor="white"
+    		textcolor="text"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Mod:hover"
 		{
-		textcolor="white"
-		selectedtextcolor="white"
+    		textcolor="white"
+    		selectedtextcolor="white"
 		}
 
 		"GameItem_Updating"
 		{
-		textcolor="highlight2"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight2"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Updating:hover"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Updating:selected"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Decrypting"
 		{
-		textcolor="highlight2"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight2"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Decrypting:hover"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Decrypting:selected"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Syncing"
 		{
-		textcolor="highlight2"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight2"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Syncing:hover"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameItem_Syncing:selected"
 		{
-		textcolor="highlight1"
-		selectedtextcolor="highlight1"
+    		textcolor="highlight1"
+    		selectedtextcolor="highlight1"
 		}
 
 		"GameColumn_BigText"
@@ -774,27 +762,28 @@ steam.styles
 
 		ListPanelSectionHeader
 		{     
-		inset="2 0 0 0"
-		textcolor=label
-		font-family=basefont
-		font-size=12
-		font-weight=300
-		bgcolor=none
-		render_bg {}
+    		inset="2 0 0 0"
+    		textcolor=label
+    		font-family=basefont
+    		font-size=12
+    		font-weight=300
+            font-style=uppercase
+    		bgcolor=none
+    		render_bg {}
 		} 
 
 		ListPanelSectionHeader:hover
 		{     
-		textcolor=texthover
+		  textcolor=texthover
 		} 
 
 		"ListPanel RichText"
 		{
-		textcolor="Text"
-		font-family=basefont
-		font-size=15
-		bgcolor=none
-		render_bg {} 
+    		textcolor="Text"
+    		font-family=basefont
+    		font-size=15
+    		bgcolor=none
+    		render_bg {} 
 		}
 
 		"ListPanel RichText url" 
@@ -1340,32 +1329,6 @@ steam.styles
 		font-size=14
 		textcolor="label"
 		selectedtextcolor="TextSelected"
-		}
-
-		GameColumnHeaderFavorites
-		{
-		image="steam/cached/fav_remove"
-
-		}
-
-		CGamesListFavoritesToggle
-		{
-		image="steam/cached/fav_addTo"
-		}
-
-		CGamesListFavoritesToggle:hover
-		{
-		image="steam/cached/fav_addTo_ovr"
-		}
-
-		CGamesListFavoritesToggle:selected
-		{
-		image="steam/cached/fav_remove"
-		}
-
-		CGamesListFavoritesToggle:selected:hover
-		{
-		image="steam/cached/fav_remove_ovr"
 		}
 
 		WrapPanel

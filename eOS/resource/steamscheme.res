@@ -117,7 +117,7 @@ Scheme
 			frame_minimize
 			{				
 				xpos	36
-				xpos	20 [$OSX]
+				xpos	28 [$OSX]
 				
 				ypos	4
 				
@@ -133,7 +133,7 @@ Scheme
 			frame_maximize
 			{
 				xpos	r59
-				xpos	40 [$OSX]
+				xpos	48 [$OSX]
 				ypos	4
 				wide	20 
 				tall	20
@@ -144,7 +144,7 @@ Scheme
 			frame_close
 			{
 				xpos	6
-				xpos	0 [$OSX]
+				xpos	8 [$OSX]
 				
 				ypos	4
 				

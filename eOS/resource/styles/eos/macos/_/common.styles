@@ -1,4 +1,8 @@
 common.styles
 {
-	
+	include "resource/styles/eos/macos/_/window.styles"
+	include "resource/styles/eos/macos/_/rootdialog.styles"
+	include "resource/styles/eos/macos/_/header.styles"
+	include "resource/styles/eos/macos/_/navigation.styles"
+	include "resource/styles/eos/macos/_/menu.styles"
 }

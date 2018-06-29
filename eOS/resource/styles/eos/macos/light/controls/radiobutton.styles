@@ -1,0 +1,27 @@
+radiobutton.styles
+{
+	styles
+	{
+		RadioButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/macos/light/controls/radiobutton/unchecked"
+		}
+		RadioButton:selected
+		{
+			image="graphics/macos/light/controls/radiobutton/checked"
+		}
+		RadioButton:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/macos/light/controls/radiobutton/unchecked_disabled"
+		}
+		RadioButton:selected:disabled
+		{
+			image="graphics/macos/light/controls/radiobutton/checked_disabled"
+		}
+	}
+}

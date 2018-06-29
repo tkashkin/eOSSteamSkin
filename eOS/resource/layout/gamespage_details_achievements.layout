@@ -25,6 +25,16 @@
 
             	4="image(x0 + 16, y0 + 44, x0 + 58, y0 + 86, graphics/_/_/library/achievement)"
 			}
+			render_bg [$OSX]
+			{
+                0="image_tiled(x0 - 11, y0, x0 + 19, y1 - 29, graphics/_/_/library/card/l)"
+               	1="image_tiled(x1 - 19, y0, x1 + 11, y1 - 29, graphics/_/_/library/card/r)"
+                2="fill(x0 + 19, y0, x1 - 19, y1 - 29, white)"
+
+            	3="fill(x0, y0, x1, y0 + 1, eOSSidebarBorder)"
+
+            	4="image(x0 + 16, y0 + 42, x0 + 58, y0 + 84, graphics/_/_/library/achievement)"
+			}
 			render
 			{
             	0="fill(x0, y0 + 102, x1, y0 + 103, eOSSidebarBorder)"

@@ -1,4 +1,17 @@
 light.styles
 {
+	include "resource/styles/eos/macos/light/colors.styles"
 	
+	include "resource/styles/eos/_/_/common.styles"
+	include "resource/styles/eos/macos/_/common.styles"
+	
+	include "resource/styles/eos/macos/light/library.styles"
+	include "resource/styles/eos/macos/light/inbox.styles"
+	
+	include "resource/styles/eos/macos/light/controls/textentry.styles"
+	include "resource/styles/eos/macos/light/controls/button.styles"
+	include "resource/styles/eos/macos/light/controls/checkbox.styles"
+	include "resource/styles/eos/macos/light/controls/radiobutton.styles"
+	include "resource/styles/eos/macos/light/controls/combobox.styles"
+	include "resource/styles/eos/macos/light/controls/tab.styles"
 }
