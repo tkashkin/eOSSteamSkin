@@ -1,0 +1,65 @@
+library.styles
+{
+	styles
+	{
+		ViewDetailButton
+		{
+			bgcolor="none"
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/macos/light/library/view/detail/inactive"
+			padding-left=0
+			padding-right=0
+			padding-top=0
+			padding-bottom=0
+		}
+		ViewDetailButton:active
+		{
+			image="graphics/macos/light/library/view/detail/active"
+		}
+		ViewDetailButton:selected
+		{
+			image="graphics/macos/light/library/view/detail/active"
+		}
+
+		ViewGridButton
+		{
+			bgcolor="none"
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/macos/light/library/view/grid/inactive"
+			padding-left=0
+			padding-right=0
+			padding-top=0
+			padding-bottom=0
+		}
+		ViewGridButton:active
+		{
+			image="graphics/macos/light/library/view/grid/active"
+		}
+		ViewGridButton:selected
+		{
+			image="graphics/macos/light/library/view/grid/active"
+		}
+
+		ViewListButton
+		{
+			bgcolor="none"
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/macos/light/library/view/list/inactive"
+			padding-left=0
+			padding-right=0
+			padding-top=0
+			padding-bottom=0
+		}
+		ViewListButton:active
+		{
+			image="graphics/macos/light/library/view/list/active"
+		}
+		ViewListButton:selected
+		{
+			image="graphics/macos/light/library/view/list/active"
+		}
+	}
+}

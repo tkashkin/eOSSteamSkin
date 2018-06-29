@@ -1,0 +1,87 @@
+button.styles
+{
+	styles
+	{
+		Button
+		{     
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			inset="8 2 8 2"
+			textcolor="Text"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/button/normal/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/button/normal/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/button/normal/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/button/normal/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/button/normal/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/button/normal/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/button/normal/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/button/normal/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/button/normal/m)"
+			}
+		}
+		Button:focus
+		{
+			render_bg
+			{
+				0="image(x0 - 1, y0 - 1, x0 + 5, y0 + 5, graphics/elementary/light/controls/button/focused/tl)"
+                1="image(x1 - 5, y0 - 1, x1 + 1, y0 + 5, graphics/elementary/light/controls/button/focused/tr)"
+                2="image(x0 - 1, y1 - 5, x0 + 5, y1 + 1, graphics/elementary/light/controls/button/focused/bl)"
+                3="image(x1 - 5, y1 - 5, x1 + 1, y1 + 1, graphics/elementary/light/controls/button/focused/br)"
+                4="image_tiled(x0 + 5, y0 - 1, x1 - 5, y0 + 5, graphics/elementary/light/controls/button/focused/t)"
+                5="image_scale(x0 - 1, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/button/focused/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1 + 1, y1 - 5, graphics/elementary/light/controls/button/focused/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1 + 1, graphics/elementary/light/controls/button/focused/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/button/focused/m)"
+			}
+		}
+		Button:selected
+		{
+			render_bg
+			{
+				0="image(x0 - 1, y0 - 1, x0 + 5, y0 + 5, graphics/elementary/light/controls/button/focused/tl)"
+                1="image(x1 - 5, y0 - 1, x1 + 1, y0 + 5, graphics/elementary/light/controls/button/focused/tr)"
+                2="image(x0 - 1, y1 - 5, x0 + 5, y1 + 1, graphics/elementary/light/controls/button/focused/bl)"
+                3="image(x1 - 5, y1 - 5, x1 + 1, y1 + 1, graphics/elementary/light/controls/button/focused/br)"
+                4="image_tiled(x0 + 5, y0 - 1, x1 - 5, y0 + 5, graphics/elementary/light/controls/button/focused/t)"
+                5="image_scale(x0 - 1, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/button/focused/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1 + 1, y1 - 5, graphics/elementary/light/controls/button/focused/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1 + 1, graphics/elementary/light/controls/button/focused/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/button/focused/m)"
+			}
+		}
+		Button:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/button/active/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/button/active/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/button/active/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/button/active/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/button/active/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/button/active/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/button/active/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/button/active/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/button/active/m)"
+			}
+		}
+		Button:disabled
+		{
+			textcolor="grey"
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 5, graphics/elementary/light/controls/button/disabled/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/elementary/light/controls/button/disabled/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/elementary/light/controls/button/disabled/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/elementary/light/controls/button/disabled/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/elementary/light/controls/button/disabled/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/elementary/light/controls/button/disabled/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/elementary/light/controls/button/disabled/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/elementary/light/controls/button/disabled/b)"
+                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/elementary/light/controls/button/disabled/m)"
+			}
+		}
+	}
+}

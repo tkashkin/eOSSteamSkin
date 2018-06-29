@@ -7,11 +7,11 @@
 			bgcolor=none
 			render_bg
 			{
-				0="image(x0 - 11, y0 - 11, x0 + 19, y0 + 19, graphics/_common/library/card/tl)"
-                1="image(x1 - 19, y0 - 11, x1 + 11, y0 + 19, graphics/_common/library/card/tr)"
-                2="image_tiled(x0 + 19, y0 - 11, x1 - 19, y0 + 30, graphics/_common/library/card/t)"
-                3="image_tiled(x0 - 11, y0 + 19, x0 + 19, y1, graphics/_common/library/card/l)"
-                4="image_tiled(x1 - 19, y0 + 19, x1 + 11, y1, graphics/_common/library/card/r)"
+				0="image(x0 - 11, y0 - 11, x0 + 19, y0 + 19, graphics/_/_/library/card/tl)"
+                1="image(x1 - 19, y0 - 11, x1 + 11, y0 + 19, graphics/_/_/library/card/tr)"
+                2="image_tiled(x0 + 19, y0 - 11, x1 - 19, y0 + 30, graphics/_/_/library/card/t)"
+                3="image_tiled(x0 - 11, y0 + 19, x0 + 19, y1, graphics/_/_/library/card/l)"
+                4="image_tiled(x1 - 19, y0 + 19, x1 + 11, y1, graphics/_/_/library/card/r)"
                 5="fill(x0 + 19, y0 + 19, x1 - 19, y1, white)"
 			}
 	  	}
@@ -27,7 +27,7 @@
 			textcolor=none
 			render_bg
 			{
-				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
 			}
 		}
 		PauseButton:hover
@@ -35,8 +35,8 @@
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, black10)"
-				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
-				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
 			}
 		}
 		PauseButton:active
@@ -44,9 +44,9 @@
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, black20)"
-				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
-				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
-				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/pause)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
+				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/pause)"
 			}
 		}
 
@@ -56,7 +56,7 @@
 			textcolor=none
 			render_bg
 			{
-				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				0="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
 			}
 		}
 		ResumeButton:hover
@@ -64,8 +64,8 @@
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, black10)"
-				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
-				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
 			}
 		}
 		ResumeButton:active
@@ -73,9 +73,9 @@
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, black20)"
-				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
-				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
-				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_common/library/downloads/resume)"
+				1="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
+				2="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
+				3="image(x0 + 168, y0 + 33, x1 - 168, y1 - 33, graphics/_/_/library/downloads/resume)"
 			}
 		}
 	}

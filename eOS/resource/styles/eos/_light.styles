@@ -1,0 +1,8 @@
+_light.styles
+{
+	include "resource/styles/eos/_/light/light.styles"
+	include "resource/styles/eos/_/light/icons.styles"
+	
+	include "resource/styles/eos/elementary/light/light.styles" [$LINUX]
+	include "resource/styles/eos/macos/light/light.styles" [$OSX]
+}

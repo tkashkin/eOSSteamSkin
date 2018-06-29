@@ -1,0 +1,52 @@
+checkbox.styles
+{
+	styles
+	{
+		CheckButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/elementary/light/controls/checkbox/unchecked"
+		}
+		CheckButton:selected
+		{
+			image="graphics/elementary/light/controls/checkbox/checked"
+		}
+		CheckButton:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/elementary/light/controls/checkbox/unchecked"
+		}
+		
+		IndeterminateCheckButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			bgcolor=none
+			image="graphics/elementary/light/controls/checkbox/unchecked"
+		}
+
+		ListPanelCheckBox
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/elementary/light/controls/checkbox/unchecked"
+			inset="0 5 0 0"
+		}
+		ListPanelCheckBox:selected
+		{
+			image="graphics/elementary/light/controls/checkbox/checked"
+		}
+		ListPanelCheckBox:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/elementary/light/controls/checkbox/unchecked"
+		}
+	}
+}

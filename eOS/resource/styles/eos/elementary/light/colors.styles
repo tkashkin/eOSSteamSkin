@@ -1,0 +1,110 @@
+colors.styles
+{
+	include "resource/styles/eos/_/_/colors.styles"
+	include "resource/styles/eos/_/light/colors.styles"
+	include "resource/styles/eos/elementary/_/colors.styles"
+	
+	colors
+	{
+		eOSSelection="63 146 254 255"
+
+		eOSTitleTop="230 230 230 255"
+		eOSTitleBottom="197 197 197 255"
+		eOSTitleBorder="133 133 133 255"
+		eOSTitleText="47 47 47 255"
+
+		eOSInactiveTitleTop="239 239 239 255"
+		eOSInactiveTitleBottom="219 219 219 255"
+		eOSInactiveTitleBorder="142 142 142 255"
+		eOSInactiveTitleText="144 144 144 255"
+
+		eOSSubHeaderTop="173 173 173 255"
+		eOSSubHeaderBottom="200 200 200 255"
+		eOSInactiveSubHeaderTop="200 200 200 255"
+		eOSInactiveSubHeaderBottom="213 213 213 255"
+
+		eOSWindowBG="255 255 255 255"
+		
+		eOSWindowTintedBG="226 226 226 255"
+		
+		eOSWindowTintedBGAlpha64="226 226 226 64"
+		eOSWindowTintedBGAlpha128="226 226 226 128"
+		eOSWindowTintedBGAlpha200="226 226 226 200"
+
+		eOSWindowTintedBGAlpha="eOSWindowTintedBGAlpha64"
+
+		eOSWindowDarkBG="40 40 40 255"
+
+		eOSInactiveWindowBG="255 255 255 255"
+		eOSInactiveWindowTintedBG="233 233 233 255"
+		eOSInactiveWindowDarkBG="40 40 40 255"
+
+		eOSSidebarBG="eOSWindowTintedBG"
+
+		eOSSidebarBGAlpha64="eOSWindowTintedBGAlpha64"
+		eOSSidebarBGAlpha128="eOSWindowTintedBGAlpha128"
+		eOSSidebarBGAlpha200="eOSWindowTintedBGAlpha200"
+
+		eOSSidebarBGAlpha="eOSSidebarBGAlpha64"
+
+		eOSSidebarBorder="166 166 166 255"
+
+		eOSMenuBG="eOSWindowTintedBG"
+		eOSMenuBorder="eOSTitleBorder"
+		eOSMenuText="128 128 128 255"
+		eOSMenuTextHover="64 64 64 255"
+		eOSMenuTextSelected="0 0 0 255"
+		eOSMenuTextDisabled="128 128 128 255"
+		eOSMenuTextHoverBG="0 0 0 24"
+		eOSMenuTextSelectedBG="0 0 0 48"
+
+		eOSContextMenu="0 0 0 255"
+		eOSContextMenuDisabled="128 128 128 255"
+		eOSContextMenuHover="0 0 0 255"
+		eOSContextMenuSelected="0 0 0 255"
+		eOSContextMenuBG="245 245 245 255"
+		eOSContextMenuHoverBG="215 215 215 255"
+		eOSContextMenuSelectedBG="215 215 215 255"
+
+		eOSTextFieldText="eOSContextMenu"
+		eOSTextFieldCursor="153 153 153 255"
+		eOSTextFieldSelectedText="eOSContextMenuSelected"
+		eOSTextFieldSelectedBG="eOSSelection"
+
+		eOSTableHeaderBG="238 238 238 255"
+		eOSTableHeaderBorder="190 190 190 255"
+		eOSTableHeaderDragger="214 214 214 255"
+
+		eOSLibraryGameInfoSubHeader="117 117 117 255"
+
+		eOSScrollBarFill="124 124 124 125"
+		
+		eOSProgressBar="63 146 254 255"
+		eOSProgressBarBorder="63 146 254 255"
+
+		eOSNotificationBG="238 238 238 255"
+		eOSNotificationBorder="eOSTitleBorder"
+		
+		eOSTitleOutlineTop="247 247 247 255"
+		eOSTitleOutlineBottom="208 208 208 255"
+
+		eOSMessageInfoBorderTop="53 120 147 255"
+		eOSMessageInfoGradientTop="85 193 236 255"
+		eOSMessageInfoGradientBottom="68 162 233 255"
+		eOSMessageInfoGradientBottomOutline="96 176 236 255"
+		eOSMessageInfoBorderBottom="51 123 178 255"
+		eOSMessageInfoText="0 65 102 255"
+		
+		eOSActiveTabTop="217 217 217 255"
+		eOSActiveTabBottom="211 211 211 255"
+		eOSInactiveActiveTabTop="245 245 245 255"
+		eOSInactiveActiveTabBottom="245 245 245 255"
+		
+		eOSLibraryBG="eOSWindowDarkBG"
+		eOSLibrarySidebarBG="eOSSidebarBG"
+		eOSLibrarySidebarBorder="eOSSidebarBorder"
+
+		eOSLibraryLink="eOSLibraryGameInfoSubHeader"
+		eOSLibraryLinkHover="white"
+	}
+}

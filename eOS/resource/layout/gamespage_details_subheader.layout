@@ -20,8 +20,8 @@
 			bgcolor=none
 			render_bg
 			{
-                0="image_tiled(x0 - 11, y0, x0 + 19, y1, graphics/_common/library/card/l)"
-               	1="image_tiled(x1 - 19, y0, x1 + 11, y1, graphics/_common/library/card/r)"
+                0="image_tiled(x0 - 11, y0, x0 + 19, y1, graphics/_/_/library/card/l)"
+               	1="image_tiled(x1 - 19, y0, x1 + 11, y1, graphics/_/_/library/card/r)"
                 2="fill(x0 + 19, y0, x1 - 19, y1, white)"
 			}
 		}
@@ -29,64 +29,25 @@
 		
 		ClientListButton
 		{
-			inset="20 0 0 0"
-			// minimum-width=20
-			// minimum-height set by code to match actual height of Launch button
-			// Do not set either minimum-width or -height here or it will override the code and the layout will break
 			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, launch1, launch2 )"
-			}
+			inset="32 0 0 0"
 			render
 			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+				0="image(x0 + 4, y0 + 4, x1 - 4, y1 - 4, graphics/_/light/icons/settings)"
 			}
 		}
-		
-		ClientListButton:hover
-		{
-			inset="20 0 0 0"
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, launch0, launch2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
-			}
-		}	
-		
 		ClientListButton:active
 		{
-			inset="20 0 0 0"
-			bgcolor=none
 			render_bg
 			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
 			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
-			}
-		}	
-				
+		}
 		ClientListButton:selected
 		{
-			inset="20 0 0 0"
-			bgcolor=none
 			render_bg
 			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
 			}
 		}	
 		
@@ -159,45 +120,45 @@
 
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/play/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/play/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/play/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/play/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/play/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/play/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/play/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/play/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/play/m)"
 			}
 		}
 		DetailsLaunchButton:Hover
 		{
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/active/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/active/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/active/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/active/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/active/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/active/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/active/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/active/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/active/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/play/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/play/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/play/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/play/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/play/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/play/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/play/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/play/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/play/active/m)"
 			}
 		}
 		DetailsLaunchButton:Active
 		{
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/play/active/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/play/active/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/play/active/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/play/active/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/play/active/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/play/active/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/play/active/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/play/active/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/play/active/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/play/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/play/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/play/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/play/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/play/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/play/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/play/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/play/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/play/active/m)"
 			}
 		}
 				
@@ -215,45 +176,45 @@
 
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/install/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/install/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/install/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/install/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/install/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/install/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/install/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/install/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/install/m)"
 			}
 		}
 		DetailsInstallButton:Hover
 		{
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/active/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/active/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/active/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/active/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/active/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/active/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/active/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/active/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/active/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/install/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/install/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/install/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/install/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/install/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/install/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/install/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/install/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/install/active/m)"
 			}
 		}
 		DetailsInstallButton:Active
 		{
 			render_bg
 			{
-				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_common/library/buttons/install/active/tl)"
-                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_common/library/buttons/install/active/tr)"
-                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_common/library/buttons/install/active/bl)"
-                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_common/library/buttons/install/active/br)"
-                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_common/library/buttons/install/active/t)"
-                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_common/library/buttons/install/active/l)"
-                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_common/library/buttons/install/active/r)"
-                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_common/library/buttons/install/active/b)"
-                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_common/library/buttons/install/active/m)"
+				0="image(x0 - 2, y0 - 2, x0 + 12, y0 + 12, graphics/_/_/library/buttons/install/active/tl)"
+                1="image(x1 - 12, y0 - 2, x1 + 2, y0 + 12, graphics/_/_/library/buttons/install/active/tr)"
+                2="image(x0 - 2, y1 - 7, x0 + 12, y1 + 7, graphics/_/_/library/buttons/install/active/bl)"
+                3="image(x1 - 12, y1 - 7, x1 + 2, y1 + 7, graphics/_/_/library/buttons/install/active/br)"
+                4="image_tiled(x0 + 12, y0 - 2, x1 - 12, y0 + 12, graphics/_/_/library/buttons/install/active/t)"
+                5="image_tiled(x0 - 2, y0 + 12, x0 + 12, y1 - 7, graphics/_/_/library/buttons/install/active/l)"
+                6="image_tiled(x1 - 12, y0 + 12, x1 + 2, y1 - 7, graphics/_/_/library/buttons/install/active/r)"
+                7="image_tiled(x0 + 12, y1 - 7, x1 - 12, y1 + 7, graphics/_/_/library/buttons/install/active/b)"
+                8="image_scale(x0 + 12, y0 + 12, x1 - 12, y1 - 7, graphics/_/_/library/buttons/install/active/m)"
 			}
 		}
 		
@@ -271,7 +232,7 @@
 
 			render_bg
 			{
-				0="image(x0 - 1, y0 - 1, x1 + 1, y1 + 3, graphics/_common/library/buttons/install/install)"
+				0="image(x0 - 1, y0 - 1, x1 + 1, y1 + 3, graphics/_/_/library/buttons/install/install)"
 			}
 		}
 		DetailsBuyButton:hover
@@ -295,27 +256,10 @@
 
 		region { name="labels" x=8 y=0 width=max height=14 }
 
-		place { 
-			control=subheaderlabels
-			region=labels
-			dir=down
-			align=left
-		}
+		place { control=subheaderlabels region=labels dir=down align=left }
+		
+		place { control=clientlist region=header align=right margin-right=16 y=10 width=32 height=32 }
 
-		place {
-			control=launchbutton
-			region=header
-			dir=down
-			align=top-center
-			margin=8
-		}
-
-		place { 
-			control=clientlist
-			x=0
-			y=0
-			width=0
-			height=0
-		}
+		place { control=launchbutton region=header align=top-center margin=8 }
 	}
 }

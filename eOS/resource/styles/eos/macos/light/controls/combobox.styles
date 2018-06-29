@@ -1,0 +1,44 @@
+combobox.styles
+{
+	styles
+	{
+		ComboBox
+		{
+			inset="10 0 0 0"
+			textcolor="eOSContextMenu"
+			font-family=basefont
+			font-size="14"
+			selectedtextcolor="eOSContextMenu"
+			selectedbgcolor=none
+			bgcolor=none
+
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 22, graphics/macos/light/controls/combobox/normal/start)"
+				1="image_tiled(x0 + 5, y0, x1 - 17, y0 + 22, graphics/macos/light/controls/combobox/normal/middle)"
+				2="image(x1 - 17, y0, x1, y0 + 22, graphics/macos/light/controls/combobox/normal/end)"
+			}
+		}
+
+		ComboBox:hover
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 5, y0 + 22, graphics/macos/light/controls/combobox/pressed/start)"
+				1="image_tiled(x0 + 5, y0, x1 - 17, y0 + 22, graphics/macos/light/controls/combobox/pressed/middle)"
+				2="image(x1 - 17, y0, x1, y0 + 22, graphics/macos/light/controls/combobox/pressed/end)"
+			}
+		}
+
+		ComboBoxButton
+		{
+			bgcolor=none
+			textcolor=none
+			inset=0
+			padding=0
+			minimum-width=48
+			render {}
+			render_bg {}
+		}
+	}
+}

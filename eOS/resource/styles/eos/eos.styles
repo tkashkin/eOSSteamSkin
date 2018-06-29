@@ -1,0 +1,4 @@
+eos.styles
+{
+	include "_theme.ini"
+}

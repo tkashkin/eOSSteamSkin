@@ -1,24 +1,19 @@
 "resource/layout/uinavigatorpanel.layout"
-{
-	styles
-	{
-
-	}
-	
+{	
 	layout
 	{
 		region [$WINDOWS] { name="header" x=0 y=0 width=max height=max margin-right=170 }
-		region [$LINUX] { name="header" x=0 y=0 width=max height=max margin-right=170 }
+		region [$LINUX] { name="header" x=0 y=0 width=max height=max margin-right=280 }
 		region [$OSX] { name="header" x=0 y=0 width=max height=max margin-right=170 }
 
 		place [$WINDOWS] { control="back,forward" region="header" x=30 spacing=20 height=48 } 
-		place [$LINUX] { control="back,forward" region="header" x=76 y=9 spacing=-8 height=32 }
-		place [$OSX] { control="back,forward" region="header" x=80 y=12 spacing=-8 height=24 }
+		place [$LINUX] { control="back,forward" region="header" x=51 y=9 spacing=-3 height=32 }
+		place [$OSX] { control="back,forward" region="header" x=84 y=12 spacing=-1 height=24 }
 		
-		place [!$OSX] { control="refresh,stop" region="header" start="forward" x=20 height=32 }
+		place [!$OSX] { control="refresh,stop" region="header" start="forward" x=0 height=32 }
 		place [$OSX] { control="refresh,stop" region="header" start="forward" x=20 height=24 }
 		
-		place [!$OSX] { control="library_filters_details,library_filters_list,library_filters_grid" region="header" start="forward" x=20 y=3 height=24 }
+		place [!$OSX] { control="library_filters_details,library_filters_list,library_filters_grid" region="header" start="forward" x=4 y=3 height=24 }
 		place [$OSX] { control="library_filters_details,library_filters_list,library_filters_grid" region="header" start="forward" x=20 height=24 spacing=-1 }
 
 		place [!$OSX] { control="label_store" region="header" x=275 y=12 margin=0 width=24 height=30 }
@@ -26,6 +21,9 @@
 
 		place [!$OSX] { control="label_library,label_community,label_news,label_me" region="header" start="label_store" spacing=0 margin=0 width=24 height=30 }
 		place [$OSX] { control="label_library,label_community,label_news,label_me" region="header" start="label_store" spacing=0 margin=0 width=30 height=30 }
+		
+		place [!$OSX] { control="label_console" region="header" start="label_store" spacing=0 margin=0 x=-64 width=24 height=30 }
+		place [$OSX] { control="label_console" region="header" start="label_store" spacing=0 margin=0 x=-64 width=30 height=30 }
 
 		place { control="URLBar" region="header" start="label_me" x=20 width=max height=24 }
 		
@@ -61,7 +59,7 @@
 		place { control="library_music_player_icon" align=right y=57 height=16 width=16 margin-right=10 }
 
 		region { name="hidden" width=0 height=0 }
-		place { control="label_console,EVCert,PageLoadThrobber,label_search_icon,label_library_view,label_community_new,subnavgroup_library,library_music_add_button,library_music_menu,label_library_zoom,label_zoom_separator" width=0 height=0 region="hidden" } // hidden
+		place { control="EVCert,PageLoadThrobber,label_search_icon,label_library_view,label_community_new,subnavgroup_library,library_music_add_button,library_music_menu,label_library_zoom,label_zoom_separator" width=0 height=0 region="hidden" } // hidden
 	}
 
 }

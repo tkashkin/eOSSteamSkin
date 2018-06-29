@@ -53,14 +53,14 @@
             padding-right=8
             render_bg
             {
-                0="image(x0, y0, x0 + 5, y0 + 5, graphics/_common/infobars/info/button/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/_common/infobars/info/button/tr)"
-                2="image(x0, y1 - 5, x0 + 5, y1, graphics/_common/infobars/info/button/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/_common/infobars/info/button/br)"
-                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/_common/infobars/info/button/t)"
-                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/_common/infobars/info/button/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/_common/infobars/info/button/r)"
-                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/_common/infobars/info/button/b)"
+                0="image(x0, y0, x0 + 5, y0 + 5, graphics/_/_/infobars/info/button/tl)"
+                1="image(x1 - 5, y0, x1, y0 + 5, graphics/_/_/infobars/info/button/tr)"
+                2="image(x0, y1 - 5, x0 + 5, y1, graphics/_/_/infobars/info/button/bl)"
+                3="image(x1 - 5, y1 - 5, x1, y1, graphics/_/_/infobars/info/button/br)"
+                4="image_tiled(x0 + 5, y0, x1 - 5, y0 + 5, graphics/_/_/infobars/info/button/t)"
+                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/_/_/infobars/info/button/l)"
+                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/_/_/infobars/info/button/r)"
+                7="image_tiled(x0 + 5, y1 - 5, x1 - 5, y1, graphics/_/_/infobars/info/button/b)"
             }
         }
 	}

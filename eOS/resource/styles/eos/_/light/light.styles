@@ -1,0 +1,4 @@
+light.styles
+{
+	include "resource/styles/eos/_/light/icons.styles"
+}

@@ -1,14 +1,12 @@
 "resource/layout/gamespage_details_gametitleheader.layout"
 {
-	colors {
+	colors
+	{
 		GameDetailsTitleHeader.HorizontalSpacing=10
 	}
 
-	styles {
-
-	}
-
-	layout {
+	layout
+	{
 		region { name=header width=max height=max }
 
 		place {

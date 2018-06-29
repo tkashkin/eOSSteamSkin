@@ -58,17 +58,9 @@
 			bgcolor="0 255 0 255"
 	    }
 
-	    "GamesPage_Details ListPanelSectionCollapser"
-	    {
-	    	font-size=0
-	    	inset=-32
-	    	image=graphics/none
-	    }
-
 	    "GamesPage_Details ListPanelSectionHeader"
 	    {
 	        bgcolor=none
-	        font-style=uppercase
 	    	inset-left=0
 	    }
 		
@@ -82,11 +74,11 @@
 			bgcolor=none
 			render_bg
 			{
-				0="image(x0 - 11, y0 - 11, x0 + 19, y0 + 19, graphics/_common/library/card/tl)"
-                1="image(x1 - 19, y0 - 11, x1 + 11, y0 + 19, graphics/_common/library/card/tr)"
-                2="image_tiled(x0 + 19, y0 - 11, x1 - 19, y0 + 30, graphics/_common/library/card/t)"
-                3="image_tiled(x0 - 11, y0 + 19, x0 + 19, y1, graphics/_common/library/card/l)"
-                4="image_tiled(x1 - 19, y0 + 19, x1 + 11, y1, graphics/_common/library/card/r)"
+				0="image(x0 - 11, y0 - 11, x0 + 19, y0 + 19, graphics/_/_/library/card/tl)"
+                1="image(x1 - 19, y0 - 11, x1 + 11, y0 + 19, graphics/_/_/library/card/tr)"
+                2="image_tiled(x0 + 19, y0 - 11, x1 - 19, y0 + 30, graphics/_/_/library/card/t)"
+                3="image_tiled(x0 - 11, y0 + 19, x0 + 19, y1, graphics/_/_/library/card/l)"
+                4="image_tiled(x1 - 19, y0 + 19, x1 + 11, y1, graphics/_/_/library/card/r)"
                 5="fill(x0 + 19, y0 + 19, x1 - 19, y1, white)"
 			}
 		}
@@ -98,12 +90,12 @@
 			minimum-height=30
 			render_bg
 			{
-                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_common/library/card/bl)"
-                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_common/library/card/br)"
-                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_common/library/card/b)"
+                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_/_/library/card/bl)"
+                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_/_/library/card/br)"
+                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_/_/library/card/b)"
 
-                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_common/library/links/store)"
-                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_common/library/links/community)"
+                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_/_/library/links/store)"
+                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_/_/library/links/community)"
 			}
 		}
 		rightcolumnheadertext-green // this is bottom card part
@@ -113,12 +105,12 @@
 			minimum-height=30
 			render_bg
 			{
-                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_common/library/card/bl)"
-                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_common/library/card/br)"
-                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_common/library/card/b)"
+                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_/_/library/card/bl)"
+                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_/_/library/card/br)"
+                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_/_/library/card/b)"
 
-                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_common/library/links/store)"
-                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_common/library/links/community)"
+                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_/_/library/links/store)"
+                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_/_/library/links/community)"
 			}
 		}
 		rightcolumnheadertext-blue // this is bottom card part
@@ -128,12 +120,12 @@
 			minimum-height=30
 			render_bg
 			{
-                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_common/library/card/bl)"
-                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_common/library/card/br)"
-                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_common/library/card/b)"
+                0="image(x0 - 11, y0, x0 + 19, y1, graphics/_/_/library/card/bl)"
+                1="image(x1 - 19, y0, x1 + 11, y1, graphics/_/_/library/card/br)"
+                2="image_tiled(x0 + 19, y0, x1 - 19, y1, graphics/_/_/library/card/b)"
 
-                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_common/library/links/store)"
-                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_common/library/links/community)"
+                3="image(x0 + 32, y1, x0 + 56, y1 + 24, graphics/_/_/library/links/store)"
+                4="image(x0 + 220, y1, x0 + 244, y1 + 24, graphics/_/_/library/links/community)"
 			}
 		}
 

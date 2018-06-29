@@ -1,0 +1,23 @@
+radiobutton.styles
+{
+	styles
+	{
+		RadioButton
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Label"
+			image="graphics/elementary/light/controls/radiobutton/unchecked"
+		}
+		RadioButton:selected
+		{
+			image="graphics/elementary/light/controls/radiobutton/checked"
+		}
+		RadioButton:disabled
+		{
+			textcolor="TextDisabled"
+			image="graphics/elementary/light/controls/radiobutton/unchecked"
+		}
+	}
+}

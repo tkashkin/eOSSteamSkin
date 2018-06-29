@@ -1,0 +1,55 @@
+"resource/layout/accountbutton.layout"
+{
+	styles
+	{
+		AccountButtonStyle
+		{
+			render_bg
+		  	{
+				0="fill(x0, y0, x1, y1, dark_blue)"
+			}
+		}
+
+		AccountButtonStyle:hover
+		{
+			render_bg
+		  	{
+				0="fill(x0, y0, x1, y1, darkblue)"
+			}
+		}
+		
+		AccountMenuButtonStyle
+		{
+			render_bg {}
+			render [$LINUX]
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/headerbar_avatar_mask_unfocused)"
+			}
+			render [$OSX]
+			{
+				0="image(x0, y0, x1, y1, graphics/macos/light/headerbar_avatar_mask_unfocused)"
+			}
+		}
+		AccountMenuButtonStyle:framefocus
+		{
+			render [$LINUX]
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/headerbar_avatar_mask)"
+			}
+			render [$OSX]
+			{
+				0="image(x0, y0, x1, y1, graphics/macos/light/headerbar_avatar_mask)" 
+			}
+		}
+	}
+
+	layout
+	{
+		region { name="hidden" width=0 height=0 }
+		
+		place { control="account_persona,account_balance,account_drop_down" width=0 height=0 region=hidden }
+		
+		place { control="account_menu_button" align=left height=32 width=max } // span over everything
+		place { control="account_avatar" align=right height=32 width=32 }
+	}
+}

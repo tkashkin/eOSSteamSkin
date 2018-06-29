@@ -25,7 +25,7 @@
       		image="graphics/none"
       		render
       		{
-      			0="image_scale(x0 + 1, y0 + 1, x1 - 1, y1 - 1, graphics/_common/mask/circle_white_42)"
+      			0="image_scale(x0 + 1, y0 + 1, x1 - 1, y1 - 1, graphics/_/_/mask/circle_white_42)"
       		}
 		}
 	}

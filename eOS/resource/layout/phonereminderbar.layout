@@ -50,6 +50,7 @@
 		
 		soft
 		{
+			font-family=basefont
 			font-size=15
 			textcolor="209 242 133 255"
 			minimum-width=500
@@ -57,13 +58,14 @@
 
 		bright
 		{
-			
+			font-family=basefont
 			font-size=18
 			textcolor="255 255 255 255"
 		}
 
 		ButtonStyle
 		{
+			font-family=basefont
 			font-size=16
 			padding=2
 			bgcolor=button_green_bg

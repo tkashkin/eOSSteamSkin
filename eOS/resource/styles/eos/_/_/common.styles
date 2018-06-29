@@ -1,0 +1,4 @@
+common.styles
+{
+	include "resource/styles/eos/_/_/controls/scrollbar.styles"
+}

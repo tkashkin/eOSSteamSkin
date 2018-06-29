@@ -1,0 +1,7 @@
+dark.styles
+{
+	include "resource/styles/eos/elementary/dark/colors.styles"
+	
+	include "resource/styles/eos/_/_/common.styles"
+	include "resource/styles/eos/elementary/_/common.styles"
+}

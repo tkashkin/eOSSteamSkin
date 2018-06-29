@@ -1,0 +1,102 @@
+window.styles
+{
+	styles
+	{
+		FrameMinimizeButton
+		{
+			image="graphics/elementary/light/window/minimize"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		FrameMinimizeButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/window/active_bg)"
+			}
+		}
+
+		FrameMaximizeButton
+		{
+			image="graphics/elementary/light/window/maximize"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		FrameMaximizeButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/window/active_bg)"
+			}
+		}
+
+		FrameRestoreButton
+		{
+			image="graphics/elementary/light/window/restore"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		FrameRestoreButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/window/active_bg)"
+			}
+		}
+
+		FrameCloseButton
+		{
+			image="graphics/elementary/light/window/close"
+			inset="-2 4 6 4"
+			padding=0
+		}
+		FrameCloseButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/light/window/active_bg)"
+			}
+		}
+		
+		Frame
+		{
+			bgcolor=eOSInactiveWindowBG
+			corner_rounding=5
+			render_bg
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSInactiveTitleBorder)"
+				//2="fill(x0, y0+32, x1, y1, eOSInactiveWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSInactiveTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSInactiveTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSInactiveTitleBorder)"
+			}
+			render_bg
+			{
+				0="gradient(x0, y0, x1, y0+24, eOSInactiveTitleTop, eOSInactiveTitleBottom)"
+				1="fill(x0, y0+23, x1, y0+24, eOSInactiveTitleBorder)"
+				//2="fill(x0, y0+24, x1, y1, eOSInactiveWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSInactiveTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSInactiveTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSInactiveTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSInactiveTitleBorder)"
+			}
+		}
+
+		Frame:FrameFocus
+		{
+			bgcolor=eOSWindowBG
+			render_bg
+			{
+				0="gradient(x0, y0, x1, y0+32, eOSTitleTop, eOSTitleBottom)"
+				1="fill(x0, y0+31, x1, y0+32, eOSTitleBorder)"
+				//2="fill(x0, y0+32, x1, y1, eOSWindowBG)"
+				3="fill(x0, y0, x0 + 1, y1, eOSTitleBorder)"
+				4="fill(x0, y0, x1, y0 + 1, eOSTitleBorder)"
+				5="fill(x1 - 1, y0, x1, y1, eOSTitleBorder)"
+				6="fill(x0, y1 - 1, x1, y1, eOSTitleBorder)"
+			}
+		}
+	}
+}

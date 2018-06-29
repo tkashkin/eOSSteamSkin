@@ -1,0 +1,60 @@
+"resource/layout/accountmenu.layout"
+{
+	styles
+	{
+		AccountMenuStyle
+		{
+			bgcolor="eOSMenuBG"
+			
+			render
+			{
+				0="fill(x0, y0, x0+1, y1, eOSMenuBorder)"
+				1="fill(x1-1, y0, x1, y1, eOSMenuBorder)"
+				2="fill(x0, y0, x1, y0+1, eOSMenuBorder)"
+				3="fill(x0, y1-1, x1, y1, eOSMenuBorder)"
+			}
+		}
+
+		account_menu_button
+		{
+			padding=8
+			inset="0 0 0 0"
+			font-family=basefont
+			font-size=14
+			font-weight=regular
+			textcolor="eOSContextMenu"
+			bgcolor="eOSContextMenuBG"
+			render_bg{}
+		}
+		account_menu_button:selected
+		{
+			textcolor="eOSContextMenuSelected"
+			bgcolor="eOSContextMenuHoverBG"
+			render_bg{}
+		}
+		account_menu_button:hover
+		{
+			textcolor="eOSContextMenuHover"
+			bgcolor="eOSContextMenuHoverBG"
+			render_bg{}
+		}
+		
+		account_menu_label
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=regular
+			textcolor="eOSContextMenu"
+			bgcolor=none
+		}
+	}
+	
+	layout
+	{
+		place { control="view_profile_button,view_account_button,change_user_button,view_preferences_button,view_wallet_button" width=max height=24 dir=down }
+
+		place { control="wallet_amount_label" align=right margin-top=101 margin-right=8 }
+
+		place { control="account_name_label" x=-1 y=-1 width=0 height=0 }
+	}
+}

@@ -38,21 +38,21 @@
 			textcolor=none
 			render_bg
 			{
-				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view)"
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view)"
 			}
 		}
 		more_link:hover
 		{
 			render_bg
 			{
-				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view_hov)"
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view_hov)"
 			}
 		}
 		more_link:active
 		{
 			render_bg
 			{
-				0="image(x0, y0, x1, y1, graphics/_common/library/buttons/view/view_down)"
+				0="image(x0, y0, x1, y1, graphics/_/_/library/buttons/view/view_down)"
 			}
 		}
 	}

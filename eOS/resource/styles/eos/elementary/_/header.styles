@@ -1,0 +1,112 @@
+header.styles
+{
+	styles
+	{
+		CUINavButton
+		{
+			bgcolor=none
+			
+			font-family=basefont
+			font-size=0
+			textcolor=none
+			
+			render_bg
+			{
+				0="image(x0, y0, x0 + 3, y0 + 24, graphics/elementary/light/controls/tabs/inactive/start)"
+				1="image_tiled(x0 + 3, y0, x1 - 3, y0 + 24, graphics/elementary/light/controls/tabs/inactive/middle)"
+				2="image(x1 - 3, y0, x1, y0 + 24, graphics/elementary/light/controls/tabs/inactive/end)"
+			}
+		}
+		CUINavButton:selected
+		{
+			render_bg
+			{
+				0="image(x0, y0, x0 + 3, y0 + 24, graphics/elementary/light/controls/tabs/active/start)"
+				1="image_tiled(x0 + 3, y0, x1 - 3, y0 + 24, graphics/elementary/light/controls/tabs/active/middle)"
+				2="image(x1 - 3, y0, x1, y0 + 24, graphics/elementary/light/controls/tabs/active/end)"
+			}
+		}
+
+		CUINavButton2
+		{
+			textcolor="eOSContextMenu"
+			bgcolor="eOSContextMenuBG"
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			padding-left=5
+			padding-right=5
+			padding-bottom=4
+		}
+				
+		CUINavButton2:hover
+		{
+			textcolor="eOSContextMenuHover"
+			bgcolor="eOSContextMenuHoverBG"
+		}
+
+		CUINavButton2:selected 
+		{
+			textcolor="eOSContextMenuSelected"
+			bgcolor="eOSContextMenuHoverBG"
+		}
+
+
+		SuperNavMenu
+		{
+			bgcolor="eOSMenuBG"
+		  
+			render
+			{
+				0="fill(x0, y0, x0+1, y1, eOSMenuBorder)"
+				2="fill(x1-1, y0, x1, y1, eOSMenuBorder)"
+				3="fill(x0, y0, x1, y0+1, eOSMenuBorder)"
+				4="fill(x0, y1-1, x1, y1, eOSMenuBorder)"
+			}
+		}
+
+		SuperNavMenuItem
+		{
+			padding=8
+			font-family=basefont
+			font-size=14
+			font-weight=regular
+			textcolor="eOSContextMenu"
+			bgcolor="eOSContextMenuBG"
+		}
+		SuperNavMenuItem:selected
+		{
+			textcolor="eOSContextMenuSelected"
+			bgcolor="eOSContextMenuHoverBG"
+		}
+		SuperNavMenuItem:hover
+		{
+			textcolor="eOSContextMenuHover"
+			bgcolor="eOSContextMenuHoverBG"
+		}
+
+		SuperNavMenuDivider
+		{
+			textcolor="none"
+			render {
+				1="fill(x0+6, y0+1, x1-6, y0+2, eOSContextMenuDisabled)"
+			}
+		}
+		
+		CUINavigatorPanel
+		{
+			bgcolor="none"
+			
+			render // hack for navigation buttons
+			{
+				0="image(x0 + 275, y0 + 12, x0 + 277, y0 + 36, graphics/elementary/light/controls/tabs/left)"
+				1="image(x0 + 369, y0 + 12, x0 + 371, y0 + 36, graphics/elementary/light/controls/tabs/right)"
+				
+				2="image(x0 + 275, y0 + 12, x0 + 299, y0 + 36, graphics/_/light/icons/header_sections/store)"
+				3="image(x0 + 299, y0 + 12, x0 + 323, y0 + 36, graphics/_/light/icons/header_sections/library)"
+				4="image(x0 + 323, y0 + 12, x0 + 347, y0 + 36, graphics/_/light/icons/header_sections/community)"
+				5="image(x0 + 347, y0 + 12, x0 + 371, y0 + 36, graphics/_/light/icons/header_sections/profile)"
+			}
+		}
+	}
+}

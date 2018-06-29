@@ -1,0 +1,29 @@
+icons.styles
+{
+	styles
+	{
+		GameColumnHeaderFavorites
+		{
+			image="graphics/_/light/icons/16/star"
+			inset="0 -2 0 0"
+		}
+
+		CGamesListFavoritesToggle:selected
+		{
+			image="graphics/_/light/icons/16/star"
+		}
+
+		ListPanelSectionCollapser
+		{
+			bgcolor=none
+			render_bg {}
+			image="graphics/_/light/icons/16/collapse"
+			inset="0 0 0 0"
+			padding=0
+		}
+		ListPanelSectionCollapser:selected
+		{
+			image="graphics/_/light/icons/16/expand"
+		}
+	}
+}
