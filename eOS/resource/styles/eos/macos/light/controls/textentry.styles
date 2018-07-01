@@ -12,36 +12,18 @@ textentry.styles
 			selectedbgcolor="eOSTextFieldSelectedBG"
 			shadowtextcolor="eOSTextFieldCursor"
 
-			inset-left=10
-			inset-right=10
+			inset="5 -1 5 -1"
 
 			render_bg
 			{
-                0="image(x0, y0, x0 + 5, y0 + 5, graphics/macos/light/controls/textentry/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/macos/light/controls/textentry/tr)"
-                2="image(x0, y1 - 5, x0 + 5, y1, graphics/macos/light/controls/textentry/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/macos/light/controls/textentry/br)"
-                4="image_scale(x0 + 5, y0, x1 - 5, y0 + 5, graphics/macos/light/controls/textentry/t)"
-                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/macos/light/controls/textentry/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/macos/light/controls/textentry/r)"
-                7="image_scale(x0 + 5, y1 - 5, x1 - 5, y1, graphics/macos/light/controls/textentry/b)"
-                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/macos/light/controls/textentry/m)"
+                0="image(x0, y0, x0 + 5, y0 + 20, graphics/macos/light/controls/textentry/start)"
+                1="image_tiled(x0 + 5, y0, x1 - 5, y0 + 20, graphics/macos/light/controls/textentry/middle)"
+				2="image(x1 - 5, y0, x1, y0 + 20, graphics/macos/light/controls/textentry/end)"
 			}	 
 		}
 		TextEntry:disabled
 		{
-			render_bg
-			{
-                0="image(x0, y0, x0 + 5, y0 + 5, graphics/macos/light/controls/textentry/disabled/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/macos/light/controls/textentry/disabled/tr)"
-                2="image(x0, y1 - 5, x0 + 5, y1, graphics/macos/light/controls/textentry/disabled/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/macos/light/controls/textentry/disabled/br)"
-                4="image_scale(x0 + 5, y0, x1 - 5, y0 + 5, graphics/macos/light/controls/textentry/disabled/t)"
-                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/macos/light/controls/textentry/disabled/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/macos/light/controls/textentry/disabled/r)"
-                7="image_scale(x0 + 5, y1 - 5, x1 - 5, y1, graphics/macos/light/controls/textentry/disabled/b)"
-                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/macos/light/controls/textentry/disabled/m)"
-			}
+			textcolor="TextDisabled"
 		}
 		TextEntry:focus
 		{
@@ -60,20 +42,13 @@ textentry.styles
 
 		LibrarySearch
 		{
-			inset-left=0
-			inset-right=0
+			inset="0 0 0 0"
 			minimum-width=140
 			render_bg
 			{
-                0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/macos/light/controls/textentry/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/macos/light/controls/textentry/tr)"
-                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/macos/light/controls/textentry/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/macos/light/controls/textentry/br)"
-                4="image_scale(x0 - 17, y0, x1 - 5, y0 + 5, graphics/macos/light/controls/textentry/t)"
-                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/macos/light/controls/textentry/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/macos/light/controls/textentry/r)"
-                7="image_scale(x0 - 17, y1 - 5, x1 - 5, y1, graphics/macos/light/controls/textentry/b)"
-                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/macos/light/controls/textentry/m)"
+				0="image(x0 - 22, y0, x0 - 17, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/start)"
+                1="image_tiled(x0 - 17, y0, x1 - 5, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/middle)"
+				2="image(x1 - 5, y0, x1, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/end)"
 				9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/macos/light/icons/search)"
 			}
 		}
@@ -94,20 +69,13 @@ textentry.styles
 
 		FriendsSearch
 		{
-			inset-left=0
-			inset-right=0
+			inset="0 0 0 0"
 			render_bg
 			{
-				0="image(x0 - 22, y0, x0 - 17, y0 + 5, graphics/macos/light/controls/textentry/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/macos/light/controls/textentry/tr)"
-                2="image(x0 - 22, y1 - 5, x0 - 17, y1, graphics/macos/light/controls/textentry/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/macos/light/controls/textentry/br)"
-                4="image_scale(x0 - 17, y0, x1 - 5, y0 + 5, graphics/macos/light/controls/textentry/t)"
-                5="image_scale(x0 - 22, y0 + 5, x0 - 17, y1 - 5, graphics/macos/light/controls/textentry/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/macos/light/controls/textentry/r)"
-                7="image_scale(x0 - 17, y1 - 5, x1 - 5, y1, graphics/macos/light/controls/textentry/b)"
-                8="image_scale(x0 - 17, y0 + 5, x1 - 5, y1 - 5, graphics/macos/light/controls/textentry/m)"
-				9="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/macos/light/icons/search)"
+				0="image(x0 - 22, y0, x0 - 17, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/start)"
+                1="image_tiled(x0 - 17, y0, x1 - 5, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/middle)"
+				2="image(x1 - 5, y0, x1, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/end)"
+				3="image(x0 - 16, y0 + 6, x0 - 4, y1 - 6, graphics/macos/light/icons/search)"
 			}
 		}
 		FriendsSearch:focus
@@ -127,26 +95,25 @@ textentry.styles
 		
 		TextEntryURL
 		{
-			inset-left=20
+			inset="20 0 5 0"
+			textcolor="eOSTextFieldText"
 			render_bg
 			{
-				0="image(x0, y0, x0 + 5, y0 + 5, graphics/macos/light/controls/textentry/tl)"
-                1="image(x1 - 5, y0, x1, y0 + 5, graphics/macos/light/controls/textentry/tr)"
-                2="image(x0, y1 - 5, x0 + 5, y1, graphics/macos/light/controls/textentry/bl)"
-                3="image(x1 - 5, y1 - 5, x1, y1, graphics/macos/light/controls/textentry/br)"
-                4="image_scale(x0 + 5, y0, x1 - 5, y0 + 5, graphics/macos/light/controls/textentry/t)"
-                5="image_scale(x0, y0 + 5, x0 + 5, y1 - 5, graphics/macos/light/controls/textentry/l)"
-                6="image_scale(x1 - 5, y0 + 5, x1, y1 - 5, graphics/macos/light/controls/textentry/r)"
-                7="image_scale(x0 + 5, y1 - 5, x1 - 5, y1, graphics/macos/light/controls/textentry/b)"
-                8="image_scale(x0 + 5, y0 + 5, x1 - 5, y1 - 5, graphics/macos/light/controls/textentry/m)"
-				9="image(x0 + 6, y0 + 6, x0 + 18, y0 + 18, graphics/_/light/icons/web/web)"
+				0="image(x0, y0, x0 + 5, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/start)"
+                1="image_tiled(x0 + 5, y0, x1 - 5, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/middle)"
+				2="image(x1 - 5, y0, x1, y0 + 22, graphics/macos/light/controls/textentry_textured/normal/end)"
+				3="image(x0 + 6, y0 + 6, x0 + 18, y0 + 18, graphics/_/light/icons/web/web)"
 			}  
+		}
+		TextEntryURL:disabled
+		{
+			textcolor="eOSTextFieldText"
 		}
 		URLStatusImage
 		{
 			render
 			{
-				0="image_scale(x0, y0, x1, y1, graphics/macos/light/controls/textentry/m)"
+				0="image_scale(x0, y0, x1, y1, graphics/macos/light/controls/textentry/middle)"
 				1="image(x0, y0, x1, y1, graphics/_/light/icons/web/secure)"
 			}
 		}

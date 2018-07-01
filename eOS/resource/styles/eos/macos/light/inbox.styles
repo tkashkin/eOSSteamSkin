@@ -2,7 +2,7 @@ inbox.styles
 {
 	styles
 	{
-        inbox_button [$OSX]
+        inbox_button
         {
         	minimum-width=28
             
@@ -12,6 +12,21 @@ inbox.styles
             }
 			render_bg
 			{
+                0="image(x0, y0, x0 + 4, y0 + 4, graphics/macos/light/controls/button_textured/inactive/tl)"
+                1="image(x1 - 4, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/inactive/tr)"
+                2="image(x0, y1 - 4, x0 + 4, y1, graphics/macos/light/controls/button_textured/inactive/bl)"
+                3="image(x1 - 4, y1 - 4, x1, y1, graphics/macos/light/controls/button_textured/inactive/br)"
+                4="image_tiled(x0 + 4, y0, x1 - 4, y0 + 4, graphics/macos/light/controls/button_textured/inactive/t)"
+                5="image_scale(x0, y0 + 4, x0 + 4, y1 - 4, graphics/macos/light/controls/button_textured/inactive/l)"
+                6="image_scale(x1 - 4, y0 + 4, x1, y1 - 4, graphics/macos/light/controls/button_textured/inactive/r)"
+                7="image_tiled(x0 + 4, y1 - 4, x1 - 4, y1, graphics/macos/light/controls/button_textured/inactive/b)"
+                8="image_scale(x0 + 4, y0 + 4, x1 - 4, y1 - 4, graphics/macos/light/controls/button_textured/inactive/m)"
+			}
+        }
+        inbox_button:framefocus
+        {
+            render_bg
+            {
                 0="image(x0, y0, x0 + 4, y0 + 4, graphics/macos/light/controls/button_textured/normal/tl)"
                 1="image(x1 - 4, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/normal/tr)"
                 2="image(x0, y1 - 4, x0 + 4, y1, graphics/macos/light/controls/button_textured/normal/bl)"
@@ -21,9 +36,9 @@ inbox.styles
                 6="image_scale(x1 - 4, y0 + 4, x1, y1 - 4, graphics/macos/light/controls/button_textured/normal/r)"
                 7="image_tiled(x0 + 4, y1 - 4, x1 - 4, y1, graphics/macos/light/controls/button_textured/normal/b)"
                 8="image_scale(x0 + 4, y0 + 4, x1 - 4, y1 - 4, graphics/macos/light/controls/button_textured/normal/m)"
-			}
+            }
         }
-        inbox_button:selected [$OSX]
+        inbox_button:selected
         {
         	render_bg
 			{
@@ -39,7 +54,7 @@ inbox.styles
 			}
         }
 
-        inbox_button_active [$OSX]
+        inbox_button_active
         {
             font-size=14
             font-style=normal
@@ -53,7 +68,22 @@ inbox.styles
             }
 			render_bg
 			{
-				0="image(x0, y0, x0 + 4, y0 + 4, graphics/macos/light/controls/button_textured/normal/tl)"
+                0="image(x0, y0, x0 + 4, y0 + 4, graphics/macos/light/controls/button_textured/inactive/tl)"
+                1="image(x1 - 4, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/inactive/tr)"
+                2="image(x0, y1 - 4, x0 + 4, y1, graphics/macos/light/controls/button_textured/inactive/bl)"
+                3="image(x1 - 4, y1 - 4, x1, y1, graphics/macos/light/controls/button_textured/inactive/br)"
+                4="image_tiled(x0 + 4, y0, x1 - 4, y0 + 4, graphics/macos/light/controls/button_textured/inactive/t)"
+                5="image_scale(x0, y0 + 4, x0 + 4, y1 - 4, graphics/macos/light/controls/button_textured/inactive/l)"
+                6="image_scale(x1 - 4, y0 + 4, x1, y1 - 4, graphics/macos/light/controls/button_textured/inactive/r)"
+                7="image_tiled(x0 + 4, y1 - 4, x1 - 4, y1, graphics/macos/light/controls/button_textured/inactive/b)"
+                8="image_scale(x0 + 4, y0 + 4, x1 - 4, y1 - 4, graphics/macos/light/controls/button_textured/inactive/m)"
+			}
+        }
+        inbox_button_active:framefocus
+        {
+            render_bg
+            {
+                0="image(x0, y0, x0 + 4, y0 + 4, graphics/macos/light/controls/button_textured/normal/tl)"
                 1="image(x1 - 4, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/normal/tr)"
                 2="image(x0, y1 - 4, x0 + 4, y1, graphics/macos/light/controls/button_textured/normal/bl)"
                 3="image(x1 - 4, y1 - 4, x1, y1, graphics/macos/light/controls/button_textured/normal/br)"
@@ -62,9 +92,9 @@ inbox.styles
                 6="image_scale(x1 - 4, y0 + 4, x1, y1 - 4, graphics/macos/light/controls/button_textured/normal/r)"
                 7="image_tiled(x0 + 4, y1 - 4, x1 - 4, y1, graphics/macos/light/controls/button_textured/normal/b)"
                 8="image_scale(x0 + 4, y0 + 4, x1 - 4, y1 - 4, graphics/macos/light/controls/button_textured/normal/m)"
-			}
+            }
         }
-        inbox_button_active:selected [$OSX]
+        inbox_button_active:selected
         {
         	render_bg
 			{

@@ -11,16 +11,34 @@ header.styles
 			textcolor=none
 			render_bg
 			{
+                0="image_tiled(x0, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/inactive/t)"
+                1="image_tiled(x0, y0 + 20, x1, y0 + 24, graphics/macos/light/controls/button_textured/inactive/b)"
+                2="image_scale(x0, y0 + 4, x1, y0 + 20, graphics/macos/light/controls/button_textured/inactive/m)"
+			}
+			render
+			{
+				0="fill(x1 - 1, y0 + 1, x1, y0 + 23, eOSInactiveTitleBorder)"
+			}
+		}
+		CUINavButton:framefocus
+		{
+			render_bg
+			{
                 0="image_tiled(x0, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/normal/t)"
                 1="image_tiled(x0, y0 + 20, x1, y0 + 24, graphics/macos/light/controls/button_textured/normal/b)"
                 2="image_scale(x0, y0 + 4, x1, y0 + 20, graphics/macos/light/controls/button_textured/normal/m)"
 			}
-			render
-			{
-				0="fill(x1 - 1, y0, x1, y0 + 24, eOSInactiveTitleBorder)"
-			}
 		}
 		CUINavButton:selected
+		{
+			render_bg
+			{
+                0="image_tiled(x0, y0, x1, y0 + 4, graphics/macos/light/controls/button_textured/selected/t)"
+                1="image_tiled(x0, y0 + 20, x1, y0 + 24, graphics/macos/light/controls/button_textured/selected/b)"
+                2="image_scale(x0, y0 + 4, x1, y0 + 20, graphics/macos/light/controls/button_textured/selected/m)"
+			}
+		}
+		CUINavButton:framefocus:selected
 		{
 			render_bg
 			{
@@ -102,8 +120,21 @@ header.styles
 			
 			render // hack for navigation buttons
 			{
-				0="image(x0 + 275, y0 + 12, x0 + 277, y0 + 36, graphics/macos/light/controls/tabs/left)"
-				1="image(x0 + 390, y0 + 12, x0 + 395, y0 + 36, graphics/macos/light/controls/tabs/right)"
+				0="image(x0 + 275, y0 + 12, x0 + 279, y0 + 36, graphics/macos/light/controls/tabs/left_unfocused)"
+				1="image(x0 + 391, y0 + 12, x0 + 395, y0 + 36, graphics/macos/light/controls/tabs/right_unfocused)"
+
+                2="image(x0 + 278, y0 + 12, x0 + 302, y0 + 36, graphics/_/light/icons/header_sections/store)"
+                3="image(x0 + 308, y0 + 12, x0 + 332, y0 + 36, graphics/_/light/icons/header_sections/library)"
+                4="image(x0 + 338, y0 + 12, x0 + 362, y0 + 36, graphics/_/light/icons/header_sections/community)"
+                5="image(x0 + 368, y0 + 12, x0 + 392, y0 + 36, graphics/_/light/icons/header_sections/profile)"
+			}
+		}
+		CUINavigatorPanel:framefocus
+		{
+			render // hack for navigation buttons
+			{
+				0="image(x0 + 275, y0 + 12, x0 + 279, y0 + 36, graphics/macos/light/controls/tabs/left)"
+				1="image(x0 + 391, y0 + 12, x0 + 395, y0 + 36, graphics/macos/light/controls/tabs/right)"
 
                 2="image(x0 + 278, y0 + 12, x0 + 302, y0 + 36, graphics/_/light/icons/header_sections/store)"
                 3="image(x0 + 308, y0 + 12, x0 + 332, y0 + 36, graphics/_/light/icons/header_sections/library)"

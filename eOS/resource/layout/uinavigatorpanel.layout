@@ -2,9 +2,9 @@
 {	
 	layout
 	{
-		region [$WINDOWS] { name="header" x=0 y=0 width=max height=max margin-right=170 }
-		region [$LINUX] { name="header" x=0 y=0 width=max height=max margin-right=280 }
-		region [$OSX] { name="header" x=0 y=0 width=max height=max margin-right=170 }
+		region [$WINDOWS] { name="header" x=0 y=0 width=max height=max margin-right=128 }
+		region [$LINUX] { name="header" x=0 y=0 width=max height=max margin-right=238 }
+		region [$OSX] { name="header" x=0 y=0 width=max height=max margin-right=128 }
 
 		place [$WINDOWS] { control="back,forward" region="header" x=30 spacing=20 height=48 } 
 		place [$LINUX] { control="back,forward" region="header" x=51 y=9 spacing=-3 height=32 }
@@ -22,8 +22,8 @@
 		place [!$OSX] { control="label_library,label_community,label_news,label_me" region="header" start="label_store" spacing=0 margin=0 width=24 height=30 }
 		place [$OSX] { control="label_library,label_community,label_news,label_me" region="header" start="label_store" spacing=0 margin=0 width=30 height=30 }
 		
-		place [!$OSX] { control="label_console" region="header" start="label_store" spacing=0 margin=0 x=-64 width=24 height=30 }
-		place [$OSX] { control="label_console" region="header" start="label_store" spacing=0 margin=0 x=-64 width=30 height=30 }
+		place [!$OSX] { control="label_console" region="header" start="label_me" margin=0 x=4 width=16 height=30 }
+		place [$OSX] { control="label_console" region="header" start="label_me" margin=0 x=4 width=16 height=30 }
 
 		place { control="URLBar" region="header" start="label_me" x=20 width=max height=24 }
 		

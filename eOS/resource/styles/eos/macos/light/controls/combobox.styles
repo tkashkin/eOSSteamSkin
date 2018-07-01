@@ -4,7 +4,7 @@ combobox.styles
 	{
 		ComboBox
 		{
-			inset="10 0 0 0"
+			inset="5 -1 5 -1"
 			textcolor="eOSContextMenu"
 			font-family=basefont
 			font-size="14"
@@ -34,9 +34,10 @@ combobox.styles
 		{
 			bgcolor=none
 			textcolor=none
-			inset=0
-			padding=0
-			minimum-width=48
+			inset="-999 -999 -999 -999"
+			padding="-999"
+			minimum-width=0
+			font-size=0
 			render {}
 			render_bg {}
 		}
