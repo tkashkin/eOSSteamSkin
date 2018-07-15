@@ -24,15 +24,16 @@
 
 		place [$LINUX] { control="InboxButton" align=right end-right="ParentalLockButton" y=8 width=32 height=32 margin-right=6 }
 		place [$OSX] { control="InboxButton" align=right end-right="ParentalLockButton" y=12 height=24 margin-right=12 }
+
+		place [$LINUX] { control="fullscreen" align=right end-right="InboxButton" y=8 width=32 height=32 margin-right=4 }
+		place [$OSX] { control="fullscreen" align=right end-right="InboxButton" y=12 height=24 margin-right=4 }
 		
-		place { control="SupportAlert" align=right end-right="InboxButton" height=48 }
+		place { control="SupportAlert" align=right end-right="fullscreen" height=48 }
 
 		place { control="account_balance,AccountButton" align=right end-right="SupportAlert" y=8 height=32 margin-right=6 }
 
-		//place { control="FriendPanel" height=48 width=48 align=right end-right="MenuBar" }
-
 		// hidden
-		place { control="account_balance_seperator,account_URL,universe_label,startvr,exitvr,fullscreen,New,add_game,FriendPanel,view_friends,online_friends,UIStatusPanel,AnnouncementButton" x=9999 y=9999 width=0 height=0 }
+		place { control="account_balance_seperator,account_URL,universe_label,startvr,exitvr,New,add_game,FriendPanel,view_friends,online_friends,UIStatusPanel,AnnouncementButton" x=9999 y=9999 width=0 height=0 }
 	
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=48 }

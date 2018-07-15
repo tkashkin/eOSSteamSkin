@@ -108,5 +108,27 @@ header.styles
 				5="image(x0 + 347, y0 + 12, x0 + 371, y0 + 36, graphics/_/light/icons/header_sections/profile)"
 			}
 		}
+		
+		FullscreenButton
+		{
+			textcolor=none
+			bgcolor=none
+			font-family=basefont
+			font-size=32
+			minimum-width=32
+			minimum-height=32
+			render
+			{
+				0="image(x0 + 6, y0 + 5, x1 - 6, y1 - 7, graphics/elementary/_/icons/bpm)"
+			}
+			render_bg {}
+		}
+		FullscreenButton:active
+		{
+			render_bg
+			{
+				0="image(x0, y0, x1, y1, graphics/elementary/_/controls/buttons/headerbar/active_bg)"
+			}
+		}
 	}
 }
