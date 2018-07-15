@@ -14,6 +14,8 @@ This skin is not completely ready. There are many bugs. Only some basic windows 
 
     **Linux:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`~/.steam/skins` or `~/.local/share/Steam/skins`
     
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_flatpak:_&nbsp;&nbsp;`~/.var/app/com.valvesoftware.Steam/.steam/steam/skins`
+    
     **macOS:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins/`
     
     ~~**Windows:**&nbsp;&nbsp;&nbsp;&nbsp;`<Steam path>/skins`~~&nbsp;&nbsp;&nbsp;&nbsp;**not supported now**
