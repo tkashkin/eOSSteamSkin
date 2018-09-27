@@ -203,11 +203,11 @@ steam.styles
     Frame.ClientInsetX        10
     Frame.ClientInsetY        35
     Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
-    Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
+    Frame.TransitionEffectTime      "0"      // time it takes for a window to fade in/out on open/close
     Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
     Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
     Frame.AutoSnapRange         "6"
-    Frame.UsesAlphaBlending       1
+    Frame.UsesAlphaBlending       0
     FrameSystemButton.Icon        ""
     FrameSystemButton.DisabledIcon    ""
 
@@ -247,7 +247,7 @@ steam.styles
     PropertySheet.FlashTabColor	"76 159 191 255"
 
     RichText.InsetX         8
-    RichText.InsetY         7
+    RichText.InsetY         8
 
     ScrollBar.Wide          19
 
@@ -320,7 +320,7 @@ steam.styles
             font-weight=400
             bgcolor=none
         }
-        
+
         gamedetails-headerlabel
     	{
     		font-size=18
@@ -361,7 +361,7 @@ steam.styles
             font-weight=700 [$OSX]
     		inset-bottom=-2 [!$OSX]
     	}
-		
+
 		Frame
 		{
 			bgcolor=eOSInactiveWindowBG
@@ -473,7 +473,7 @@ steam.styles
 
 		downarrow
 		{
-			image="graphics/icon_down_default"    
+			image="graphics/icon_down_default"
 		}
 
 		downarrow:hover
@@ -492,17 +492,17 @@ steam.styles
 
 		uparrow
 		{
-		image="graphics/icon_up_default"    
+		image="graphics/icon_up_default"
 		}
 
 		rightarrow
 		{
-		image="graphics/icon_right_default"   
+		image="graphics/icon_right_default"
 		}
 
 		rightarrow:hover
 		{
-		image="graphics/icon_right_hover"    
+		image="graphics/icon_right_hover"
 		}
 
 		CheckButtonList
@@ -510,14 +510,14 @@ steam.styles
 		inset="1 1 1 1"
 		textcolor="text2"
 		bgcolor=none
-		} 
+		}
 
 		CheckButtonList:scrollbar
 		{
 		inset="1 1 1 1"
 		textcolor="text2"
 		bgcolor=none
-		} 
+		}
 
 		"Page CheckButtonList"
 		{
@@ -534,17 +534,17 @@ steam.styles
 		}
 
 		"CheckbuttonList Checkbutton"
-		{textcolor="label"} 
+		{textcolor="label"}
 
 		"CheckbuttonList Checkbutton:focus"
-		{textcolor="texthover"} 
+		{textcolor="texthover"}
 
 		Divider
 		{
 		bgcolor="none"
 		render
 		{
-		0="gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )"     
+		0="gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )"
 		}
 		}
 
@@ -571,11 +571,11 @@ steam.styles
 		textcolor="Text"
 		selectedtextcolor="TextSelected"
 		selectedbgcolor="Focus"
-		shadowtextcolor="TextDisabled"	// the color of disabled line items		
+		shadowtextcolor="TextDisabled"	// the color of disabled line items
 		render
 		{	}
 		render_bg { }
-		}	
+		}
 
 		GraphPanel
 		{
@@ -587,11 +587,11 @@ steam.styles
 		HTML
 		{
 		bgcolor="none"
-		render_bg 
+		render_bg
 		{
 		0="fill( x0, y0, x1, y1, almostblack )" // bg
 		}
-		inset="2 2 2 2" 
+		inset="2 2 2 2"
 		}
 
 		Label
@@ -754,14 +754,14 @@ steam.styles
 		ListPanelDragger
 		{
 		bgcolor="none"
-		render 
+		render
 		{
 		0="fill(x0, y0 + 1, x0 + 1, y1 - 3, eOSTableHeaderDragger)"
 		}
 		}
 
 		ListPanelSectionHeader
-		{     
+		{
     		inset="2 0 0 0"
     		textcolor=label
     		font-family=basefont
@@ -770,12 +770,12 @@ steam.styles
             font-style=uppercase
     		bgcolor=none
     		render_bg {}
-		} 
+		}
 
 		ListPanelSectionHeader:hover
-		{     
+		{
 		  textcolor=texthover
-		} 
+		}
 
 		"ListPanel RichText"
 		{
@@ -783,10 +783,10 @@ steam.styles
     		font-family=basefont
     		font-size=15
     		bgcolor=none
-    		render_bg {} 
+    		render_bg {}
 		}
 
-		"ListPanel RichText url" 
+		"ListPanel RichText url"
 		{
 		font-family=basefont
 		font-size=15
@@ -797,7 +797,7 @@ steam.styles
 		"ListPanel RichTextInterior"
 		{
 		bgcolor=none
-		render_bg {} 
+		render_bg {}
 		bgcolor=none
 		}
 
@@ -856,7 +856,7 @@ steam.styles
 		}
 
 		Panel
-		{ 
+		{
 		font-family=basefont
 		font-size=14
 		font-weight=400
@@ -874,7 +874,7 @@ steam.styles
 		2="fill(x0 + 1, y1 - 2, x1 - 1, y1 - 1, eOSProgressBarBorder)"
 		3="fill(x0 + 1, y0 + 1, x0 + 2, y1 - 1, eOSProgressBarBorder)"
 		4="fill(x1 - 2, y0 + 1, x1 - 1, y1 - 1, eOSProgressBarBorder)"
-		}   
+		}
 		}
 
 		PropertyPage
@@ -890,20 +890,20 @@ steam.styles
 		RadioButtonList
 		{
 		bgcolor="none"
-		inset="-2 0 0 0" 
+		inset="-2 0 0 0"
 		}
 
 		RichText
 		{
 		textcolor="eOSTextFieldText"
-		selectedtextcolor="eOSTextFieldSelectedText"	
-		selectedbgcolor="eOSTextFieldSelectedBG"	
+		selectedtextcolor="eOSTextFieldSelectedText"
+		selectedbgcolor="eOSTextFieldSelectedBG"
 		font-family=basefont
 		font-size=14
 		font-weight=400
 		}
 
-		RichTextInterior 
+		RichTextInterior
 		{
 		bgcolor=none
 		}
@@ -924,7 +924,7 @@ steam.styles
 		textcolor="Texthover"
 		}
 
-		"CFriendPanel RichText URL" 
+		"CFriendPanel RichText URL"
 		{
 		textcolor="text"
 		font-family=basefont
@@ -968,7 +968,7 @@ steam.styles
 		font-weight=400
 		textcolor="Text"
 		selectedtextcolor="TextSelected"
-		selectedbgcolor="Focus"  
+		selectedbgcolor="Focus"
 		}
 
 		SectionedlistpanelCollapser
@@ -976,7 +976,7 @@ steam.styles
 		render_bg {}
 		bgcolor=none
 		inset="2 1 0 0"
-		} 
+		}
 
 		SectionedListPanelCollapser:hover
 		{
@@ -1001,7 +1001,7 @@ steam.styles
 		font-size=14
 		font-weight=400
 		textcolor="labelfocus"
-		font-style=uppercase   
+		font-style=uppercase
 		}
 
 		StatusLabelDim
@@ -1010,7 +1010,7 @@ steam.styles
 		font-size=14
 		font-weight=400
 		textcolor="TextDisabled"
-		font-style=normal   
+		font-style=normal
 		}
 
 		StatusLabel:hover
@@ -1041,11 +1041,11 @@ steam.styles
 		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
 		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
 		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
-		}     
+		}
 		}
 
 		TextEntryLarge:focus
-		{     
+		{
 		textcolor="TextHover"
 		render
 		{
@@ -1054,11 +1054,11 @@ steam.styles
 		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // bottom
 		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus  )"  // left
 		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // right
-		}     
+		}
 		}
 
 		TextEntryLarge:disabled
-		{     
+		{
 		textcolor="TextDisabled"
 		bgcolor="ButtonFaceDisabled"
 		render
@@ -1068,7 +1068,7 @@ steam.styles
 		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
 		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
 		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
-		}     
+		}
 		}
 
 		ToggleButton
@@ -1089,7 +1089,7 @@ steam.styles
 		}
 
 		ToggleButton:focus
-		{     
+		{
 		textcolor="TextHover"
 		bgcolor="none"
 		render_bg
@@ -1104,7 +1104,7 @@ steam.styles
 		textcolor="TextHover"
 		bgcolor="none"
 		render_bg
-		{     
+		{
 
 		// background fill
 		0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
@@ -1195,7 +1195,7 @@ steam.styles
 		padding-left=4
 		padding-top=1
 		padding-bottom=0
-		font-weight=1000   		
+		font-weight=1000
 		}
 
 		TreeNode
@@ -1251,7 +1251,7 @@ steam.styles
 		16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 		17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 		18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-		}     
+		}
 		}
 
 		URLLabel
@@ -1294,7 +1294,7 @@ steam.styles
 		{
 		font-style=underline
 		textcolor="WHITE"
-		}  
+		}
 
 		URLLabelSimple2
 		{
@@ -1319,7 +1319,7 @@ steam.styles
 		URLLabelSimple2:Hover
 		{
 		textcolor="WHITE"
-		}  
+		}
 
 
 		// Steam-specific styles
@@ -1341,7 +1341,7 @@ steam.styles
 		selectedtextcolor="TextSelected"
 		selectedbgcolor="Focus"
 		bgcolor=none
-		inset="1 -1 1 1"  
+		inset="1 -1 1 1"
 		}
 
 		VRButton
@@ -1349,7 +1349,7 @@ steam.styles
 		bgcolor=none
 		render_bg={}
 		image="graphics/icon_vr"
-		}  
+		}
 
 		VRButton:hover
 		{
@@ -1377,7 +1377,7 @@ steam.styles
 		bgcolor=none
 		render_bg={}
 		image="graphics/icon_vr_happy"
-		}  
+		}
 
 		VRButtonExit:hover
 		{
@@ -1417,9 +1417,9 @@ steam.styles
 		{
 		// lines around
 		0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
-		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 
+		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )"
 		2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
-		}     	
+		}
 		}
 
 		"html-imebar"
@@ -1439,9 +1439,9 @@ steam.styles
 		{
 		// lines around
 		0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
-		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 
+		1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )"
 		2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
-		}     	
+		}
 		}
 
 		// styles for text used in RichText controls in various places
@@ -1459,14 +1459,14 @@ steam.styles
 		font-family=basefont
 		font-size=14
 		textcolor="text"
-		selectedtextcolor="TextSelected"	
+		selectedtextcolor="TextSelected"
 		selectedbgcolor="Focus"
 		}
 
 		friends_chat_text
 		{
 		textcolor="text"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		SelectedBgColor="focus"
 		font-size=16
 		}
@@ -1474,7 +1474,7 @@ steam.styles
 		friends_chat_text_self
 		{
 		textcolor="ChatOwnTextColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
@@ -1482,7 +1482,7 @@ steam.styles
 		friends_chat_history
 		{
 		textcolor="ChatDialog.HistoryColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
@@ -1516,7 +1516,7 @@ steam.styles
 		friends_chat_name_ingame
 		{
 		textcolor="Friends.InGameColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
@@ -1524,7 +1524,7 @@ steam.styles
 		friends_chat_name_golden
 		{
 		textcolor="Friends.GoldenColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
@@ -1533,7 +1533,7 @@ steam.styles
 		friends_chat_self
 		{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
@@ -1541,14 +1541,14 @@ steam.styles
 		friends_chat_name
 		{
 		textcolor="Friends.OnlineColor"
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		font-size=16
 		}
 
 		friends_chat_accountid
 		{
-		selectedtextcolor="TextentrySelected"	
+		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 		textcolor="text"
 		font-size=16
@@ -1562,12 +1562,12 @@ steam.styles
 		font-size=16
 		font-weight=400
 		font-style=underline
-		selectedtextcolor="TextSelected"	
+		selectedtextcolor="TextSelected"
 		selectedbgcolor="Focus"
 		}
 
 		CChatRoomDlg
-		{			
+		{
 		bgcolor="none"
 
 		render
@@ -1602,12 +1602,12 @@ steam.styles
 		{
 		textcolor="LabelDisabled"
 		render_bg
-		{     
+		{
 		// background fill
 		0="fill( x0, y0, x1, y1, none )"
 
 		}
-		}    
+		}
 
 		// used in friends tooltip and friends list for overriding regular styles with custom colors
 		friends_offline

@@ -22,20 +22,18 @@
 	        font-weight=400
 
 	        textcolor="eOSContextMenu"
-	        hoverbgcolor="eOSContextMenuSelectedBG"
-	        hovertextcolor="eOSContextMenuSelected"
 	        selectedbgcolor="eOSContextMenuSelectedBG"
 	        selectedtextcolor="eOSContextMenuSelected"
 
 	        padding=8
-	        
+
 			render_bg
 			{
 				0="fill(x0, y0, x1, y1, eOSLibrarySidebarBG)"
 				1="fill(x1-1, y0, x1, y1, eOSLibrarySidebarBorder)"
 			}
 		}
-		
+
 		"GamesPage_Details ListPanelInterior"
 		{
 			bgcolor=none
@@ -47,12 +45,12 @@
 			bgcolor="none"
 		}
 
-    
+
 		"GamesPage_Details ListPanelColumnSelectButton"
 		{
 			bgcolor="none"
 		}
-	   
+
 	    "GamesPage_Details ListPanelDragger"
 		{
 			bgcolor="0 255 0 255"
@@ -63,12 +61,12 @@
 	        bgcolor=none
 	    	inset-left=0
 	    }
-		
+
 		headerimage
 		{
 			bgcolor=none
 		}
-		
+
 		DetailsBorderPanel
 		{
 			bgcolor=none
@@ -167,7 +165,7 @@
 		place { control="gamesubheader" region="details" start="gametitleheader" dir=down align=top-center width=400 }
 
 		place {
-			control="turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,communityfilesdetails,dlcdetails,newsdetails"
+			control="compatsubheader,turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,communityfilesdetails,dlcdetails,newsdetails"
 			region="details"
 			start="gamesubheader"
 			spacing=-29
@@ -187,7 +185,7 @@
 		place { control="DetailsBorder" region="details_border" align=top-center dir=down width=400 height=42 margin-top=30 margin-bottom=100 }
 
 		place { control="welcomedetails,clouddetails,screenshotsdetails, tagslabel,guidelink,newslink,achievementslink,forumlink,ogglink,guideslink,recommendlink,sendguestpasslink,manuallink,dlclink,cdkeylink,supportlink,edittagslink,*taglink" x=9999 y=9999 width=0 height=0 }
-		
+
 	}
 
 }
